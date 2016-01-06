@@ -4,7 +4,7 @@
 RootModule = 'NameIT.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.0'
+ModuleVersion = '1.01'
 
 # ID used to uniquely identify this module
 GUID = '6d4ec85a-e09f-4024-819d-66bafa130a5b'
@@ -19,7 +19,7 @@ CompanyName = 'Doug Finke'
 Copyright = 'c 2016 All rights reserved.'
 
 # Description of the functionality provided by this module
-Description = 'PowerShell module to import/export Excel spreadsheets, without Excel'
+Description = 'PowerShell module to randomly generate names'
 
 # Minimum version of the Windows PowerShell engine required by this module
 # PowerShellVersion = ''
