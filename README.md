@@ -4,6 +4,12 @@ PowerShell module for randomly generating names
 
 This project is a port of https://github.com/mitchdenny/namerer. Hat tip to [Mitch Denny](https://twitter.com/mitchdenny).
 
+## In Action
+
+![image](https://raw.githubusercontent.com/dfinke/NameIT/master/images/nameit.gif)
+
+## Examples
+
 ```powershell
 Invoke-Generate
 # Output:
