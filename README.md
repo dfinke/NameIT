@@ -1,0 +1,84 @@
+PowerShell NameIT
+-
+PowerShell module for randomly generating names
+
+This project is a port of https://github.com/mitchdenny/namerer. Hat tip to [Mitch Denny](https://twitter.com/mitchdenny).
+
+```powershell
+Invoke-Generate
+# Output:
+lhcqalmf
+```
+Will generate an eight character name with a random set of characters in the A-Z alphabet. You can change which alphabet is being used by using the `-alphabet` parameter.
+
+```powershell
+Invoke-Generate -alphabet abc
+# Output:
+cabccbca
+```
+
+This is just a default template, most users will have some idea of what they want to generate, but want to randomly splice in other characters to make it unique or come up with some other ideas. For this you can provide a template string.
+
+```powershell
+Invoke-Generate "cafe###"
+# Output:
+cafe176
+```
+
+Using the `?` symbol injects a random letter, the `#` symbol injects a random number. 
+
+```powershell
+Invoke-Generate "???###"
+# Output:
+yhj561
+```
+
+## Template Functions
+The ```?``` and ```#``` characters in a template are just shorthand for functions that you can use in a template, so the previous example could also be written as:
+
+```powershell
+Invoke-Generate "[alpha][alpha][alpha][numeric][numeric][numeric]"
+# Output:
+voe336
+```
+
+NamIT exposes a bunch of useful functions to help create more useful (and pronouncable names). Here is the current list that is supported:
+
+- `[alpha]`; selects a random character (constrained by the ```-alphabet` parameter).
+- `[numeric]`; selects a random numeric (constrained by the `-numbers` parameter).
+- `[vowel]`; selects a vowel from *a*, *e*, *i*, *o* or *u*.
+- `[phoneticVowel]`; selects a vowel sound, for example *ou*.
+- `[consonant()]`; selects a consonant from the entire alphabet.
+- `[syllable]`; generates (usually) a pronouncable single syllable.
+- `[synonym word]`; finds a synonym to match the provided word.
+
+One of the most common functions you'll use is `[syllable()]` because it generally produces something that you can pronounce. For example, if we take our earlier cafe naming example, you might do something like this:
+
+```powershell
+Invoke-Generate "cafe_[syllable][syllable]"
+# Output:
+cafe_amoy
+```
+
+You can combine the tempalate functions to produce some interesting results, for example here we use the `[synonym]` function with the `[syllable]` function to also replace the word *cafe*.
+
+```powershell
+Invoke-Generate "[synonym cafe]_[syllable][syllable]"
+# Output:
+coffeehouse_iqza
+```
+
+Finally, you can also get the tool to generate a bunch of names at a time using the ```--count``` switch. Here is an example:
+
+```powershell
+Invoke-Generate -count 5 "[synonym cafe]_[syllable][syllable]"
+
+# Output:
+restaurant_owkub
+coffeebar_otqo
+eatingplace_umit
+coffeeshop_fexuz
+coffeebar_zuvpe
+```
+
+## Stay tuned for additional capability 

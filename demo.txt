@@ -1,0 +1,13 @@
+# name it
+Import-Module NameIT
+
+Invoke-Generate
+Invoke-Generate -c 5
+Invoke-Generate -c 5 "?#" 
+Invoke-Generate -c 5 "[alpha][numeric]" 
+Invoke-Generate -c 5 "[alpha 3][numeric 3]" 
+Invoke-Generate -c 5 "[alpha 3][numeric 3]" -alphabet abcxyz -number 159
+Invoke-Generate "cafe###" -count 3
+Invoke-Generate "cafe[numeric 3]" -count 3
+Invoke-Generate "cafe_[syllable][syllable]" -count 3
+Invoke-Generate "[synonym cafe]_[syllable][syllable]" -count 5
