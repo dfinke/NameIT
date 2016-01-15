@@ -87,12 +87,12 @@ coffeeshop_fexuz
 coffeebar_zuvpe
 ```
 
-You can generate also names of people like <FirstName><Space><LastName> based on provided sex (female/male/both) and culture (currently only en-US).
+You can generate also names of people like &lt;FirstName&gt;&lt;Space&gt;&lt;LastName&gt; based on provided sex (female/male/both) and culture (currently only en-US).
 The cultures can be added by putting csv files with the last/first names in the subfoders "cultures", in the module directory - please see en-US.csv for the file structure.
 
 ```powershell
 Invoke-Generate "[person]" -Sex female -count 3
-# Output: 
+# Output:
 Jacqueline Walker
 Julie Richardson
 Stacey Powell
