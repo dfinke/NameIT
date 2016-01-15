@@ -12,7 +12,7 @@ function Invoke-Generate {
     $script:alphabet = $alphabet
     $script:numbers  = $number
 
-    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant'
+    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person'
 
     $template   = $template -replace '\?', '[alpha]' -replace '#', '[numeric]'
     $unitOfWork = $template -split "\[(.+?)\]" | ?{$_}
@@ -91,6 +91,96 @@ function syllable {
     }
 
     Get-RandomChoice $syllables
+}
+
+function person {
+    <#
+    
+    .SYNOPSIS
+    The function intended to generate string with name of a random person 
+    
+    .DESCRIPTION
+    The function generate a random name of females or mailes based on provided culture like <FirstName><Space><LastName>.
+    The first and last names are randomly selected from the file delivered with  for the culture 
+    
+    .PARAMETER Sex
+    The sex of random person.
+    
+    .PARAMETER Count
+    The count how many names will be generated and returned.
+    
+    .PARAMETER Culture
+    The culture used for generate - default is en-US.    
+    
+    .LINK
+    https://www.linkedin.com/in/sciesinskiwojciech
+          
+    .NOTES
+    AUTHOR: Wojciech Sciesinski, wojciech[at]sciesinski[dot]net
+    KEYWORDS: PowerShell
+   
+    VERSIONS HISTORY
+    0.1.0 -  2016-01-16 - The first version published as a part of NameIT powershell module https://github.com/dfinke/NameIT
+        
+    The source of last names for the en-US culture - taken the first 100 on the state 2016-01-15
+    http://names.mongabay.com/data/1000.html
+
+    The source of the first names for the en-US culture - taken the first 100 on the state 2016-01-15
+    http://www.behindthename.com/top/lists/united-states-decade/1980/100
+    
+    .EXAMPLE
+    [PS] > Invoke-Generage -template person
+    Justin Carter
+    
+    The one name returned with random sex.
+    
+    .EXAMPLE
+    [PS] > Invoke-Generate "[person]" -Sex female -count 3
+    Jacqueline Walker
+    Julie Richardson
+    Stacey Powell
+    
+    Three names returned, only women.
+    
+    #>    
+    param (
+        [parameter(Mandatory = $false)]
+        [ValidateSet("both", "female", "male")]
+        [String]$Sex = "both",
+        [Int]$Count = 1,
+        [String]$Culture = "en-US"
+    )
+    
+    [String]$CultureFileName = ".\cultures\{0}.csv" -f $Culture
+    
+    $AllNames = Import-Csv -Path $CultureFileName -Delimiter ","
+    
+    $AllNamesCount = ($AllNames | Measure-Object).Count
+    
+    1..$Count | ForEach-Object -Process {
+        
+        $LastName = $AllNames[(Get-Random -Minimum 0 -Maximum ($AllNamesCount - 1))].LastName
+        
+        If ($Sex = "both") {
+            
+            $FirstName = $AllNames[(Get-Random -Minimum 0 -Maximum ($AllNamesCount - 1))].(Get-Random @('FemaleFirstName', 'MaleFirstName'))
+            
+        }
+        elseif ($FirstName -eq "female") {
+            
+            $FirstName = $AllNames[(Get-Random -Minimum 0 -Maximum ($AllNamesCount - 1))].FemaleFirstName
+            
+        }
+        else {
+            
+            $FirstName = $AllNames[(Get-Random -Minimum 0 -Maximum ($AllNamesCount - 1))].MaleFirstName
+            
+        }
+        
+        Return $([String]"{0} {1}" -f $FirstName, $LastName)
+        
+    }
+    
 }
 
 Export-ModuleMember *-*
