@@ -13,5 +13,5 @@ Invoke-Generate "cafe_[syllable][syllable]" -count 3
 Invoke-Generate "[synonym cafe]_[syllable][syllable]" -count 5
 Invoke-Generage "[person]"
 Invoke-Generate "[person] -Sex both -count 3
-Invoke-Generate "[persone]" -Sex female -count 5
+Invoke-Generate "[person]" -Sex female -count 5
 Invoke-Generate "[person]" -Sex male -count 5
