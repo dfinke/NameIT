@@ -8,7 +8,7 @@ This project is a port of https://github.com/mitchdenny/namerer. Hat tip to [Mit
 
 ![image](https://raw.githubusercontent.com/dfinke/NameIT/master/images/nameit.gif)
 
-## Release 1.03 1/16/2016
+## Release 1.04: 1/16/2016
 
 * Thank you [Wojciech Sciesinski](https://github.com/it-praktyk) for adding the NameIT `person` feature
 
