@@ -8,6 +8,26 @@ This project is a port of https://github.com/mitchdenny/namerer. Hat tip to [Mit
 
 ![image](https://raw.githubusercontent.com/dfinke/NameIT/master/images/nameit.gif)
 
+## Release 1.03 1/16/2016
+
+* Thank you [Wojciech Sciesinski](https://github.com/it-praktyk) for adding the NameIT `person` feature
+
+```
+PS C:\> Invoke-Generate "[person]" -c 3
+Meghan Cruz
+Cassandra Smith
+Luis Flores
+PS C:\> Invoke-Generate "[person female]" -c 3
+Heather Rogers
+Meghan Bailey
+Julia Perez
+PS C:\> Invoke-Generate "[person male]" -c 3
+Chad Bailey
+Jordan Gray
+Matthew Jackson
+```
+
+
 ## Examples
 
 ```powershell
