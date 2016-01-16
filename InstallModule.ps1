@@ -13,3 +13,6 @@ $FilesToCopy = dir -erroraction ignore *.psm1, *.psd1
 $FilesToCopy | ForEach {
     Copy-Item -Verbose -Path $_.FullName -Destination "$($TargetPath)\$($_.name)"
 }
+
+
+Copy-Item -Verbose -Path .\cultures -Recurse -Destination "$($TargetPath)\$($_.name)"
