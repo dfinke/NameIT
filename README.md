@@ -48,7 +48,7 @@ Invoke-Generate "[alpha][alpha][alpha][numeric][numeric][numeric]"
 voe336
 ```
 
-NamIT exposes a bunch of useful functions to help create more useful (and pronouncable names). Here is the current list that is supported:
+NameIT exposes a bunch of useful functions to help create more useful (and pronouncable names). Here is the current list that is supported:
 
 - `[alpha]`; selects a random character (constrained by the ```-alphabet` parameter).
 - `[numeric]`; selects a random numeric (constrained by the `-numbers` parameter).
