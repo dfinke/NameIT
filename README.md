@@ -31,7 +31,7 @@ Invoke-Generate "cafe###"
 cafe176
 ```
 
-Using the `?` symbol injects a random letter, the `#` symbol injects a random number. 
+Using the `?` symbol injects a random letter, the `#` symbol injects a random number.
 
 ```powershell
 Invoke-Generate "???###"
@@ -57,6 +57,9 @@ NamIT exposes a bunch of useful functions to help create more useful (and pronou
 - `[consonant()]`; selects a consonant from the entire alphabet.
 - `[syllable]`; generates (usually) a pronouncable single syllable.
 - `[synonym word]`; finds a synonym to match the provided word.
+- `[person]`; generate random name of female or male based on provided culture like &lt;FirstName&gt;&lt;Space&gt;&lt;LastName&gt;.
+- `[person female]`;generate random name of female based on provided culture like &lt;FirstName&gt;&lt;Space&gt;&lt;LastName&gt;.
+- `[person male]`;generate random name of male based on provided culture like &lt;FirstName&gt;&lt;Space&gt;&lt;LastName&gt;.
 
 One of the most common functions you'll use is `[syllable()]` because it generally produces something that you can pronounce. For example, if we take our earlier cafe naming example, you might do something like this:
 
@@ -74,11 +77,10 @@ Invoke-Generate "[synonym cafe]_[syllable][syllable]"
 coffeehouse_iqza
 ```
 
-Finally, you can also get the tool to generate a bunch of names at a time using the ```--count``` switch. Here is an example:
+You can also get the tool to generate a bunch of names at a time using the ```--count``` switch. Here is an example:
 
 ```powershell
 Invoke-Generate -count 5 "[synonym cafe]_[syllable][syllable]"
-
 # Output:
 restaurant_owkub
 coffeebar_otqo
@@ -87,4 +89,15 @@ coffeeshop_fexuz
 coffeebar_zuvpe
 ```
 
-## Stay tuned for additional capability 
+You can generate also names of people like &lt;FirstName&gt;&lt;Space&gt;&lt;LastName&gt; based on provided sex (female/male/both) and culture (currently only en-US).
+The cultures can be added by putting csv files with the last/first names in the subfoders "cultures", in the module directory - please see en-US.csv for the file structure.
+
+```powershell
+Invoke-Generate "[person female]" -count 3
+# Output:
+Jacqueline Walker
+Julie Richardson
+Stacey Powell
+```
+
+## Stay tuned for additional capability
