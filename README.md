@@ -57,7 +57,9 @@ NamIT exposes a bunch of useful functions to help create more useful (and pronou
 - `[consonant()]`; selects a consonant from the entire alphabet.
 - `[syllable]`; generates (usually) a pronouncable single syllable.
 - `[synonym word]`; finds a synonym to match the provided word.
-- `[person]`; generate random name of female or male based on provided culture like <FirstName><Space><LastName>.
+- `[person]`; generate random name of female or male based on provided culture like &lt;FirstName&gt;&lt;Space&gt;&lt;LastName&gt;.
+- `[person female]`;generate random name of female based on provided culture like &lt;FirstName&gt;&lt;Space&gt;&lt;LastName&gt;.
+- `[person male]`;generate random name of male based on provided culture like &lt;FirstName&gt;&lt;Space&gt;&lt;LastName&gt;.
 
 One of the most common functions you'll use is `[syllable()]` because it generally produces something that you can pronounce. For example, if we take our earlier cafe naming example, you might do something like this:
 
@@ -91,7 +93,7 @@ You can generate also names of people like &lt;FirstName&gt;&lt;Space&gt;&lt;Las
 The cultures can be added by putting csv files with the last/first names in the subfoders "cultures", in the module directory - please see en-US.csv for the file structure.
 
 ```powershell
-Invoke-Generate "[person]" -Sex female -count 3
+Invoke-Generate "[person female]" -count 3
 # Output:
 Jacqueline Walker
 Julie Richardson

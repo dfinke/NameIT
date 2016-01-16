@@ -2,27 +2,28 @@
 # http://mitchdenny.com/introducing-namerer-for-naming-things/
 
 function Invoke-Generate {
-    param(
-        $template='????????',
-        $count=1,
-        [string]$alphabet='abcdefghijklmnopqrstuvwxyz',
-        [string]$numbers='0123456789'
+    param (
+        $template = '????????',
+        $count = 1,
+        [string]$alphabet = 'abcdefghijklmnopqrstuvwxyz',
+        [string]$numbers = '0123456789'
     )
-
+    
     $script:alphabet = $alphabet
-    $script:numbers  = $number
-
-    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person'
-
-    $template   = $template -replace '\?', '[alpha]' -replace '#', '[numeric]'
-    $unitOfWork = $template -split "\[(.+?)\]" | ?{$_}
-
-    1..$count | % {
-        $($unitOfWork | % {
+    $script:numbers = $number
+    
+    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|personfemale|personmale'
+    
+    $template = $template -replace '\?', '[alpha]' -replace '#', '[numeric]' -replace 'person ', 'person'
+    $unitOfWork = $template -split "\[(.+?)\]" | Where-Object -FilterScript { $_ }
+    
+    1..$count | ForEach-Object -Process {
+        $($unitOfWork | ForEach-Object -Process  {
             $fn = $_.split(' ')[0]
-            if($functionList.IndexOf($fn.tolower()) -eq -1) {
+            if ($functionList.IndexOf($fn.tolower()) -eq -1) {
                 $_
-            } else {
+            }
+            else {
                 $_ | Invoke-Expression
             }
         }) -join ''
@@ -30,51 +31,52 @@ function Invoke-Generate {
 }
 
 function Get-RandomChoice {
-    param($list, [int]$length=1)
-
+    param ($list,
+        [int]$length = 1)
+    
     $max = $list.Length
-
+    
     $(
-        for ($i = 0; $i -lt $length; $i++) {
-            $list[(Get-Random -Minimum 0 -Maximum $max)]
-        }
+    for ($i = 0; $i -lt $length; $i++) {
+        $list[(Get-Random -Minimum 0 -Maximum $max)]
+    }
     ) -join ''
 }
 
 function alpha {
-    param([int]$length=1)
-
+    param ([int]$length = 1)
+    
     Get-RandomChoice $alphabet $length
 }
 
 function numeric {
-    param([int]$length=1)
-
+    param ([int]$length = 1)
+    
     Get-RandomChoice $numbers $length
 }
 
 function synonym {
-    param([string]$word)
-
-    $url="http://words.bighugelabs.com/api/2/78ae52fd37205f0bad5f8cd349409d16/$($word)/json"
-
+    param ([string]$word)
+    
+    $url = "http://words.bighugelabs.com/api/2/78ae52fd37205f0bad5f8cd349409d16/$($word)/json"
+    
     $synonyms = $(foreach ($item in (Invoke-RestMethod $url)) {
-                    $names=$item.psobject.Properties.name
-                    foreach ($name in $names) {
-                        $item.$name.syn -replace ' ',''
-                    }
-                }) | ?{$_}
-
+        $names = $item.psobject.Properties.name
+        foreach ($name in $names) {
+            $item.$name.syn -replace ' ', ''
+        }
+    }) | Where-Object -FilterScript { $_ }
+    
     $max = $synonyms.Length
     $synonyms[(Get-Random -Minimum 0 -Maximum $max)]
 }
 
-function consonant     { Get-RandomChoice 'bcdfghjklmnpqrstvwxyz' }
+function consonant { Get-RandomChoice 'bcdfghjklmnpqrstvwxyz' }
 
-function vowel         { Get-RandomChoice 'aeiou' }
+function vowel { Get-RandomChoice 'aeiou' }
 
 function phoneticVowel {
-
+    
     Get-RandomChoice 'a', 'ai', 'ay', 'au', 'aw', 'augh', 'wa', 'all', 'ald', 'alk', 'alm', 'alt',
                      'e', 'ee', 'ea', 'eu', 'ei', 'ey', 'ew', 'eigh', 'i', 'ie', 'ye', 'igh', 'ign',
                      'ind', 'o', 'oo', 'oa', 'oe', 'oi', 'oy', 'old', 'olk', 'olt', 'oll', 'ost',
@@ -82,20 +84,19 @@ function phoneticVowel {
 }
 
 function syllable {
-    param([Switch]$usePhoneticVowels)
-
+    param ([Switch]$usePhoneticVowels)
+    
     $syllables = ((vowel) + (consonant)), ((consonant) + (vowel)), ((consonant) + (vowel) + (consonant))
-
-    if($usePhoneticVowels) {
+    
+    if ($usePhoneticVowels) {
         $syllables += ((consonant) + (phoneticVowel))
     }
-
+    
     Get-RandomChoice $syllables
 }
 
 function person {
-    <#
-    
+    <#    
     .SYNOPSIS
     The function intended to generate string with name of a random person 
     
@@ -105,9 +106,6 @@ function person {
     
     .PARAMETER Sex
     The sex of random person.
-    
-    .PARAMETER Count
-    The count how many names will be generated and returned.
     
     .PARAMETER Culture
     The culture used for generate - default is en-US.    
@@ -120,7 +118,10 @@ function person {
     KEYWORDS: PowerShell
    
     VERSIONS HISTORY
-    0.1.0 -  2016-01-16 - The first version published as a part of NameIT powershell module https://github.com/dfinke/NameIT
+    0.1.0 - 2016-01-16 - The first version published as a part of NameIT powershell module https://github.com/dfinke/NameIT
+    0.1.1 - 2016-01-16 - Mistakes corrected, support for additional templates added, the paremeter Count removed
+    
+    The future version will be developed under https://github.com/it-praktyk/New-RandomPerson
         
     The source of last names for the en-US culture - taken the first 100 on the state 2016-01-15
     http://names.mongabay.com/data/1000.html
@@ -129,13 +130,13 @@ function person {
     http://www.behindthename.com/top/lists/united-states-decade/1980/100
     
     .EXAMPLE
-    [PS] > Invoke-Generage -template person
+    [PS] > person
     Justin Carter
     
     The one name returned with random sex.
     
     .EXAMPLE
-    [PS] > Invoke-Generate "[person]" -Sex female -count 3
+    [PS] > 1..3 | person -Sex 'female'
     Jacqueline Walker
     Julie Richardson
     Stacey Powell
@@ -144,42 +145,63 @@ function person {
     
     #>    
     param (
-        [parameter(Mandatory = $false)]
+        [parameter(Mandatory = $false, Position = 0)]
         [ValidateSet("both", "female", "male")]
         [String]$Sex = "both",
-        [Int]$Count = 1,
         [String]$Culture = "en-US"
     )
     
-    [String]$CultureFileName = ".\cultures\{0}.csv" -f $Culture
+    $ModulePath = Split-Path $script:MyInvocation.MyCommand.Path
+    
+    [String]$CultureFileName = "{0}\cultures\{1}.csv" -f $ModulePath, $Culture
     
     $AllNames = Import-Csv -Path $CultureFileName -Delimiter ","
     
     $AllNamesCount = ($AllNames | Measure-Object).Count
     
-    1..$Count | ForEach-Object -Process {
+    $LastName = $AllNames[(Get-Random -Minimum 0 -Maximum ($AllNamesCount - 1))].LastName
+    
+    If ($Sex -eq 'both') {
         
-        $LastName = $AllNames[(Get-Random -Minimum 0 -Maximum ($AllNamesCount - 1))].LastName
+        $RandomSex = (Get-Random @('Female', 'Male'))
         
-        If ($Sex = "both") {
-            
-            $FirstName = $AllNames[(Get-Random -Minimum 0 -Maximum ($AllNamesCount - 1))].(Get-Random @('FemaleFirstName', 'MaleFirstName'))
-            
-        }
-        elseif ($FirstName -eq "female") {
-            
-            $FirstName = $AllNames[(Get-Random -Minimum 0 -Maximum ($AllNamesCount - 1))].FemaleFirstName
-            
-        }
-        else {
-            
-            $FirstName = $AllNames[(Get-Random -Minimum 0 -Maximum ($AllNamesCount - 1))].MaleFirstName
-            
-        }
+        $FirstNameFieldName = "{0}FirstName" -f $RandomSex
         
-        Return $([String]"{0} {1}" -f $FirstName, $LastName)
+        $FirstName = $AllNames[(Get-Random -Minimum 0 -Maximum ($AllNamesCount - 1))].$FirstNameFieldName
         
     }
+    elseif ($Sex -eq 'female') {
+        
+        $FirstName = $AllNames[(Get-Random -Minimum 0 -Maximum ($AllNamesCount - 1))].FemaleFirstName
+        
+    }
+    else {
+        
+        $FirstName = $AllNames[(Get-Random -Minimum 0 -Maximum ($AllNamesCount - 1))].MaleFirstName
+        
+    }
+    
+    Return $([String]"{0} {1}" -f $FirstName, $LastName)
+    
+}
+
+function personfemale {
+    
+    param (
+        [String]$Culture = 'en-US'
+    )
+    
+    Return $(person -Sex female -Culture $Culture)
+    
+}
+
+function personmale {
+    
+    param (
+        [String]$Culture = 'en-US'
+    )
+    
+    Return $(person -Sex male -Culture $Culture)
     
 }
 
