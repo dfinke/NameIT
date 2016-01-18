@@ -120,6 +120,7 @@ function person {
     VERSIONS HISTORY
     0.1.0 - 2016-01-16 - The first version published as a part of NameIT powershell module https://github.com/dfinke/NameIT
     0.1.1 - 2016-01-16 - Mistakes corrected, support for additional templates added, the paremeter Count removed
+    0.1.2 - 2016-01-18 - Incorrect usage Get-Random in the templates [person*] corrected, the example corrected
 
     The future version will be developed under https://github.com/it-praktyk/New-RandomPerson
 
@@ -136,7 +137,7 @@ function person {
     The one name returned with random sex.
 
     .EXAMPLE
-    [PS] > 1..3 | person -Sex 'female'
+    [PS] > 1..3 | Foreach-Object -Process { person -Sex 'female' }
     Jacqueline Walker
     Julie Richardson
     Stacey Powell
@@ -159,7 +160,7 @@ function person {
 
     $AllNamesCount = ($AllNames | Measure-Object).Count
 
-    $LastName = $AllNames[(Get-Random -Minimum 0 -Maximum ($AllNamesCount - 1))].LastName
+    $LastName = $AllNames[(Get-Random -Minimum 0 -Maximum $AllNamesCount)].LastName
 
     If ($Sex -eq 'both') {
 
@@ -167,17 +168,17 @@ function person {
 
         $FirstNameFieldName = "{0}FirstName" -f $RandomSex
 
-        $FirstName = $AllNames[(Get-Random -Minimum 0 -Maximum ($AllNamesCount - 1))].$FirstNameFieldName
+        $FirstName = $AllNames[(Get-Random -Minimum 0 -Maximum $AllNamesCount)].$FirstNameFieldName
 
     }
     elseif ($Sex -eq 'female') {
 
-        $FirstName = $AllNames[(Get-Random -Minimum 0 -Maximum ($AllNamesCount - 1))].FemaleFirstName
+        $FirstName = $AllNames[(Get-Random -Minimum 0 -Maximum $AllNamesCount)].FemaleFirstName
 
     }
     else {
 
-        $FirstName = $AllNames[(Get-Random -Minimum 0 -Maximum ($AllNamesCount - 1))].MaleFirstName
+        $FirstName = $AllNames[(Get-Random -Minimum 0 -Maximum $AllNamesCount)].MaleFirstName
 
     }
 
