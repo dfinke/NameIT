@@ -14,7 +14,7 @@ function Invoke-Generate {
 
     $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|space'
 
-    $template = $template -replace '\?', '[alpha]' -replace '#', '[numeric]' -replace ' ', '[space]'
+    $template = $template -replace '\?', '[alpha]' -replace '#', '[numeric]'
     $unitOfWork = $template -split "\[(.+?)\]" | Where-Object -FilterScript { $_ }
 
     1..$count | ForEach-Object -Process {
