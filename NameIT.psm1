@@ -193,4 +193,4 @@ function person {
 
 }
 
-Export-ModuleMember *
+Export-ModuleMember *-*
