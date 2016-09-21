@@ -12,9 +12,9 @@ function Invoke-Generate {
     $script:alphabet = $alphabet
     $script:numbers = $number
 
-    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person'
+    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|space'
 
-    $template = $template -replace '\?', '[alpha]' -replace '#', '[numeric]'
+    $template = $template -replace '\?', '[alpha]' -replace '#', '[numeric]' -replace ' ', '[space]'
     $unitOfWork = $template -split "\[(.+?)\]" | Where-Object -FilterScript { $_ }
 
     1..$count | ForEach-Object -Process {
@@ -41,6 +41,13 @@ function Get-RandomChoice {
         $list[(Get-Random -Minimum 0 -Maximum $max)]
     }
     ) -join ''
+}
+
+function space {
+    param (
+        [int]$length = 1
+    )
+    ' ' * $length
 }
 
 function alpha {
@@ -186,4 +193,4 @@ function person {
 
 }
 
-Export-ModuleMember *-*
+Export-ModuleMember *
