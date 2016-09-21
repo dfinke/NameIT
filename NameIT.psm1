@@ -12,7 +12,7 @@ function Invoke-Generate {
     $script:alphabet = $alphabet
     $script:numbers = $number
 
-    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person'
+    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|space'
 
     $template = $template -replace '\?', '[alpha]' -replace '#', '[numeric]'
     $unitOfWork = $template -split "\[(.+?)\]" | Where-Object -FilterScript { $_ }
@@ -41,6 +41,13 @@ function Get-RandomChoice {
         $list[(Get-Random -Minimum 0 -Maximum $max)]
     }
     ) -join ''
+}
+
+function space {
+    param (
+        [int]$length = 1
+    )
+    ' ' * $length
 }
 
 function alpha {
