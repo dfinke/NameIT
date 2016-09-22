@@ -155,18 +155,35 @@ function Get-RandomValue
         $Numbers
     )
 
-    $stringValue = Invoke-Generate @PSBoundParameters
+    $type = $null
 
     if ( $PSBoundParameters.ContainsKey('As') )
     {
-        $returnValue = $stringValue -as $As
-        if ($null -eq $returnValue) {
-            Write-Warning "Could not cast '$stringValue' to [$($As.Name)]"
+
+        $type = $As
+
+    }
+
+    $null = $PSBoundParameters.Remove('As')
+    $stringValue = Invoke-Generate @PSBoundParameters
+
+    if ( -not $null -eq $type )
+    {
+
+        $returnValue = $stringValue -as $type
+        if ($null -eq $returnValue) 
+        {
+
+            Write-Warning "Could not cast '$stringValue' to [$($type.Name)]"
+
         }
+
     }
     else
     {
+
         $returnValue = $stringValue
+
     }
 
     $returnValue
