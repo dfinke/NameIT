@@ -18,6 +18,7 @@
    [person]; generate random name of female or male based on provided culture like <FirstName><Space><LastName>.
    [person female]; generate random name of female based on provided culture like <FirstName><Space><LastName>.
    [person male]; generate random name of male based on provided culture like <FirstName><Space><LastName>.
+   [address]; generate a random street address. Formatting is biased to US currently.
    [space]; inserts a literal space. Spaces are striped from the templates string by default.
 
 .PARAMETER Count
@@ -80,7 +81,7 @@ function Invoke-Generate {
     $script:alphabet = $alphabet
     $script:numbers = $number
 
-    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|space'
+    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|address|space'
 
     $template = $template -replace '\?', '[alpha]' -replace '#', '[numeric]'
     $unitOfWork = $template -split "\[(.+?)\]" | Where-Object -FilterScript { $_ }
@@ -200,6 +201,29 @@ function Get-RandomChoice {
         $list[(Get-Random -Minimum 0 -Maximum $max)]
     }
     ) -join ''
+}
+
+
+function address
+{
+    Param 
+    (
+        [String]$Culture = "en-US"
+    )
+
+    $numberLength = Get-Random -Minimum 3 -Maximum 6
+    $streetLenth = Get-Random -Minimum 2 -Maximum 6
+
+    $houseNumber = Get-RandomValue -Template "[numeric $numberLength]" -As int
+
+    $streetTemplate = "[syllable]" * $streetLenth
+    $street = Invoke-Generate $streetTemplate
+    
+    $suffix = Get-Content -Path "$PSScriptRoot\cultures\$Culture.streetsuffix.txt" | Get-Random
+
+    $address = $houseNumber,$street,$suffix -join ' '
+
+    (culture).TextInfo.ToTitleCase($address)
 }
 
 function space {

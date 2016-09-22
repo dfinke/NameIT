@@ -80,6 +80,7 @@ NameIT exposes a bunch of useful functions to help create more useful (and prono
 - `[person]`; generate random name of female or male based on provided culture like &lt;FirstName&gt;&lt;Space&gt;&lt;LastName&gt;.
 - `[person female]`;generate random name of female based on provided culture like &lt;FirstName&gt;&lt;Space&gt;&lt;LastName&gt;.
 - `[person male]`;generate random name of male based on provided culture like &lt;FirstName&gt;&lt;Space&gt;&lt;LastName&gt;.
+- `[address]`; generate a random street address. Formatting is biased to US currently.
 - `[space]`; inserts a literal space. Spaces are striped from the templates string by default.
 
 One of the most common functions you'll use is `[syllable()]` because it generally produces something that you can pronounce. For example, if we take our earlier cafe naming example, you might do something like this:
