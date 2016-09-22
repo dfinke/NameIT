@@ -1,7 +1,66 @@
-# Inspired by
-# http://mitchdenny.com/introducing-namerer-for-naming-things/
 
+
+<#
+.Synopsis
+   Utilize Invoke-Generate to create a random value type
+
+.DESCRIPTION
+   NameIt returns strings including unecessary zeros in numbers. Get-RandomValue returns a specified values type. 
+
+.PARAMETER Template
+   A Nameit template string.
+
+   [alpha]; selects a random character (constrained by the -Alphabet parameter).
+   [numeric]; selects a random numeric (constrained by the -Numbers parameter).
+   [vowel]; selects a vowel from a, e, i, o or u.
+   [phoneticVowel]; selects a vowel sound, for example ou.
+   [consonant]; selects a consonant from the entire alphabet.
+   [syllable]; generates (usually) a pronouncable single syllable.
+   [synonym word]; finds a synonym to match the provided word.
+   [person]; generate random name of female or male based on provided culture like <FirstName><Space><LastName>.
+   [person female]; generate random name of female based on provided culture like <FirstName><Space><LastName>.
+   [person male]; generate random name of male based on provided culture like <FirstName><Space><LastName>.
+   [space]; inserts a literal space. Spaces are striped from the templates string by default.
+
+.PARAMETER Count
+   The number of random items to return.
+
+.PARAMETER Alphabet
+   A set of alpha characters used to generate random strings.
+
+.PARAMETER Numbers
+   A set of digit characters used to generate random numerics.
+
+.EXAMPLE
+   PS C:\> Invoke-Generate
+   lhcqalmf
+
+.EXAMPLE
+   PS C:\> Invoke-Generate -alphabet abc
+   cabccbca 
+
+.EXAMPLE
+   PS C:\> Invoke-Generate "cafe###"
+   cafe176
+
+.EXAMPLE
+   PS C:\> Invoke-Generate "???###"
+   yhj561
+
+.EXAMPLE
+   PS C:\> Invoke-Generate -count 5 "[synonym cafe]_[syllable][syllable]"
+   restaurant_owkub
+   coffeebar_otqo
+   eatingplace_umit
+   coffeeshop_fexuz
+   coffeebar_zuvpe
+
+.Notes
+   Inspired by
+   http://mitchdenny.com/introducing-namerer-for-naming-things/
+#>
 function Invoke-Generate {
+    [CmdletBinding()]
     param (
         [Parameter(Position=0)]
         [String]
