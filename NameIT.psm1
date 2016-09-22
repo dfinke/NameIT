@@ -100,7 +100,7 @@ function Invoke-Generate {
 
 <#
 .Synopsis
-   Utilize Invoke-Generate to create a random value type
+   Utilize Invoke-Generate to create a random value with a specified type.
 
 .DESCRIPTION
    NameIt returns strings including unecessary zeros in numbers. Get-RandomValue returns a specified values type. 
