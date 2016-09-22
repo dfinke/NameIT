@@ -3,10 +3,21 @@
 
 function Invoke-Generate {
     param (
-        $template = '????????',
-        $count = 1,
-        [string]$alphabet = 'abcdefghijklmnopqrstuvwxyz',
-        [string]$numbers = '0123456789'
+        [Parameter(Position=0)]
+        [String]
+        $Template = '????????',
+
+        [Parameter(Position=1)]
+        [int]
+        $Count = 1,
+
+        [Parameter(Position=2)]
+        [string]
+        $Alphabet = 'abcdefghijklmnopqrstuvwxyz',
+
+        [Parameter(Position=3)]
+        [string]        
+        $Numbers = '0123456789'
     )
 
     $script:alphabet = $alphabet
