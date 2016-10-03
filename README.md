@@ -8,6 +8,17 @@ This project is a port of https://github.com/mitchdenny/namerer. Hat tip to [Mit
 
 ![image](https://raw.githubusercontent.com/dfinke/NameIT/master/images/nameit.gif)
 
+## Release 1.05: 10/2/2016
+* Thank you [Chris Hunt](https://github.com/cdhunt) for adding the `address` feature and more
+
+```PowerShell
+PS C:\> Invoke-Generate "[person],[space][address][space]" -c 5
+Derrick Cox, 1 Yicxizehpuw Av
+Bethany Jones, 237 Tataqe Keys
+Courtney Lewis, 162 Goyinu Ranch
+Stacy Davis, 127 Odwus Lgt
+Shane Carter, 308 Qeep Harb
+```
 ## Release 1.04: 1/16/2016
 
 * Thank you [Wojciech Sciesinski](https://github.com/it-praktyk) for adding the NameIT `person` feature
