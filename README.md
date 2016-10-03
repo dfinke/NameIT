@@ -8,15 +8,34 @@ This project is a port of https://github.com/mitchdenny/namerer. Hat tip to [Mit
 
 ![image](https://raw.githubusercontent.com/dfinke/NameIT/master/images/nameit.gif)
 
-## Release 1.06: 10/2/2016
+![image1](https://github.com/dfinke/NameIT/blob/master/images/nameitAddressVerbNounAdjective.gif?raw=true)
 
-* Thank you [Chris Hunt](https://github.com/cdhunt) for adding the `address` feature and more
+## Release 1.7.0 : 10/3/2016
+* Generate random cmdlet names (verb-noun) and limit it to approved verbs
 
-* Thanks to Chris for the suggestion of adding adjective, noun and verb
+```powershell
+PS C:\> Invoke-Generate "[cmdlet]" -c 3
+Boat-Other
+Lawyer-South
+Loose-Trip
+PS C:\> Invoke-Generate "[cmdlet]" -c 3 -ApprovedVerb
+Request-Purchase
+Push-Grocery
+Format-River
+```
 
-Video:
+* Thank you [Chris Hunt](https://github.com/cdhunt) for: 
+    * Adding the `address` feature (and more)
+    * Suggesting of adding adjective, noun and verb
 
-![image](https://github.com/dfinke/NameIT/blob/master/images/nameitAddressVerbNounAdjective.gif?raw=true)
+## Manage Your PowerShell Window Titles
+Put this line in your `$Profile`.
+
+`$Host.UI.RawUI.WindowTitle = Invoke-Generate "PowerShell[space]-[space][Adjective][Noun]"`
+
+Or [try this gist snippet](https://gist.github.com/cdhunt/00a6f98b9d7773b2610bdc6d490ad217).
+
+![](https://raw.githubusercontent.com/dfinke/NameIT/f35ff2f2b2ff80b2d9e008d82c620588d780a494/images/nameitConsoleTitle.png)
  
 ```PowerShell
 PS C:\> Invoke-Generate "[person],[space][address][space]" -c 5
