@@ -81,7 +81,7 @@ function Invoke-Generate {
     $script:alphabet = $alphabet
     $script:numbers = $number
 
-    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|address|space|noun|adjective'
+    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|address|space|noun|adjective|verb'
 
     $template = $template -replace '\?', '[alpha]' -replace '#', '[numeric]'
     $unitOfWork = $template -split "\[(.+?)\]" | Where-Object -FilterScript { $_ }
@@ -204,16 +204,21 @@ function Get-RandomChoice {
 }
 
 $nouns=Get-Content -Path "$PSScriptRoot\cultures\en-US.nouns.txt"
+$adjectives=Get-Content -Path "$PSScriptRoot\cultures\en-US.adjectives.txt"
+$verbs=Get-Content -Path "$PSScriptRoot\cultures\en-US.verbs.txt"
 
 function noun {
      $nouns | Get-Random
 }
 
-$adjectives=Get-Content -Path "$PSScriptRoot\cultures\en-US.adjectives.txt"
-
 function adjective {
      $adjectives | Get-Random
 }
+
+function verb {
+     $verbs | Get-Random
+}
+
 function address {
     Param 
     (
