@@ -58,6 +58,9 @@
    Inspired by
    http://mitchdenny.com/introducing-namerer-for-naming-things/
 #>
+
+$ApprovedVerb=$false
+
 function Invoke-Generate {
     [CmdletBinding()]
     param (
@@ -75,16 +78,18 @@ function Invoke-Generate {
 
         [Parameter(Position=3)]
         [string]        
-        $Numbers = '0123456789'
+        $Numbers = '0123456789',
+        [Switch]$ApprovedVerb
     )
 
     $script:alphabet = $alphabet
     $script:numbers = $number
 
-    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|address|space|noun|adjective|verb'
+    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|address|space|noun|adjective|verb|cmdlet'
 
     $template = $template -replace '\?', '[alpha]' -replace '#', '[numeric]'
     $unitOfWork = $template -split "\[(.+?)\]" | Where-Object -FilterScript { $_ }
+    $ApprovedVerb=$ApprovedVerb
 
     1..$count | ForEach-Object -Process {
         $($unitOfWork | ForEach-Object -Process  {
@@ -217,6 +222,20 @@ function adjective {
 
 function verb {
      $verbs | Get-Random
+}
+
+function baseVerbNoun {
+    if($ApprovedVerb) {
+        $verb = (Get-Verb | Get-Random).verb 
+    } else {
+        $verb = (verb)
+    }
+    
+    "{0}-{1}" -f $verb,(noun)
+}
+
+function cmdlet {
+    baseVerbNoun
 }
 
 function address {
