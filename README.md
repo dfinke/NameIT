@@ -33,6 +33,8 @@ Put this line in your `$Profile`.
 
 `$Host.UI.RawUI.WindowTitle = Invoke-Generate "PowerShell[space]-[space][Adjective][Noun]"`
 
+Or [try this gist snippet](https://gist.github.com/cdhunt/00a6f98b9d7773b2610bdc6d490ad217).
+
 ![](https://raw.githubusercontent.com/dfinke/NameIT/f35ff2f2b2ff80b2d9e008d82c620588d780a494/images/nameitConsoleTitle.png)
  
 ```PowerShell
