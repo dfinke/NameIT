@@ -8,6 +8,8 @@ This project is a port of https://github.com/mitchdenny/namerer. Hat tip to [Mit
 
 ![image](https://raw.githubusercontent.com/dfinke/NameIT/master/images/nameit.gif)
 
+![image1](https://github.com/dfinke/NameIT/blob/master/images/nameitAddressVerbNounAdjective.gif?raw=true)
+
 ## Release 1.7.0 : 10/3/2016
 * Generate random cmdlet names (verb-noun) and limit it to approved verbs
 
@@ -32,10 +34,6 @@ Put this line in your `$Profile`.
 `$Host.UI.RawUI.WindowTitle = Invoke-Generate "PowerShell[space]-[space][Adjective][Noun]"`
 
 ![](https://raw.githubusercontent.com/dfinke/NameIT/f35ff2f2b2ff80b2d9e008d82c620588d780a494/images/nameitConsoleTitle.png)
-
-Video:
-
-![image](https://github.com/dfinke/NameIT/blob/master/images/nameitAddressVerbNounAdjective.gif?raw=true)
  
 ```PowerShell
 PS C:\> Invoke-Generate "[person],[space][address][space]" -c 5
