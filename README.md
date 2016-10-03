@@ -8,8 +8,27 @@ This project is a port of https://github.com/mitchdenny/namerer. Hat tip to [Mit
 
 ![image](https://raw.githubusercontent.com/dfinke/NameIT/master/images/nameit.gif)
 
-## Release 1.05: 10/2/2016
+## Release 1.06: 10/2/2016
 * Thank you [Chris Hunt](https://github.com/cdhunt) for adding the `address` feature and more
+
+* Thanks to Chris for the suggestion of adding adjective, noun and verb
+ 
+```powershell
+PS C:\> Invoke-Generate "VM-[adjective][noun]" -c 4
+VM-StormyFriendship
+VM-PricklyLook
+VM-KindTrick
+VM-LuckyOrder
+```
+
+```powershell
+PS C:\> Invoke-Generate "See [person][space][adjective][space][noun][space][verb]" -c 5
+See Joel James Cute Tip Date
+See Cody Martinez Annoyed East Command
+See Brent Gutierrez Better Sport Father
+See Alexandra Peterson Horrible Influence Evidence
+See Diana Rogers Gleaming Tour Jury
+```
 
 ```PowerShell
 PS C:\> Invoke-Generate "[person],[space][address][space]" -c 5
