@@ -111,7 +111,7 @@ NameIT exposes a bunch of useful functions to help create more useful (and prono
 - `[numeric]`; selects a random numeric (constrained by the `-numbers` parameter).
 - `[vowel]`; selects a vowel from *a*, *e*, *i*, *o* or *u*.
 - `[phoneticVowel]`; selects a vowel sound, for example *ou*.
-- `[consonant()]`; selects a consonant from the entire alphabet.
+- `[consonant]`; selects a consonant from the entire alphabet.
 - `[syllable]`; generates (usually) a pronouncable single syllable.
 - `[synonym word]`; finds a synonym to match the provided word.
 - `[person]`; generate random name of female or male based on provided culture like &lt;FirstName&gt;&lt;Space&gt;&lt;LastName&gt;.
