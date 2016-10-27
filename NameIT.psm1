@@ -424,6 +424,10 @@ function State {
         "name"    {$property="statename"}
         "abbr"    {$property="abbreviation"}
         "capital" {$property="capital"}
+        "all" {
+            $targetState=$states | Get-Random 
+            "{0}, {1} {2}" -f $targetState.Capital,$targetState.StateName,$targetState.Abbreviation
+        }
         default { throw "property [$($property)] not supported"}
     }
 
