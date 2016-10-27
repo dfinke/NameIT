@@ -197,8 +197,10 @@ function Get-RandomValue
 }
 
 function Get-RandomChoice {
-    param ($list,
-        [int]$length = 1)
+    param (
+        $list,
+        [int]$length = 1
+    )
 
     $max = $list.Length
 
@@ -426,7 +428,7 @@ function State {
         "capital" {$property="capital"}
         "all" {
             $targetState=$states | Get-Random 
-            "{0}, {1} {2}" -f $targetState.Capital,$targetState.StateName,$targetState.Abbreviation
+            "{0},{1},{2},{3}" -f $targetState.Capital,$targetState.StateName,$targetState.Abbreviation,$targetState.Zip
         }
         default { throw "property [$($property)] not supported"}
     }
@@ -434,4 +436,6 @@ function State {
     $states | get-random | % $property
 }
 
-Export-ModuleMember *-*
+Set-Alias ig Invoke-Generate
+
+#Export-ModuleMember *-*
