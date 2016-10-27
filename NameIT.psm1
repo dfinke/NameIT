@@ -85,7 +85,8 @@ function Invoke-Generate {
     $script:alphabet = $alphabet
     $script:numbers = $number
 
-    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|address|space|noun|adjective|verb|cmdlet'
+    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|address|space|noun|adjective|verb|cmdlet|statename|stateabbr|stateCapital'
+    $functionList=$functionList.ToLower()
 
     $template = $template -replace '\?', '[alpha]' -replace '#', '[numeric]'
     $unitOfWork = $template -split "\[(.+?)\]" | Where-Object -FilterScript { $_ }
@@ -407,6 +408,34 @@ function person {
 
     Return $([String]"{0} {1}" -f $FirstName, $LastName)
 
+}
+
+function StateName {
+
+    param(
+        [String]$Culture = "en-US"
+    )
+    
+    $CultureFileName = "$($PSScriptRoot)\cultures\{0}.States.csv" -f  $Culture
+    (Import-Csv $CultureFileName | Get-Random).StateName
+}
+
+function StateAbbr {
+    param(
+        [String]$Culture = "en-US"
+    )
+    
+    $CultureFileName = "$($PSScriptRoot)\cultures\{0}.States.csv" -f  $Culture
+    (Import-Csv $CultureFileName | Get-Random).Abbreviation
+}
+
+function StateCapital {
+    param(
+        [String]$Culture = "en-US"
+    )
+
+    $CultureFileName = "$($PSScriptRoot)\cultures\{0}.States.csv" -f  $Culture
+    (Import-Csv $CultureFileName | Get-Random).Capital
 }
 
 Export-ModuleMember *-*
