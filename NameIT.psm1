@@ -85,7 +85,7 @@ function Invoke-Generate {
     $script:alphabet = $alphabet
     $script:numbers = $number
 
-    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|address|space|noun|adjective|verb|cmdlet|statename|stateabbr|stateCapital'
+    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|address|space|noun|adjective|verb|cmdlet|state'
     $functionList=$functionList.ToLower()
 
     $template = $template -replace '\?', '[alpha]' -replace '#', '[numeric]'
@@ -410,32 +410,24 @@ function person {
 
 }
 
-function StateName {
+function State {
 
     param(
+        $property="name",
         [String]$Culture = "en-US"
     )
     
     $CultureFileName = "$($PSScriptRoot)\cultures\{0}.States.csv" -f  $Culture
-    (Import-Csv $CultureFileName | Get-Random).StateName
-}
+    $states=Import-Csv $CultureFileName
 
-function StateAbbr {
-    param(
-        [String]$Culture = "en-US"
-    )
-    
-    $CultureFileName = "$($PSScriptRoot)\cultures\{0}.States.csv" -f  $Culture
-    (Import-Csv $CultureFileName | Get-Random).Abbreviation
-}
+    switch($property) {
+        "name"    {$property="statename"}
+        "abbr"    {$property="abbreviation"}
+        "capital" {$property="capital"}
+        default { throw "property [$($property)] not supported"}
+    }
 
-function StateCapital {
-    param(
-        [String]$Culture = "en-US"
-    )
-
-    $CultureFileName = "$($PSScriptRoot)\cultures\{0}.States.csv" -f  $Culture
-    (Import-Csv $CultureFileName | Get-Random).Capital
+    $states | get-random | % $property
 }
 
 Export-ModuleMember *-*
