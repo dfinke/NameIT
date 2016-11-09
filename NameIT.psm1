@@ -79,13 +79,22 @@ function Invoke-Generate {
         [Parameter(Position=3)]
         [string]        
         $Numbers = '0123456789',
-        [Switch]$ApprovedVerb
+        [Switch]$ApprovedVerb,
+        [HashTable]$CustomData
     )
 
     $script:alphabet = $alphabet
     $script:numbers = $number
 
     $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|address|space|noun|adjective|verb|cmdlet|state'
+
+    if($CustomData) {    
+        foreach ($key in $CustomData.Keys) {        
+            $functionList+=$key
+            "function $key { echo $($CustomData.$key) | Get-Random }" | Invoke-Expression
+        }
+    }
+
     $functionList=$functionList.ToLower()
 
     $template = $template -replace '\?', '[alpha]' -replace '#', '[numeric]'
