@@ -79,8 +79,13 @@ function Invoke-Generate {
         [Parameter(Position=3)]
         [string]        
         $Numbers = '0123456789',
+
+        [Parameter(Position=4)]
+        [HashTable]$CustomData,
+
         [Switch]$ApprovedVerb,
-        [HashTable]$CustomData
+
+        [Switch]$AsPSObject
     )
 
     $script:alphabet = $alphabet
@@ -102,7 +107,7 @@ function Invoke-Generate {
     $ApprovedVerb=$ApprovedVerb
 
     1..$count | ForEach-Object -Process {
-        $($unitOfWork | ForEach-Object -Process  {
+        $r=$($unitOfWork | ForEach-Object -Process  {
             $fn = $_.split(' ')[0]
             if ($functionList.IndexOf($fn.tolower()) -eq -1) {
                 $_
@@ -111,6 +116,12 @@ function Invoke-Generate {
                 $_ | Invoke-Expression
             }
         }) -join ''
+
+        if($AsPSObject) {
+            [pscustomobject](ConvertFrom-StringData $r)
+        } else {
+            $r
+        }
     }
 }
 
