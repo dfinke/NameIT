@@ -14,5 +14,6 @@ $FilesToCopy | ForEach {
     Copy-Item -Verbose -Path $_.FullName -Destination "$($TargetPath)\$($_.name)"
 }
 
+$null=Robocopy.exe .\customData $TargetPath\customData /mir
 
 Copy-Item -Verbose -Path .\cultures -Recurse -Destination "$($TargetPath)\$($_.name)"
