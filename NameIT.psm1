@@ -91,7 +91,7 @@ function Invoke-Generate {
     $script:alphabet = $alphabet
     $script:numbers = $number
 
-    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|address|space|noun|adjective|verb|cmdlet|state'
+    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|address|space|noun|adjective|verb|cmdlet|state'.Split('|')
 
     $customDataFile="$PSScriptRoot\customData\customData.ps1"
     if(Test-Path $customDataFile){
@@ -114,7 +114,7 @@ function Invoke-Generate {
     1..$count | ForEach-Object -Process {
         $r=$($unitOfWork | ForEach-Object -Process  {
             $fn = $_.split(' ')[0]
-            if ($functionList.IndexOf($fn.tolower()) -eq -1) {
+            if ($functionList -notcontains $fn) {
                 $_
             }
             else {
