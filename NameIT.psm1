@@ -84,7 +84,7 @@ function Invoke-Generate {
         [HashTable]$CustomData,
 
         [Switch]$ApprovedVerb,
-
+        [Switch]$AsTabDelimited,
         [Switch]$AsPSObject
     )
 
@@ -124,6 +124,9 @@ function Invoke-Generate {
 
         if($AsPSObject) {
             [pscustomobject](ConvertFrom-StringData $r)
+        } elseif($AsTabDelimited) {
+            [pscustomobject](ConvertFrom-StringData $r) |
+                ConvertTo-Csv -Delimiter "`t" -NoTypeInformation
         } else {
             $r
         }
