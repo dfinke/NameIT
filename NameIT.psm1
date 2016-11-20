@@ -1,3 +1,7 @@
+
+"Hello World"
+
+return
 <#
 .Synopsis
    Utilize Invoke-Generate to create a random value type
