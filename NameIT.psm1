@@ -128,7 +128,7 @@ function Invoke-Generate {
             [pscustomobject](ConvertFrom-StringData $r) |
                 ConvertTo-Csv -Delimiter "`t" -NoTypeInformation
         } else {
-            $r
+            $r + " hello world"
         }
     }
 }
