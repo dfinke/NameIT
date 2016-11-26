@@ -466,4 +466,4 @@ function State {
 
 Set-Alias ig Invoke-Generate
 
-#Export-ModuleMember *-*
+Export-ModuleMember -Function * -Alias *
