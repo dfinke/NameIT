@@ -441,7 +441,6 @@ function person {
 }
 
 function State {
-
     param(
         $property="name",
         [String]$Culture = "en-US"
@@ -454,6 +453,7 @@ function State {
         "name"    {$property="statename"}
         "abbr"    {$property="abbreviation"}
         "capital" {$property="capital"}
+        "zip" {$property="zip"}
         "all" {
             $targetState=$states | Get-Random 
             "{0},{1},{2},{3}" -f $targetState.Capital,$targetState.StateName,$targetState.Abbreviation,$targetState.Zip
