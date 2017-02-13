@@ -1,0 +1,58 @@
+# Find-Module NameIT 
+# Find-Module NameIT | Install-Module
+''
+Invoke-Generate
+Invoke-Generate -Count 3
+Invoke-Generate "?#" -Count 3
+Invoke-Generate "[alpha][numeric]" -Count 3
+Invoke-Generate "cafe###" -Count 3
+Invoke-Generate "cafe[numeric 3]" -Count 3
+Invoke-Generate "cafe_[syllable][syllable]" -Count 3
+
+# synonym
+Invoke-Generate "[synonym cafe]_[syllable][syllable]" -Count 3
+
+# adjective/noun
+Invoke-Generate "[adjective][noun]" -Count 3
+
+# VMs [Docker continer names]
+Invoke-Generate "VM_[adjective][noun]" -Count 3
+
+# PowerShell cmdlets
+Invoke-Generate "[cmdlet]" -Count 3
+Invoke-Generate "[cmdlet]" -Count 3 -ApprovedVerb
+
+# People
+Invoke-Generate "See [person][space][adjective][space][noun][space][verb]" -Count 3
+Invoke-Generate "See [person female]" -Count 3
+Invoke-Generate "See [person male]" -Count 3
+
+# Custom Data
+$data=@{}
+$data+=@{Region=echo North East South West}
+$data+=@{Food=echo Pizza Pancakes Sliders Steak Fish}
+$data+=@{Fruit=echo lemon lime peach apple banana}
+
+$data
+
+Invoke-Generate -Custom $data -Count 3 "[Food]"
+Invoke-Generate -Custom $data -Count 3 "[Fruit]"
+
+Invoke-Generate -Custom $data -Count 3 "[Region],[Fruit]"
+
+# Templates
+$Template="Region=[Region]`nFruit=[Fruit]"
+Invoke-Generate -Custom $data -Count 3 -Template $Template
+
+# PowerShell Objects
+$result=Invoke-Generate -Custom $data -Count 3 -Template $Template -AsPSObject
+$result
+$result.GetType()
+
+#
+$Template="Region=[Region]`nState=[State]`nFruit=[Fruit]"
+Invoke-Generate -Custom $data -Count 10 -Template $Template -AsPSObject
+
+# Play to the PS ecosystem
+$result=Invoke-Generate -Custom $data -Count 10 -Template $Template -AsPSObject
+$result|Export-Excel -Now
