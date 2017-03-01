@@ -3,7 +3,7 @@
    Utilize Invoke-Generate to create a random value type
 
 .DESCRIPTION
-   NameIt returns strings including unecessary zeros in numbers. Get-RandomValue returns a specified values type. 
+   NameIt returns strings including unecessary zeros in numbers. Get-RandomValue returns a specified values type.
 
 .PARAMETER Template
    A Nameit template string.
@@ -36,7 +36,7 @@
 
 .EXAMPLE
    PS C:\> Invoke-Generate -alphabet abc
-   cabccbca 
+   cabccbca
 
 .EXAMPLE
    PS C:\> Invoke-Generate "cafe###"
@@ -77,7 +77,7 @@ function Invoke-Generate {
         $Alphabet = 'abcdefghijklmnopqrstuvwxyz',
 
         [Parameter(Position=3)]
-        [string]        
+        [string]
         $Numbers = '0123456789',
 
         [Parameter(Position=4)]
@@ -91,15 +91,15 @@ function Invoke-Generate {
     $script:alphabet = $alphabet
     $script:numbers = $number
 
-    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|address|space|noun|adjective|verb|cmdlet|state'.Split('|')
+    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|address|space|noun|adjective|verb|cmdlet|state|dave'.Split('|')
 
     $customDataFile="$PSScriptRoot\customData\customData.ps1"
     if(Test-Path $customDataFile){
         $CustomData+=. $customDataFile
-    }   
+    }
 
     if($CustomData) {
-        foreach ($key in $CustomData.Keys) {        
+        foreach ($key in $CustomData.Keys) {
             $functionList+=$key
             "function $key { echo $($CustomData.$key) | Get-Random }" | Invoke-Expression
         }
@@ -138,7 +138,7 @@ function Invoke-Generate {
    Utilize Invoke-Generate to create a random value with a specified type.
 
 .DESCRIPTION
-   NameIt returns strings including unecessary zeros in numbers. Get-RandomValue returns a specified values type. 
+   NameIt returns strings including unecessary zeros in numbers. Get-RandomValue returns a specified values type.
 
 .PARAMETER Template
    A Nameit template string.
@@ -163,9 +163,9 @@ function Invoke-Generate {
 
    Major  Minor  Build  Revision
    -----  -----  -----  --------
-   1      3      1      -1      
-   2      2      5      -1      
-   7      1      0      -1      
+   1      3      1      -1
+   2      2      5      -1
+   7      1      0      -1
 #>
 function Get-RandomValue
 {
@@ -186,7 +186,7 @@ function Get-RandomValue
         $Alphabet,
 
         [Parameter(Position=3)]
-        [string]        
+        [string]
         $Numbers
     )
 
@@ -206,7 +206,7 @@ function Get-RandomValue
     {
 
         $returnValue = $stringValue -as $type
-        if ($null -eq $returnValue) 
+        if ($null -eq $returnValue)
         {
 
             Write-Warning "Could not cast '$stringValue' to [$($type.Name)]"
@@ -257,11 +257,11 @@ function verb {
 
 function baseVerbNoun {
     if($ApprovedVerb) {
-        $verb = (Get-Verb | Get-Random).verb 
+        $verb = (Get-Verb | Get-Random).verb
     } else {
         $verb = (verb)
     }
-    
+
     "{0}-{1}" -f $verb,(noun)
 }
 
@@ -270,7 +270,7 @@ function cmdlet {
 }
 
 function address {
-    Param 
+    Param
     (
         [String]$Culture = "en-US"
     )
@@ -282,7 +282,7 @@ function address {
 
     $streetTemplate = "[syllable]" * $streetLenth
     $street = Invoke-Generate $streetTemplate
-    
+
     $suffix = Get-Content -Path "$PSScriptRoot\cultures\$Culture.streetsuffix.txt" | Get-Random
 
     $address = $houseNumber,$street,$suffix -join ' '
@@ -445,7 +445,7 @@ function State {
         $property="name",
         [String]$Culture = "en-US"
     )
-    
+
     $CultureFileName = "$($PSScriptRoot)\cultures\{0}.States.csv" -f  $Culture
     $states=Import-Csv $CultureFileName
 
@@ -455,7 +455,7 @@ function State {
         "capital" {$property="capital"}
         "zip" {$property="zip"}
         "all" {
-            $targetState=$states | Get-Random 
+            $targetState=$states | Get-Random
             "{0},{1},{2},{3}" -f $targetState.Capital,$targetState.StateName,$targetState.Abbreviation,$targetState.Zip
         }
         default { throw "property [$($property)] not supported"}
@@ -463,6 +463,20 @@ function State {
 
     $states | get-random | % $property
 }
+
+# Too Many Daves by Dr. Seuss
+# https://www.poetryfoundation.org/poems-and-poets/poems/detail/42882
+function Dave {
+    param(
+        [String]$Culture = "en-US"
+    )
+
+    $CultureFileName = "$($PSScriptRoot)\cultures\{0}.daves.txt" -f  $Culture
+    $daves=Get-Content $CultureFileName
+
+    $daves | get-random
+}
+
 
 Set-Alias ig Invoke-Generate
 
