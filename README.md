@@ -10,6 +10,21 @@ This project is a port of https://github.com/mitchdenny/namerer. Hat tip to [Mit
 
 ![image1](https://github.com/dfinke/NameIT/blob/master/images/nameitAddressVerbNounAdjective.gif?raw=true)
 
+## Release 1.8.2 : 03/5/2017
+Added `guid` to the template. *Chris Hunt* suggested and then delegated the implementation to me after I showed him I was randomly generating guid parts.
+
+```powershell
+Invoke-Generate "[guid]" 
+Invoke-Generate "[guid 0]"
+Invoke-Generate "[guid 3]"
+```
+
+```
+690dcb11-a5b5-462a-a860-8de11626f5fd
+eeb507b0
+9873
+```
+
 ## Release 1.7.0 : 10/3/2016
 * Generate random cmdlet names (verb-noun) and limit it to approved verbs
 

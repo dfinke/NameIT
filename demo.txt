@@ -14,3 +14,10 @@ Invoke-Generate "[synonym cafe]_[syllable][syllable]" -count 5
 Invoke-Generate "[person]" -count 3
 Invoke-Generate "[person female]" -count 5
 Invoke-Generate "[person male]" -count 5
+
+Invoke-Generate "[guid]" 
+Invoke-Generate "[guid 0]"
+Invoke-Generate "[guid 1]"
+Invoke-Generate "[guid 2]"
+Invoke-Generate "[guid 3]"
+Invoke-Generate "[guid 4]"

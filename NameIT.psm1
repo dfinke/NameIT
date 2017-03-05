@@ -91,7 +91,7 @@ function Invoke-Generate {
     $script:alphabet = $alphabet
     $script:numbers = $number
 
-    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|address|space|noun|adjective|verb|cmdlet|state|dave'.Split('|')
+    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|address|space|noun|adjective|verb|cmdlet|state|dave|guid'.Split('|')
 
     $customDataFile="$PSScriptRoot\customData\customData.ps1"
     if(Test-Path $customDataFile){
@@ -477,6 +477,19 @@ function Dave {
     $daves | get-random
 }
 
+function guid {
+    param(
+        $part
+    )
+
+    $guid=[guid]::NewGuid().guid
+
+    if($part -ne $null) {
+        ($guid -split '-')[$part]
+    } else {
+        $guid
+    }
+}
 
 Set-Alias ig Invoke-Generate
 
