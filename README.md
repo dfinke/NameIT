@@ -11,6 +11,8 @@ This project is a port of https://github.com/mitchdenny/namerer. Hat tip to [Mit
 ![image1](https://github.com/dfinke/NameIT/blob/master/images/nameitAddressVerbNounAdjective.gif?raw=true)
 
 ## Release 1.8.2 : 03/5/2017
+Added more adjectives and stored them randomly, suggested by [Joel Bennett](https://twitter.com/Jaykul).
+
 Added `guid` to the template. *Chris Hunt* suggested and then delegated the implementation to me after I showed him I was randomly generating guid parts.
 
 ```powershell
