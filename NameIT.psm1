@@ -502,7 +502,8 @@ function guid {
 }
 
 function timeStamp {    
-    ((Get-Date).ToUniversalTime()).ToString('MMdd-HHmm')
+    param($format="MMdd-HHmm")
+    ((Get-Date).ToUniversalTime()).ToString($format)
 }
 
 Set-Alias ig Invoke-Generate

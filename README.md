@@ -16,6 +16,7 @@ This project is a port of https://github.com/mitchdenny/namerer. Hat tip to [Mit
 
 ```powershell
 ig "[adjective]-[noun]-[timestamp]" -Count 5
+ig '[timestamp yyyyMMddHHmm]'
 ```
 
 ```
@@ -24,6 +25,7 @@ Combative-Anything-0318-2059
 Annoyed-Politics-0318-2059
 Bad-Menu-0318-2059
 Spotless-Manner-0318-2059
+201703182110
 ```
 
 ## Release 1.8.2 : 03/5/2017
