@@ -56,3 +56,6 @@ Invoke-Generate -Custom $data -Count 10 -Template $Template -AsPSObject
 # Play to the PS ecosystem
 $result=Invoke-Generate -Custom $data -Count 10 -Template $Template -AsPSObject
 $result|Export-Excel -Now
+
+# Timestamps 
+ig "[adjective]-[noun]-[timestamp]" -Count 5

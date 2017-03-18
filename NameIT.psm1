@@ -85,13 +85,14 @@ function Invoke-Generate {
 
         [Switch]$ApprovedVerb,
         [Switch]$AsTabDelimited,
-        [Switch]$AsPSObject
+        [Switch]$AsPSObject,
+        [Switch]$IncludeTimeStamp
     )
 
     $script:alphabet = $alphabet
     $script:numbers = $number
 
-    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|address|space|noun|adjective|verb|cmdlet|state|dave|guid'.Split('|')
+    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|address|space|noun|adjective|verb|cmdlet|state|dave|guid|timeStamp'.Split('|')
 
     $customDataFile="$PSScriptRoot\customData\customData.ps1"
     if(Test-Path $customDataFile){
@@ -126,7 +127,7 @@ function Invoke-Generate {
             [pscustomobject](ConvertFrom-StringData $r)
         } elseif($AsTabDelimited) {
             [pscustomobject](ConvertFrom-StringData $r) |
-                ConvertTo-Csv -Delimiter "`t" -NoTypeInformation
+            ConvertTo-Csv -Delimiter "`t" -NoTypeInformation
         } else {
             $r
         }
@@ -167,8 +168,7 @@ function Invoke-Generate {
    2      2      5      -1
    7      1      0      -1
 #>
-function Get-RandomValue
-{
+function Get-RandomValue {
     [CmdletBinding()]
     [Alias()]
     Param
@@ -192,8 +192,7 @@ function Get-RandomValue
 
     $type = $null
 
-    if ( $PSBoundParameters.ContainsKey('As') )
-    {
+    if ( $PSBoundParameters.ContainsKey('As') ) {
 
         $type = $As
 
@@ -202,20 +201,17 @@ function Get-RandomValue
     $null = $PSBoundParameters.Remove('As')
     $stringValue = Invoke-Generate @PSBoundParameters
 
-    if ( -not $null -eq $type )
-    {
+    if ( -not $null -eq $type ) {
 
         $returnValue = $stringValue -as $type
-        if ($null -eq $returnValue)
-        {
+        if ($null -eq $returnValue) {
 
             Write-Warning "Could not cast '$stringValue' to [$($type.Name)]"
 
         }
 
     }
-    else
-    {
+    else {
 
         $returnValue = $stringValue
 
@@ -236,7 +232,7 @@ function Get-RandomChoice {
     for ($i = 0; $i -lt $length; $i++) {
         $list[(Get-Random -Minimum 0 -Maximum $max)]
     }
-    ) -join ''
+) -join ''
 }
 
 $nouns=Get-Content -Path "$PSScriptRoot\cultures\en-US.nouns.txt"
@@ -244,15 +240,15 @@ $adjectives=Get-Content -Path "$PSScriptRoot\cultures\en-US.adjectives.txt"
 $verbs=Get-Content -Path "$PSScriptRoot\cultures\en-US.verbs.txt"
 
 function noun {
-     $nouns | Get-Random
+    $nouns | Get-Random
 }
 
 function adjective {
-     $adjectives | Get-Random
+    $adjectives | Get-Random
 }
 
 function verb {
-     $verbs | Get-Random
+    $verbs | Get-Random
 }
 
 function baseVerbNoun {
@@ -321,20 +317,24 @@ function synonym {
         }
     }) | Where-Object -FilterScript { $_ }
 
-    $max = $synonyms.Length
-    $synonyms[(Get-Random -Minimum 0 -Maximum $max)]
+$max = $synonyms.Length
+$synonyms[(Get-Random -Minimum 0 -Maximum $max)]
 }
 
-function consonant { Get-RandomChoice 'bcdfghjklmnpqrstvwxyz' }
+function consonant {
+    Get-RandomChoice 'bcdfghjklmnpqrstvwxyz' 
+}
 
-function vowel { Get-RandomChoice 'aeiou' }
+function vowel {
+    Get-RandomChoice 'aeiou' 
+}
 
 function phoneticVowel {
 
     Get-RandomChoice 'a', 'ai', 'ay', 'au', 'aw', 'augh', 'wa', 'all', 'ald', 'alk', 'alm', 'alt',
-                     'e', 'ee', 'ea', 'eu', 'ei', 'ey', 'ew', 'eigh', 'i', 'ie', 'ye', 'igh', 'ign',
-                     'ind', 'o', 'oo', 'oa', 'oe', 'oi', 'oy', 'old', 'olk', 'olt', 'oll', 'ost',
-                     'ou', 'ow', 'u', 'ue', 'ui'
+    'e', 'ee', 'ea', 'eu', 'ei', 'ey', 'ew', 'eigh', 'i', 'ie', 'ye', 'igh', 'ign',
+    'ind', 'o', 'oo', 'oa', 'oe', 'oi', 'oy', 'old', 'olk', 'olt', 'oll', 'ost',
+    'ou', 'ow', 'u', 'ue', 'ui'
 }
 
 function syllable {
@@ -450,15 +450,25 @@ function State {
     $states=Import-Csv $CultureFileName
 
     switch($property) {
-        "name"    {$property="statename"}
-        "abbr"    {$property="abbreviation"}
-        "capital" {$property="capital"}
-        "zip" {$property="zip"}
+        "name"    {
+            $property="statename"
+        }
+        "abbr"    {
+            $property="abbreviation"
+        }
+        "capital" {
+            $property="capital"
+        }
+        "zip" {
+            $property="zip"
+        }
         "all" {
             $targetState=$states | Get-Random
             "{0},{1},{2},{3}" -f $targetState.Capital,$targetState.StateName,$targetState.Abbreviation,$targetState.Zip
         }
-        default { throw "property [$($property)] not supported"}
+        default {
+            throw "property [$($property)] not supported"
+        }
     }
 
     $states | get-random | % $property
@@ -491,6 +501,10 @@ function guid {
     }
 }
 
+function timeStamp {    
+    ((Get-Date).ToUniversalTime()).ToString('MMdd-HHmm')
+}
+
 Set-Alias ig Invoke-Generate
 
-Export-ModuleMember -Function * -Alias *
+Export-ModuleMember -Function Invoke-Generate -Alias ig

@@ -10,6 +10,22 @@ This project is a port of https://github.com/mitchdenny/namerer. Hat tip to [Mit
 
 ![image1](https://github.com/dfinke/NameIT/blob/master/images/nameitAddressVerbNounAdjective.gif?raw=true)
 
+## Release 1.8.4 : 03/18/2017
+- Corrected casing on Adjectives
+- Added `timestamp` as a template place holder
+
+```powershell
+ig "[adjective]-[noun]-[timestamp]" -Count 5
+```
+
+```
+Awful-Few-0318-2059
+Combative-Anything-0318-2059
+Annoyed-Politics-0318-2059
+Bad-Menu-0318-2059
+Spotless-Manner-0318-2059
+```
+
 ## Release 1.8.2 : 03/5/2017
 Added more adjectives and stored them randomly, suggested by [Joel Bennett](https://twitter.com/Jaykul).
 
