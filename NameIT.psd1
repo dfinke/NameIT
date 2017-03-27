@@ -4,13 +4,13 @@
 RootModule = 'NameIT.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.8.3'
+ModuleVersion = '1.8.4'
 
 # ID used to uniquely identify this module
 GUID = '6d4ec85a-e09f-4024-819d-66bafa130a5b'
 
 # Author of this module
-Author = 'Douglas Finke'
+Author = 'Douglas Finke, Chris Hunt'
 
 # Company or vendor of this module
 CompanyName = 'Doug Finke'
