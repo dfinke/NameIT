@@ -62,7 +62,7 @@
 $ApprovedVerb=$false
 
 function Invoke-Generate {
-    [CmdletBinding()]
+    [CmdletBinding(DefaultParameterSetName="Data")]
     param (
         [Parameter(Position=0)]
         [String]
@@ -83,6 +83,9 @@ function Invoke-Generate {
         [Parameter(Position=4)]
         [HashTable]$CustomData,
 
+        [Parameter(Position=5)]
+        [String]$CustomDataFile,
+
         [Switch]$ApprovedVerb,
         [Switch]$AsTabDelimited,
         [Switch]$AsPSObject
@@ -93,13 +96,12 @@ function Invoke-Generate {
 
     $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|address|space|noun|adjective|verb|cmdlet|state|dave|guid'.Split('|')
 
-    if (-not $PSBoundParameters.ContainsKey("CustomData")) {
-
+    if (-not $PSBoundParameters.ContainsKey("CustomDataFile")) {
         $customDataFile="$PSScriptRoot\customData\customData.ps1"
-        if(Test-Path $customDataFile){
-            $CustomData+=. $customDataFile
-        }
+    }
 
+    if(Test-Path $customDataFile){
+        $CustomData += . $customDataFile
     }
 
     if($CustomData) {
