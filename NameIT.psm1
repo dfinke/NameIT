@@ -93,15 +93,19 @@ function Invoke-Generate {
 
     $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|address|space|noun|adjective|verb|cmdlet|state|dave|guid'.Split('|')
 
-    $customDataFile="$PSScriptRoot\customData\customData.ps1"
-    if(Test-Path $customDataFile){
-        $CustomData+=. $customDataFile
+    if (-not $PSBoundParameters.ContainsKey("CustomData")) {
+
+        $customDataFile="$PSScriptRoot\customData\customData.ps1"
+        if(Test-Path $customDataFile){
+            $CustomData+=. $customDataFile
+        }
+
     }
 
     if($CustomData) {
         foreach ($key in $CustomData.Keys) {
             $functionList+=$key
-            "function $key { echo $($CustomData.$key) | Get-Random }" | Invoke-Expression
+            "function $key { `$CustomData.$key | Get-Random }" | Invoke-Expression
         }
     }
 
