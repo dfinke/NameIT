@@ -94,7 +94,7 @@ function Invoke-Generate {
     $script:alphabet = $alphabet
     $script:numbers = $number
 
-    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|address|space|noun|adjective|verb|cmdlet|state|dave|guid'.Split('|')
+    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|address|space|noun|adjective|verb|cmdlet|state|dave|guid|randomdate'.Split('|')
 
     if (-not $PSBoundParameters.ContainsKey("CustomDataFile")) {
         $customDataFile="$PSScriptRoot\customData\customData.ps1"
@@ -495,6 +495,16 @@ function guid {
     } else {
         $guid
     }
+}
+
+function RandomDate {
+    [DateTime]$theMin = "1/1/1970"
+    $theMax = [DateTime]::Now
+
+    $theRandomGen = new-object random
+    $theRandomTicks = [Convert]::ToInt64( ($theMax.ticks * 1.0 - $theMin.Ticks * 1.0 ) * $theRandomGen.NextDouble() + $theMin.Ticks * 1.0 )
+
+    (new-object DateTime $theRandomTicks).ToString("MM/dd/yyyy")
 }
 
 Set-Alias ig Invoke-Generate

@@ -10,13 +10,28 @@ This project is a port of https://github.com/mitchdenny/namerer. Hat tip to [Mit
 
 ![image1](https://github.com/dfinke/NameIT/blob/master/images/nameitAddressVerbNounAdjective.gif?raw=true)
 
+## Release 1.8.5 : 6/18/2018
+Added `RandomDate`
+
+```powershell
+ig "[person] [randomdate]" -Count 5
+```
+
+```
+Austin Jones 06/04/2007
+Kristin Hernandez 06/04/2007
+Lindsay Richardson 06/04/2007
+Alex Morales 06/04/2007
+Nicholas Sanders 06/04/2007
+```
+
 ## Release 1.8.2 : 03/5/2017
 Added more adjectives and stored them randomly, suggested by [Joel Bennett](https://twitter.com/Jaykul).
 
 Added `guid` to the template. *Chris Hunt* suggested and then delegated the implementation to me after I showed him I was randomly generating guid parts.
 
 ```powershell
-Invoke-Generate "[guid]" 
+Invoke-Generate "[guid]"
 Invoke-Generate "[guid 0]"
 Invoke-Generate "[guid 3]"
 ```
@@ -41,7 +56,7 @@ Push-Grocery
 Format-River
 ```
 
-* Thank you [Chris Hunt](https://github.com/cdhunt) for: 
+* Thank you [Chris Hunt](https://github.com/cdhunt) for:
     * Adding the `address` feature (and more)
     * Suggesting of adding adjective, noun and verb
 
@@ -53,7 +68,7 @@ Put this line in your `$Profile`.
 Or [try this gist snippet](https://gist.github.com/cdhunt/00a6f98b9d7773b2610bdc6d490ad217).
 
 ![](https://raw.githubusercontent.com/dfinke/NameIT/master/images/nameitConsoleTitle.png)
- 
+
 ```PowerShell
 PS C:\> Invoke-Generate "[person],[space][address][space]" -c 5
 Derrick Cox, 1 Yicxizehpuw Av
