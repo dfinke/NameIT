@@ -94,7 +94,7 @@ function Invoke-Generate {
     $script:alphabet = $alphabet
     $script:numbers = $number
 
-    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|address|space|noun|adjective|verb|cmdlet|state|dave|guid|randomdate'.Split('|')
+    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|address|space|noun|adjective|verb|cmdlet|state|dave|guid|randomdate|fortnite'.Split('|')
 
     if (-not $PSBoundParameters.ContainsKey("CustomDataFile")) {
         $customDataFile="$PSScriptRoot\customData\customData.ps1"
@@ -508,13 +508,23 @@ function RandomDate {
 }
 
 function Fortnite {
+    param (
+        [Parameter(Position=0)]
+        [char]
+        $Char
+    )
 
-    $adj = $adjectives | Get-Random
+    if ($PSBoundParameters.ContainsKey("Char")) {
+        $adj = $adjectives | Where-Object {$_ -like "$char*"} | Get-Random
+    }
+    else {
+        $adj = $adjectives | Get-Random
+        $char = $adj[0]
+    }
 
-    $noun = $nouns | Where-Object {$_[0] -eq $adj[0]} | Get-Random
+    $noun = $nouns | Where-Object {$_ -like "$char*"} | Get-Random
 
     "$adj" + $noun
-
 }
 
 Set-Alias ig Invoke-Generate
