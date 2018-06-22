@@ -507,6 +507,16 @@ function RandomDate {
     (new-object DateTime $theRandomTicks).ToString("MM/dd/yyyy")
 }
 
+function Fortnite {
+
+    $adj = $adjectives | Get-Random
+
+    $noun = $nouns | Where-Object {$_[0] -eq $adj[0]} | Get-Random
+
+    "$adj" + $noun
+
+}
+
 Set-Alias ig Invoke-Generate
 
 Export-ModuleMember -Function * -Alias *
