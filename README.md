@@ -1,3 +1,9 @@
+<p align="center">
+<a <a href="./LICENSE.txt"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"></a>
+<a href="https://www.powershellgallery.com/packages/NameIT"><img src="https://img.shields.io/powershellgallery/dt/NameIT.svg"></a>
+<a href="https://www.powershellgallery.com/packages/NameIT"><img src="https://img.shields.io/powershellgallery/v/NameIT.svg"></a>
+</p>
+
 PowerShell NameIT
 -
 PowerShell module for randomly generating names
@@ -9,6 +15,19 @@ This project is a port of https://github.com/mitchdenny/namerer. Hat tip to [Mit
 ![image](https://raw.githubusercontent.com/dfinke/NameIT/master/images/nameit.gif)
 
 ![image1](https://github.com/dfinke/NameIT/blob/master/images/nameitAddressVerbNounAdjective.gif?raw=true)
+
+## 7/10/2018
+- Added badges
+- Added first|last for `person` address issue https://github.com/dfinke/NameIT/issues/16
+
+```
+[person female first]
+[person female last]
+[person male first]
+[person male last]
+[person both first]
+[person both last]
+```
 
 ## Release 1.8.5 : 6/18/2018
 Added `RandomDate`
