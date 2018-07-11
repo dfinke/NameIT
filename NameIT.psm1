@@ -17,7 +17,13 @@
    [synonym word]; finds a synonym to match the provided word.
    [person]; generate random name of female or male based on provided culture like <FirstName><Space><LastName>.
    [person female]; generate random name of female based on provided culture like <FirstName><Space><LastName>.
+   [person female first]
+   [person female last]
    [person male]; generate random name of male based on provided culture like <FirstName><Space><LastName>.
+   [person male first]
+   [person male last]
+   [person both first]
+   [person both last]
    [address]; generate a random street address. Formatting is biased to US currently.
    [space]; inserts a literal space. Spaces are striped from the templates string by default.
 
@@ -59,31 +65,31 @@
    http://mitchdenny.com/introducing-namerer-for-naming-things/
 #>
 
-$ApprovedVerb=$false
+$ApprovedVerb = $false
 
 function Invoke-Generate {
-    [CmdletBinding(DefaultParameterSetName="Data")]
+    [CmdletBinding(DefaultParameterSetName = "Data")]
     param (
-        [Parameter(Position=0)]
+        [Parameter(Position = 0)]
         [String]
         $Template = '????????',
 
-        [Parameter(Position=1)]
+        [Parameter(Position = 1)]
         [int]
         $Count = 1,
 
-        [Parameter(Position=2)]
+        [Parameter(Position = 2)]
         [string]
         $Alphabet = 'abcdefghijklmnopqrstuvwxyz',
 
-        [Parameter(Position=3)]
+        [Parameter(Position = 3)]
         [string]
         $Numbers = '0123456789',
 
-        [Parameter(Position=4)]
+        [Parameter(Position = 4)]
         [HashTable]$CustomData,
 
-        [Parameter(Position=5)]
+        [Parameter(Position = 5)]
         [String]$CustomDataFile,
 
         [Switch]$ApprovedVerb,
@@ -97,43 +103,45 @@ function Invoke-Generate {
     $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|address|space|noun|adjective|verb|cmdlet|state|dave|guid|randomdate|fortnite'.Split('|')
 
     if (-not $PSBoundParameters.ContainsKey("CustomDataFile")) {
-        $customDataFile="$PSScriptRoot\customData\customData.ps1"
+        $customDataFile = "$PSScriptRoot\customData\customData.ps1"
     }
 
-    if(Test-Path $customDataFile){
+    if (Test-Path $customDataFile) {
         $CustomData += . $customDataFile
     }
 
-    if($CustomData) {
+    if ($CustomData) {
         foreach ($key in $CustomData.Keys) {
-            $functionList+=$key
+            $functionList += $key
             "function $key { `$CustomData.$key | Get-Random }" | Invoke-Expression
         }
     }
 
-    $functionList=$functionList.ToLower()
+    $functionList = $functionList.ToLower()
 
     $template = $template -replace '\?', '[alpha]' -replace '#', '[numeric]'
     $unitOfWork = $template -split "\[(.+?)\]" | Where-Object -FilterScript { $_ }
-    $ApprovedVerb=$ApprovedVerb
+    $ApprovedVerb = $ApprovedVerb
 
     1..$count | ForEach-Object -Process {
-        $r=$($unitOfWork | ForEach-Object -Process  {
-            $fn = $_.split(' ')[0]
-            if ($functionList -notcontains $fn) {
-                $_
-            }
-            else {
-                $_ | Invoke-Expression
-            }
-        }) -join ''
+        $r = $($unitOfWork | ForEach-Object -Process {
+                $fn = $_.split(' ')[0]
+                if ($functionList -notcontains $fn) {
+                    $_
+                }
+                else {
+                    $_ | Invoke-Expression
+                }
+            }) -join ''
 
-        if($AsPSObject) {
+        if ($AsPSObject) {
             [pscustomobject](ConvertFrom-StringData $r)
-        } elseif($AsTabDelimited) {
+        }
+        elseif ($AsTabDelimited) {
             [pscustomobject](ConvertFrom-StringData $r) |
                 ConvertTo-Csv -Delimiter "`t" -NoTypeInformation
-        } else {
+        }
+        else {
             $r
         }
     }
@@ -173,33 +181,31 @@ function Invoke-Generate {
    2      2      5      -1
    7      1      0      -1
 #>
-function Get-RandomValue
-{
+function Get-RandomValue {
     [CmdletBinding()]
     [Alias()]
     Param
     (
-        [Parameter(Mandatory,Position=0)]
+        [Parameter(Mandatory, Position = 0)]
         [string]
         $Template,
 
-        [Parameter(Position=1)]
+        [Parameter(Position = 1)]
         [Type]
         $As,
 
-        [Parameter(Position=2)]
+        [Parameter(Position = 2)]
         [string]
         $Alphabet,
 
-        [Parameter(Position=3)]
+        [Parameter(Position = 3)]
         [string]
         $Numbers
     )
 
     $type = $null
 
-    if ( $PSBoundParameters.ContainsKey('As') )
-    {
+    if ( $PSBoundParameters.ContainsKey('As') ) {
 
         $type = $As
 
@@ -208,20 +214,17 @@ function Get-RandomValue
     $null = $PSBoundParameters.Remove('As')
     $stringValue = Invoke-Generate @PSBoundParameters
 
-    if ( -not $null -eq $type )
-    {
+    if ( -not $null -eq $type ) {
 
         $returnValue = $stringValue -as $type
-        if ($null -eq $returnValue)
-        {
+        if ($null -eq $returnValue) {
 
             Write-Warning "Could not cast '$stringValue' to [$($type.Name)]"
 
         }
 
     }
-    else
-    {
+    else {
 
         $returnValue = $stringValue
 
@@ -239,36 +242,37 @@ function Get-RandomChoice {
     $max = $list.Length
 
     $(
-    for ($i = 0; $i -lt $length; $i++) {
-        $list[(Get-Random -Minimum 0 -Maximum $max)]
-    }
+        for ($i = 0; $i -lt $length; $i++) {
+            $list[(Get-Random -Minimum 0 -Maximum $max)]
+        }
     ) -join ''
 }
 
-$nouns=Get-Content -Path "$PSScriptRoot\cultures\en-US.nouns.txt"
-$adjectives=Get-Content -Path "$PSScriptRoot\cultures\en-US.adjectives.txt"
-$verbs=Get-Content -Path "$PSScriptRoot\cultures\en-US.verbs.txt"
+$nouns = Get-Content -Path "$PSScriptRoot\cultures\en-US.nouns.txt"
+$adjectives = Get-Content -Path "$PSScriptRoot\cultures\en-US.adjectives.txt"
+$verbs = Get-Content -Path "$PSScriptRoot\cultures\en-US.verbs.txt"
 
 function noun {
-     $nouns | Get-Random
+    $nouns | Get-Random
 }
 
 function adjective {
-     $adjectives | Get-Random
+    $adjectives | Get-Random
 }
 
 function verb {
-     $verbs | Get-Random
+    $verbs | Get-Random
 }
 
 function baseVerbNoun {
-    if($ApprovedVerb) {
+    if ($ApprovedVerb) {
         $verb = (Get-Verb | Get-Random).verb
-    } else {
+    }
+    else {
         $verb = (verb)
     }
 
-    "{0}-{1}" -f $verb,(noun)
+    "{0}-{1}" -f $verb, (noun)
 }
 
 function cmdlet {
@@ -291,7 +295,7 @@ function address {
 
     $suffix = Get-Content -Path "$PSScriptRoot\cultures\$Culture.streetsuffix.txt" | Get-Random
 
-    $address = $houseNumber,$street,$suffix -join ' '
+    $address = $houseNumber, $street, $suffix -join ' '
 
     (culture).TextInfo.ToTitleCase($address)
 }
@@ -321,11 +325,11 @@ function synonym {
     $url = "http://words.bighugelabs.com/api/2/78ae52fd37205f0bad5f8cd349409d16/$($word)/json"
 
     $synonyms = $(foreach ($item in (Invoke-RestMethod $url)) {
-        $names = $item.psobject.Properties.name
-        foreach ($name in $names) {
-            $item.$name.syn -replace ' ', ''
-        }
-    }) | Where-Object -FilterScript { $_ }
+            $names = $item.psobject.Properties.name
+            foreach ($name in $names) {
+                $item.$name.syn -replace ' ', ''
+            }
+        }) | Where-Object -FilterScript { $_ }
 
     $max = $synonyms.Length
     $synonyms[(Get-Random -Minimum 0 -Maximum $max)]
@@ -338,9 +342,9 @@ function vowel { Get-RandomChoice 'aeiou' }
 function phoneticVowel {
 
     Get-RandomChoice 'a', 'ai', 'ay', 'au', 'aw', 'augh', 'wa', 'all', 'ald', 'alk', 'alm', 'alt',
-                     'e', 'ee', 'ea', 'eu', 'ei', 'ey', 'ew', 'eigh', 'i', 'ie', 'ye', 'igh', 'ign',
-                     'ind', 'o', 'oo', 'oa', 'oe', 'oi', 'oy', 'old', 'olk', 'olt', 'oll', 'ost',
-                     'ou', 'ow', 'u', 'ue', 'ui'
+    'e', 'ee', 'ea', 'eu', 'ei', 'ey', 'ew', 'eigh', 'i', 'ie', 'ye', 'igh', 'ign',
+    'ind', 'o', 'oo', 'oa', 'oe', 'oi', 'oy', 'old', 'olk', 'olt', 'oll', 'ost',
+    'ou', 'ow', 'u', 'ue', 'ui'
 }
 
 function syllable {
@@ -406,9 +410,10 @@ function person {
 
     #>
     param (
-        [parameter(Mandatory = $false, Position = 0)]
         [ValidateSet("both", "female", "male")]
         [String]$Sex = "both",
+        [ValidateSet("both", "first", "last")]
+        [String]$NameParts = "both",
         [String]$Culture = "en-US"
     )
 
@@ -423,46 +428,41 @@ function person {
     $LastName = $AllNames[(Get-Random -Minimum 0 -Maximum $AllNamesCount)].LastName
 
     If ($Sex -eq 'both') {
-
         $RandomSex = (Get-Random @('Female', 'Male'))
-
         $FirstNameFieldName = "{0}FirstName" -f $RandomSex
-
         $FirstName = $AllNames[(Get-Random -Minimum 0 -Maximum $AllNamesCount)].$FirstNameFieldName
-
     }
     elseif ($Sex -eq 'female') {
-
         $FirstName = $AllNames[(Get-Random -Minimum 0 -Maximum $AllNamesCount)].FemaleFirstName
-
     }
     else {
-
         $FirstName = $AllNames[(Get-Random -Minimum 0 -Maximum $AllNamesCount)].MaleFirstName
-
     }
 
-    Return $([String]"{0} {1}" -f $FirstName, $LastName)
-
+    switch ($NameParts) {
+        "both" {"{0} {1}" -f $FirstName, $LastName}
+        "first" {$FirstName}
+        "last" {$LastName}
+    }
 }
 
 function State {
     param(
-        $property="name",
+        $property = "name",
         [String]$Culture = "en-US"
     )
 
-    $CultureFileName = "$($PSScriptRoot)\cultures\{0}.States.csv" -f  $Culture
-    $states=Import-Csv $CultureFileName
+    $CultureFileName = "$($PSScriptRoot)\cultures\{0}.States.csv" -f $Culture
+    $states = Import-Csv $CultureFileName
 
-    switch($property) {
-        "name"    {$property="statename"}
-        "abbr"    {$property="abbreviation"}
-        "capital" {$property="capital"}
-        "zip" {$property="zip"}
+    switch ($property) {
+        "name" {$property = "statename"}
+        "abbr" {$property = "abbreviation"}
+        "capital" {$property = "capital"}
+        "zip" {$property = "zip"}
         "all" {
-            $targetState=$states | Get-Random
-            "{0},{1},{2},{3}" -f $targetState.Capital,$targetState.StateName,$targetState.Abbreviation,$targetState.Zip
+            $targetState = $states | Get-Random
+            "{0},{1},{2},{3}" -f $targetState.Capital, $targetState.StateName, $targetState.Abbreviation, $targetState.Zip
         }
         default { throw "property [$($property)] not supported"}
     }
@@ -477,8 +477,8 @@ function Dave {
         [String]$Culture = "en-US"
     )
 
-    $CultureFileName = "$($PSScriptRoot)\cultures\{0}.daves.txt" -f  $Culture
-    $daves=Get-Content $CultureFileName
+    $CultureFileName = "$($PSScriptRoot)\cultures\{0}.daves.txt" -f $Culture
+    $daves = Get-Content $CultureFileName
 
     $daves | get-random
 }
@@ -488,11 +488,12 @@ function guid {
         $part
     )
 
-    $guid=[guid]::NewGuid().guid
+    $guid = [guid]::NewGuid().guid
 
-    if($part -ne $null) {
+    if ($part -ne $null) {
         ($guid -split '-')[$part]
-    } else {
+    }
+    else {
         $guid
     }
 }
@@ -509,7 +510,7 @@ function RandomDate {
 
 function Fortnite {
     param (
-        [Parameter(Position=0)]
+        [Parameter(Position = 0)]
         [char]
         $Char
     )
