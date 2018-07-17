@@ -100,7 +100,7 @@ function Invoke-Generate {
     $script:alphabet = $alphabet
     $script:numbers = $number
 
-    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|address|space|noun|adjective|verb|cmdlet|state|dave|guid|randomdate|fortnite'.Split('|')
+    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|address|space|noun|adjective|verb|cmdlet|state|dave|guid|randomdate|fortnite|cities'.Split('|')
 
     if (-not $PSBoundParameters.ContainsKey("CustomDataFile")) {
         $customDataFile = "$PSScriptRoot\customData\customData.ps1"
@@ -251,9 +251,13 @@ function Get-RandomChoice {
 $nouns = Get-Content -Path "$PSScriptRoot\cultures\en-US.nouns.txt"
 $adjectives = Get-Content -Path "$PSScriptRoot\cultures\en-US.adjectives.txt"
 $verbs = Get-Content -Path "$PSScriptRoot\cultures\en-US.verbs.txt"
-
+$cities = Get-Content -Path "$PSScriptRoot\cultures\en-us.cities.txt"
 function noun {
     $nouns | Get-Random
+}
+
+function cities {
+    $cities | Get-Random
 }
 
 function adjective {
