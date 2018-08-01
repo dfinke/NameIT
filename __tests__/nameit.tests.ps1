@@ -2,7 +2,7 @@
 # Import-Module $module
 # Import-Module $PSScriptRoot/../NameIt
 
-Import-Module $module "$PSScriptRoot/../NameIT.ps1"
+Import-Module $module "$PSScriptRoot/../NameIT.psd1"
 
 Describe "NameIT Tests" {
     It "Should generate five entries" {
