@@ -1,6 +1,7 @@
-$module = Resolve-Path  "$PSScriptRoot/../NameIt.psd1"
+# $module = Resolve-Path  "$PSScriptRoot/../NameIt.psd1"
+# Import-Module $module
 
-Import-Module $module
+Import-Module $PSScriptRoot/../NameIt
 
 Describe "NameIT Tests" {
     It "Should generate five entries" {
