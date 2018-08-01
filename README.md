@@ -1,4 +1,10 @@
 <p align="center">
+<a <a href="https://ci.appveyor.com/project/dfinke/nameit/branch/master"><img src="https://ci.appveyor.com/api/projects/status/dd6c12ba9q9ojiba/branch/master?svg=true"></a>
+</p>
+
+<!-- [![Build status](https://ci.appveyor.com/api/projects/status/dd6c12ba9q9ojiba/branch/master?svg=true)](https://ci.appveyor.com/project/dfinke/nameit/branch/master) -->
+
+<p align="center">
 <a <a href="./LICENSE.txt"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"></a>
 <a href="https://www.powershellgallery.com/packages/NameIT"><img src="https://img.shields.io/powershellgallery/dt/NameIT.svg"></a>
 <a href="https://www.powershellgallery.com/packages/NameIT"><img src="https://img.shields.io/powershellgallery/v/NameIT.svg"></a>
