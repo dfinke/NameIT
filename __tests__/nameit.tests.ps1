@@ -12,7 +12,7 @@ Describe "NameIT Tests" {
     #     (Get-WmiObject win32_bios) | Should Not Be Null
     # }
 
-    It "Should fail on the path for Linux" {
-        Test-Path "$PSScriptRoot\..\__tests__" | Should Be $true
+    It "Should pass all versions all OSes" {
+        (Get-CimClass win32_bios) | Should Not Be Null
     }
 }
