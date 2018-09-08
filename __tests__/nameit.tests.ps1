@@ -2,14 +2,6 @@ Import-Module "$PSScriptRoot/../NameIT.psd1"
 
 Describe "NameIT Tests" {
 
-    BeforeAll {
-        $script:targetPath = "$env:TEMP/TestThePath"
-    }
-
-    AfterAll {
-        Remove-Item -Recurse -Force $script:targetPath -ErrorAction SilentlyContinue
-    }
-
     It "Should generate five entries" {
         $actual = Invoke-Generate -Template "[person]" -Count 5
 
@@ -21,8 +13,6 @@ Describe "NameIT Tests" {
     # }
 
     It "Should fail on the path for Linux" {
-        $null = mkdir $script:targetPath
-
-        (Test-Path $script:targetPath) | Should Be $true
+        Test-Path "$PSScriptRoot\..\__tests__" | Should Be $true
     }
 }
