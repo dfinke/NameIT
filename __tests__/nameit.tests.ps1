@@ -6,4 +6,8 @@ Describe "NameIT Tests" {
 
         $actual.count | Should Be 5
     }
+
+    It "Should pass in v5 and fail in on all OSes" {
+        (Get-WmiObject win32_bios) | Should Not Be Null
+    }
 }
