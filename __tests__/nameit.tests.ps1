@@ -15,4 +15,11 @@ Describe "NameIT Tests" {
     It "Should pass all versions all OSes" {
         (Get-CimInstance win32_bios) | Should Not Be Null
     }
+
+    It "Should pass all versions all OSes" {
+        "" | Set-Content "$PSScriptRoot\test.txt"
+
+        (Test-Path "$PSScriptRoot\test.txt") | Should Be $true
+    }
+
 }
