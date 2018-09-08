@@ -13,6 +13,6 @@ Describe "NameIT Tests" {
     # }
 
     It "Should pass all versions all OSes" {
-        (Get-CimClass win32_bios) | Should Not Be Null
+        (Get-CimInstance win32_bios) | Should Not Be Null
     }
 }
