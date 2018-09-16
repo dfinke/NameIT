@@ -8,9 +8,9 @@ Describe "NameIT Tests" {
         $actual.count | Should Be 5
     }
 
-    # It "Should pass all versions all OSes" {
-    #     (Get-CimInstance win32_bios) | Should Not Be Null
-    # }
+    It "Should pass all versions all OSes" {
+        (Get-CimInstance win32_bios) | Should Not Be Null
+    }
 
     # It "Should fail on Linux" {
     #     "" | Set-Content "$PSScriptRoot\Test.txt"
