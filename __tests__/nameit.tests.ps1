@@ -1,6 +1,5 @@
 Import-Module "$PSScriptRoot/../NameIT.psd1"
 
-
 Describe "NameIT Tests" {
 
     It "Should generate five entries" {
