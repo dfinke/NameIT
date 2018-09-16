@@ -16,13 +16,13 @@ Describe "NameIT Tests" {
     #     (Get-CimInstance win32_bios) | Should Not Be Null
     # }
 
-    It "Should fail on Linux" {
-        "" | Set-Content "$PSScriptRoot\Test.txt"
-        (Test-Path "$PSScriptRoot\test.txt") | Should Be $true
-    }
-
-    # It "Should pass on Linux - correct case" {
-    #     "" | Set-Content "$PSScriptRoot\test.txt"
+    # It "Should fail on Linux" {
+    #     "" | Set-Content "$PSScriptRoot\Test.txt"
     #     (Test-Path "$PSScriptRoot\test.txt") | Should Be $true
     # }
+
+    It "Should pass on Linux - correct case" {
+        "" | Set-Content "$PSScriptRoot\test.txt"
+        (Test-Path "$PSScriptRoot\test.txt") | Should Be $true
+    }
 }
