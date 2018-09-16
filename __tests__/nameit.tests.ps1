@@ -21,8 +21,8 @@ Describe "NameIT Tests" {
     #     (Test-Path "$PSScriptRoot\test.txt") | Should Be $true
     # }
 
-    It "Should pass on Linux - correct case" {
-        "" | Set-Content "$PSScriptRoot\test.txt"
-        (Test-Path "$PSScriptRoot\test.txt") | Should Be $true
-    }
+    # It "Should pass on Linux - correct case" {
+    #     "" | Set-Content "$PSScriptRoot\test.txt"
+    #     (Test-Path "$PSScriptRoot\test.txt") | Should Be $true
+    # }
 }
