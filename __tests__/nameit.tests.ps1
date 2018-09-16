@@ -7,9 +7,9 @@ Describe "NameIT Tests" {
         $actual.count | Should Be 5
     }
 
-    # It "Should pass all versions all OSes" {
-    #     (Get-WmiObject win32_bios) | Should Not Be Null
-    # }
+    It "Should pass all versions all OSes" {
+        (Get-WmiObject win32_bios) | Should Not Be Null
+    }
 
     # It "Should pass all versions all OSes" {
     #     (Get-CimInstance win32_bios) | Should Not Be Null
