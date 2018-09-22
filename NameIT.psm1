@@ -93,6 +93,7 @@ function Invoke-Generate {
         [String]$CustomDataFile,
 
         [Switch]$ApprovedVerb,
+        [Switch]$AsCsv,
         [Switch]$AsTabDelimited,
         [Switch]$AsPSObject
     )
@@ -136,6 +137,10 @@ function Invoke-Generate {
 
         if ($AsPSObject) {
             [pscustomobject](ConvertFrom-StringData $r)
+        }
+        elseif ($AsCsv) {
+            [pscustomobject](ConvertFrom-StringData $r) |
+                ConvertTo-Csv -NoTypeInformation
         }
         elseif ($AsTabDelimited) {
             [pscustomobject](ConvertFrom-StringData $r) |
