@@ -8,7 +8,7 @@ if(Test-Path $TargetPath) {
 
 md $TargetPath | out-null
 
-$FilesToCopy = dir -erroraction ignore *.psm1, *.psd1
+$FilesToCopy = dir -erroraction ignore *.psm1, *.psd1, *.ps1
 
 $FilesToCopy | ForEach {
     Copy-Item -Verbose -Path $_.FullName -Destination "$($TargetPath)\$($_.name)"
