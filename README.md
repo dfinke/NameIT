@@ -16,11 +16,48 @@ PowerShell module for randomly generating names
 
 This project is a port of https://github.com/mitchdenny/namerer. Hat tip to [Mitch Denny](https://twitter.com/mitchdenny).
 
+## September 2018
+
+Added `New-NameItTemplate`. Pass an object with properties and it will generate a `NameIT` template.
+
+If a property name has has the value `name`, `zip`, `address`, or `state` the appropriate `NameIT` template is applied, otherwise the type is inferred as numeric or alpha.
+
+```ps
+New-NameItTemplate {[PSCustomObject]@{Company="";Name=""}}
+```
+
+```
+Company=[alpha 6]
+Name=[person]
+```
+
+### OR
+
+Pass it to `Invoke-Generate` directly.
+
+```powershell
+Invoke-Generate (New-NameItTemplate {[PSCustomObject]@{Company="";Name=""}}) -Count 5 -AsPSObject
+```
+
+## Output
+
+```
+Name          Company
+----          -------
+Elvis Potts   cuajwj
+Janae Herring kyzfgb
+Cecelia Cruz  slseam
+Akira Kelly   bltamv
+Bella Bean    wfhats
+```
+
+
 ## In Action
 
 ![image](https://raw.githubusercontent.com/dfinke/NameIT/master/images/nameit.gif)
 
 ![image1](https://github.com/dfinke/NameIT/blob/master/images/nameitAddressVerbNounAdjective.gif?raw=true)
+
 
 ## 7/10/2018
 - Added badges
