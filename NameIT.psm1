@@ -365,6 +365,22 @@ function Get-CacheStore {
     }
 }
 
+function Clear-CacheStore {
+    [CmdletBinding()]
+    param(
+        [Parameter()]
+        [String]
+        $Key
+    )
+
+    $local:cache = Get-CacheStore
+
+    if ($key) {
+        $null = $local:cache.Remove($key)
+    } else {
+        $local:cache.Clear()
+    }
+}
 function Get-CacheableContent {
     [CmdletBinding(DefaultParameterSetName = 'Path')]
     param(
