@@ -805,8 +805,6 @@ function person {
         [cultureinfo]$Culture = [cultureinfo]::CurrentCulture
     )
 
-    $ModulePath = Split-Path $script:MyInvocation.MyCommand.Path
-
     $AllNames = Resolve-LocalizedPath -Culture $Culture -ContentFile 'names.csv' | Import-CacheableCsv -UseCulture -Culture $Culture
 
     $AllNamesCount = $AllNames.Count
