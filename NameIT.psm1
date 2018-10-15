@@ -403,7 +403,7 @@ function Get-CacheableContent {
 
         [Parameter()]
         [Object] # in core this is [System.Text.Encoding], in desktop it's [FileSystemCmdletProviderEncoding]
-        $Encoding ,
+        $Encoding = 'utf8' ,
 
         [Parameter()]
         [Switch]
@@ -494,7 +494,7 @@ function Import-CacheableCsv {
 
         [Parameter()]
         [object]
-        $Encoding ,
+        $Encoding = 'utf8' ,
 
         [Parameter()]
         [String[]]
