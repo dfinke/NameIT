@@ -96,14 +96,40 @@ function Invoke-Generate {
 
         [Switch]$ApprovedVerb,
         [Switch]$AsCsv,
+        [Switch]$UseCsvCultureSeparator,
         [Switch]$AsTabDelimited,
-        [Switch]$AsPSObject
+        [Switch]$AsPSObject ,
+
+        [Parameter()]
+        [cultureinfo]
+        $Culture = [cultureinfo]::CurrentCulture
     )
 
     $script:alphabet = $alphabet
     $script:numbers = $number
 
-    $functionList = 'alpha|synonym|numeric|syllable|vowel|phoneticvowel|consonant|person|address|space|noun|adjective|verb|cmdlet|state|dave|guid|randomdate|fortnite'.Split('|')
+    $functionList = @(
+         'alpha'
+        ,'synonym'
+        ,'numeric'
+        ,'syllable'
+        ,'vowel',
+        ,'phoneticvowel'
+        ,'consonant'
+        ,'person'
+        ,'address'
+        ,'space'
+        ,'noun'
+        ,'adjective'
+        ,'verb'
+        ,'cmdlet'
+        ,'state'
+        ,'dave'
+        ,'guid'
+        ,'randomdate'
+        ,'fortnite'
+        ,'color'
+    )
 
     if (-not $PSBoundParameters.ContainsKey("CustomDataFile")) {
         $customDataFile = "$PSScriptRoot\customData\customData.ps1"
@@ -128,7 +154,7 @@ function Invoke-Generate {
 
     1..$count | ForEach-Object -Process {
         $r = $($unitOfWork | ForEach-Object -Process {
-                $fn = $_.split(' ')[0]
+                $fn = ($_ -split '\s+')[0]
                 if ($functionList -notcontains $fn) {
                     $_
                 }
@@ -141,8 +167,15 @@ function Invoke-Generate {
             [pscustomobject](ConvertFrom-StringData $r)
         }
         elseif ($AsCsv) {
+            $separator = if ($UseCsvCultureSeparator) {
+                @{
+                    Delimiter = $Culture.TextInfo.ListSeparator
+                }
+            } else {
+                @{}
+            }
             [pscustomobject](ConvertFrom-StringData $r) |
-                ConvertTo-Csv -NoTypeInformation
+                ConvertTo-Csv -NoTypeInformation @separator
         }
         elseif ($AsTabDelimited) {
             [pscustomobject](ConvertFrom-StringData $r) |
@@ -240,6 +273,330 @@ function Get-RandomValue {
     $returnValue
 }
 
+function Resolve-LocalizedPath {
+    [CmdletBinding()]
+    param(
+        [Parameter()]
+        [cultureinfo]
+        $Culture = [cultureinfo]::CurrentCulture ,
+
+        [Parameter()]
+        [String]
+        $CulturePath = ($PSScriptRoot | Join-Path -ChildPath 'cultures') ,
+
+        [Parameter()]
+        [cultureinfo]
+        $FallbackCulture = 'en' ,
+
+        [Parameter(
+            Mandatory,
+            ValueFromPipeline
+        )]
+        [String]
+        $ContentFile ,
+
+        [Parameter()]
+        [Switch]
+        $StrictCultureMatch ,
+
+        [Parameter()]
+        [Switch]
+        $StrictLanguageMatch
+    )
+
+    Begin {
+        $StrictLanguageMatch = $StrictLanguageMatch -or $StrictCultureMatch
+
+        $LanguageFilePath = $CulturePath | Join-Path -ChildPath $Culture.TwoLetterISOLanguageName
+
+        if (-not ($LanguageFilePath | Test-Path)) {
+            if ($StrictLanguageMatch) {
+                throw [System.Globalization.CultureNotFoundException]"No cultures with languages compatible with '$($Culture.EnglishName)' were found."
+            } else {
+                $Culture = $FallbackCulture
+                $LanguageFilePath = $CulturePath | Join-Path -ChildPath $Culture.TwoLetterISOLanguageName
+
+                Write-Verbose -Message "Falling back to culture '$($Culture.EnglishName)'"
+            }
+        }
+
+        $CultureCode = $Culture.Name.Split('-')[1]
+
+        if ($CultureCode)  {
+            $CultureFilePath = $LanguageFilePath | Join-Path -ChildPath $CultureCode
+            $UseSpecificCulture = $CultureFilePath | Test-Path
+
+            if ($StrictCultureMatch -and -not $UseSpecificCulture) {
+                throw [System.Globalization.CultureNotFoundException]"No cultures matching '$($Culture.EnglishName) ($($Culture.Name))' were found."
+            }
+        }
+    }
+    
+    Process {
+        if ($UseSpecificCulture) {
+            $ContentPath = $CultureFilePath | Join-Path -ChildPath $ContentFile
+
+            if (($ContentPath | Test-Path)) {
+                return $ContentPath | Resolve-Path
+            } elseif ($StrictCultureMatch) {
+                throw [System.IO.FileNotFoundException]"The content file '$ContentFile' does not exist for culture '$($Culture.EnglishName)'"
+            }
+        }
+
+        $ContentPath = $LanguageFilePath | Join-Path -ChildPath $ContentFile
+        if (($ContentPath | Test-Path)) {
+            return $ContentPath | Resolve-Path
+        } else {
+            throw [System.IO.FileNotFoundException]"The content file '$ContentFile' does not exist for culture '$($Culture.EnglishName)'"
+        }
+    }
+}
+
+function Get-CacheStore {
+    [CmdletBinding()]
+    param()
+
+    End {
+        if (-not $Script:__cache) {
+            Set-Variable -Name __cache -Scope Script -Value ([System.Collections.Generic.Dictionary[string,object]]::new()) -Option ReadOnly,AllScope
+        }
+
+        $Script:__cache
+    }
+}
+
+function Clear-CacheStore {
+    [CmdletBinding()]
+    param(
+        [Parameter()]
+        [String]
+        $Key
+    )
+
+    $local:cache = Get-CacheStore
+
+    if ($key) {
+        $null = $local:cache.Remove($key)
+    } else {
+        $local:cache.Clear()
+    }
+}
+function Get-CacheableContent {
+    [CmdletBinding(DefaultParameterSetName = 'Path')]
+    param(
+        [Parameter(
+            ParameterSetName = 'Path' ,
+            Mandatory ,
+            ValueFromPipelineByPropertyName
+        )]
+        [String[]]
+        $Path ,
+
+        [Parameter(
+            ParameterSetName = 'LiteralPath' ,
+            Mandatory ,
+            ValueFromPipelineByPropertyName
+        )]
+        [Alias('PSPath')]
+        [String[]]
+        $LiteralPath ,
+
+        [Parameter()]
+        [Object] # in core this is [System.Text.Encoding], in desktop it's [FileSystemCmdletProviderEncoding]
+        $Encoding = 'utf8' ,
+
+        [Parameter()]
+        [Switch]
+        $Raw ,
+
+        [Parameter()]
+        [Switch]
+        $RefreshCache ,
+
+        [Parameter()]
+        [Alias('Process')]
+        [ScriptBlock]
+        $Transform ,
+
+        [Parameter()]
+        [ValidateSet(
+             'Read'
+            ,'Write'
+            ,'ReadWrite'
+        )]
+        [String]
+        $TransformCacheContentOn = 'Write'
+    )
+
+    Begin {
+        $local:cache = Get-CacheStore
+
+        $commonParams = @{}
+        if ($Encoding) {
+            $commonParams.Encoding = $Encoding
+        }
+
+        if ($Raw) {
+            $commonParams.Raw = $Raw
+        }
+    }
+
+    Process {
+        $OnePath = $PSBoundParameters[$PSCmdlet.ParameterSetName]
+
+        foreach ($thisPath in $OnePath) {
+            $key = $thisPath
+
+            if ($RefreshCache -or -not $local:cache.ContainsKey($key)) {
+                $params = $commonParams.Clone()
+                $params[$PSCmdlet.ParameterSetName] = $thisPath
+
+                $content = Get-Content @params
+
+                $local:cache[$key] = if ($Transform -and $TransformCacheContentOn -in 'Write','ReadWrite') {
+                    $content | ForEach-Object -Process $Transform
+                } else {
+                    $content
+                }
+            }
+            
+            if ($Transform -and $TransformCacheContentOn -in 'Read','ReadWrite') {
+                $local:cache[$key] | ForEach-Object -Process $Transform
+            } else {
+                $local:cache[$key]
+            }
+        }
+    }
+}
+function Import-CacheableCsv {
+    [CmdletBinding(DefaultParameterSetName = 'Delimiter')]
+    param(
+        [Parameter(
+            ValueFromPipelineByPropertyName
+        )]
+        [ValidateNotNullOrEmpty()]
+        [String[]]
+        $Path ,
+
+        [Parameter(
+            ValueFromPipelineByPropertyName
+        )]
+        [ValidateNotNullOrEmpty()]
+        [Alias('PSPath')]
+        [String[]]
+        $LiteralPath ,
+
+        [Parameter(
+            ParameterSetName = 'Delimiter'
+        )]
+        [char]
+        $Delimiter ,
+
+        [Parameter()]
+        [object]
+        $Encoding = 'utf8' ,
+
+        [Parameter()]
+        [String[]]
+        $Header ,
+
+        [Parameter(
+            ParameterSetName = 'UseCulture' ,
+            Mandatory
+        )]
+        [Switch]
+        $UseCulture ,
+
+        [Parameter(
+            ParameterSetName = 'UseCulture'
+        )]
+        [cultureinfo]
+        $Culture ,
+
+        [Parameter()]
+        [Switch]
+        $RefreshCache ,
+
+        [Parameter()]
+        [Alias('Process')]
+        [ScriptBlock]
+        $Transform ,
+
+        [Parameter()]
+        [ValidateSet(
+             'Read'
+            ,'Write'
+            ,'ReadWrite'
+        )]
+        [String]
+        $TransformCacheContentOn = 'Write'
+    )
+
+    Begin {
+        $local:cache = Get-CacheStore
+
+        $commonParams = @{}
+        if ($Encoding) {
+            $commonParams.Encoding = $Encoding
+        }
+
+        if ($Delimiter) {
+            $commonParams.Delimiter = $Delimiter
+        }
+
+        if ($Header) {
+            $commonParams.Header = $Header
+        }
+
+        if ($UseCulture) {
+            if ($Culture) {
+                $commonParams.Delimiter = $Culture.TextInfo.ListSeparator
+            } else {
+                $commonParams.UseCulture = $UseCulture
+            }
+        }
+    }
+
+    Process {
+        $params = $commonParams.Clone()
+
+        if ($PSBoundParameters.ContainsKey('LiteralPath')) {
+            $OnePath = $LiteralPath
+            $pathParam = 'LiteralPath'
+        }
+
+        if ($PSBoundParameters.ContainsKey('Path')) {
+            if ($OnePath) {
+                throw [System.InvalidOperationException]'You must specify either the -Path or -LiteralPath parameters, but not both.'
+            }
+            $OnePath = $Path
+            $pathParam = 'Path'
+        }
+
+        foreach ($thisPath in $OnePath) {
+            $key = $thisPath
+
+            if ($RefreshCache -or -not $local:cache.ContainsKey($key)) {
+                $params[$pathParam] = $thisPath
+
+                $content = Import-Csv @params
+
+                $local:cache[$key] = if ($Transform -and $TransformCacheContentOn -in 'Write','ReadWrite') {
+                    $content | ForEach-Object -Process $Transform
+                } else {
+                    $content
+                }
+            }
+            
+            if ($Transform -and $TransformCacheContentOn -in 'Read','ReadWrite') {
+                $local:cache[$key] | ForEach-Object -Process $Transform
+            } else {
+                $local:cache[$key]
+            }
+        }
+    }
+}
+
 function Get-RandomChoice {
     param (
         $list,
@@ -255,20 +612,48 @@ function Get-RandomChoice {
     ) -join ''
 }
 
-$nouns = Get-Content -Path "$PSScriptRoot\cultures\en-US.nouns.txt"
-$adjectives = Get-Content -Path "$PSScriptRoot\cultures\en-US.adjectives.txt"
-$verbs = Get-Content -Path "$PSScriptRoot\cultures\en-US.verbs.txt"
-
 function noun {
-    $nouns | Get-Random
+    [CmdletBinding()]
+    param(
+        [Parameter()]
+        [cultureinfo]
+        $Culture = [cultureinfo]::CurrentCulture
+    )
+
+    Resolve-LocalizedPath -ContentFile 'nouns.txt' -Culture $Culture | Get-CacheableContent | Get-Random
 }
 
 function adjective {
-    $adjectives | Get-Random
+    [CmdletBinding()]
+    param(
+        [Parameter()]
+        [cultureinfo]
+        $Culture = [cultureinfo]::CurrentCulture
+    )
+
+    Resolve-LocalizedPath -ContentFile 'adjectives.txt' -Culture $Culture | Get-CacheableContent | Get-Random
 }
 
 function verb {
-    $verbs | Get-Random
+    [CmdletBinding()]
+    param(
+        [Parameter()]
+        [cultureinfo]
+        $Culture = [cultureinfo]::CurrentCulture
+    )
+
+    Resolve-LocalizedPath -ContentFile 'verbs.txt' -Culture $Culture | Get-CacheableContent | Get-Random
+}
+
+function color {
+    [CmdletBinding()]
+    param(
+        [Parameter()]
+        [cultureinfo]
+        $Culture = [cultureinfo]::CurrentCulture
+    )
+
+    Resolve-LocalizedPath -ContentFile 'colors.txt' -Culture $Culture | Get-CacheableContent | Get-Random
 }
 
 function baseVerbNoun {
@@ -287,31 +672,42 @@ function cmdlet {
 }
 
 function address {
-    Param
-    (
-        [String]$Culture = "en-US"
+    [CmdletBinding()]
+    param (
+        [Parameter()]
+        [cultureinfo]
+        $Culture = [cultureinfo]::CurrentCulture
     )
 
     $numberLength = Get-Random -Minimum 3 -Maximum 6
-    $streetLenth = Get-Random -Minimum 2 -Maximum 6
+    $streetLength = Get-Random -Minimum 2 -Maximum 6
 
     $houseNumber = Get-RandomValue -Template "[numeric $numberLength]" -As int
 
-    $streetTemplate = "[syllable]" * $streetLenth
+    $streetTemplate = "[syllable]" * $streetLength
     $street = Invoke-Generate $streetTemplate
 
-    $suffix = Get-Content -Path "$PSScriptRoot\cultures\$Culture.streetsuffix.txt" | Get-Random
+    $suffix = Resolve-LocalizedPath -Culture $Culture -ContentFile 'streetsuffix.txt' | Get-CacheableContent | Get-Random
 
     $address = $houseNumber, $street, $suffix -join ' '
 
-    (culture).TextInfo.ToTitleCase($address)
+    $Culture.TextInfo.ToTitleCase($address)
 }
 
 function space {
-    param (
-        [int]$length = 1
+    [CmdletBinding()]
+    param(
+        [Parameter()]
+        [uint32]
+        $Length = 1 ,
+
+        [Parameter()]
+        [cultureinfo]
+        $Culture = [cultureinfo]::CurrentCulture
     )
-    ' ' * $length
+
+    Resolve-LocalizedPath -Culture $Culture -ContentFile 'space.txt' | 
+        Get-CacheableContent -Raw -Transform { $_ * $Length } -TransformCacheContentOn Read
 }
 
 function alpha {
@@ -372,14 +768,14 @@ function person {
     The function intended to generate string with name of a random person
 
     .DESCRIPTION
-    The function generate a random name of females or mailes based on provided culture like <FirstName><Space><LastName>.
-    The first and last names are randomly selected from the file delivered with  for the culture
+    The function generate a random name of females or males based on provided culture like <FirstName><Space><LastName>.
+    The first and last names are randomly selected from the file delivered with for the culture
 
     .PARAMETER Sex
     The sex of random person.
 
     .PARAMETER Culture
-    The culture used for generate - default is en-US.
+    The culture used for generate - default is the current culture.
 
     .LINK
     https://www.linkedin.com/in/sciesinskiwojciech
@@ -416,21 +812,18 @@ function person {
     Three names returned, only women.
 
     #>
+    [CmdletBinding()]
     param (
         [ValidateSet("both", "female", "male")]
         [String]$Sex = "both",
         [ValidateSet("both", "first", "last")]
         [String]$NameParts = "both",
-        [String]$Culture = "en-US"
+        [cultureinfo]$Culture = [cultureinfo]::CurrentCulture
     )
 
-    $ModulePath = Split-Path $script:MyInvocation.MyCommand.Path
+    $AllNames = Resolve-LocalizedPath -Culture $Culture -ContentFile 'names.csv' | Import-CacheableCsv -UseCulture -Culture $Culture
 
-    [String]$CultureFileName = "{0}\cultures\{1}.csv" -f $ModulePath, $Culture
-
-    $AllNames = Import-Csv -Path $CultureFileName -Delimiter ","
-
-    $AllNamesCount = ($AllNames | Measure-Object).Count
+    $AllNamesCount = $AllNames.Count
 
     $LastName = $AllNames[(Get-Random -Minimum 0 -Maximum $AllNamesCount)].LastName
 
@@ -454,13 +847,18 @@ function person {
 }
 
 function State {
+    [CmdletBinding()]
     param(
+        [Parameter()]
+        [String]
         $property = "name",
-        [String]$Culture = "en-US"
+
+        [Parameter()]
+        [cultureinfo]
+        $Culture = [cultureinfo]::CurrentCulture
     )
 
-    $CultureFileName = "$($PSScriptRoot)\cultures\{0}.States.csv" -f $Culture
-    $states = Import-Csv $CultureFileName
+    $states = Resolve-LocalizedPath -Culture $Culture -ContentFile 'states.csv' | Import-CacheableCsv -UseCulture -Culture $Culture
 
     switch ($property) {
         "name" {$property = "statename"}
@@ -474,45 +872,68 @@ function State {
         default { throw "property [$($property)] not supported"}
     }
 
-    $states | get-random | % $property
+    $states | Get-Random | % $property
 }
 
 # Too Many Daves by Dr. Seuss
 # https://www.poetryfoundation.org/poems-and-poets/poems/detail/42882
 function Dave {
+    [CmdletBinding()]
     param(
-        [String]$Culture = "en-US"
+        [Parameter()]
+        [cultureinfo]
+        $Culture = [cultureinfo]::CurrentCulture
     )
-
-    $CultureFileName = "$($PSScriptRoot)\cultures\{0}.daves.txt" -f $Culture
-    $daves = Get-Content $CultureFileName
-
-    $daves | get-random
+    Resolve-LocalizedPath -Culture $Culture -ContentFile 'daves.txt' | Get-CacheableContent | Get-Random
 }
 
 function guid {
+    [CmdletBinding()]
     param(
+        [Parameter()]
+        [int]
         $part
     )
 
     $guid = [guid]::NewGuid().guid
 
-    if ($part -ne $null) {
+    if ($part) {
         ($guid -split '-')[$part]
-    }
-    else {
+    } else {
         $guid
     }
 }
 
 function RandomDate {
-    [DateTime]$theMin = "1/1/1970"
-    $theMax = [DateTime]::Now
+    [CmdletBinding()]
+    param(
+        [Parameter()]
+        [Alias('TheMin')]
+        [DateTime]
+        $MinDate = [DateTime]::MinValue,
 
-    $theRandomGen = new-object random
-    $theRandomTicks = [Convert]::ToInt64( ($theMax.ticks * 1.0 - $theMin.Ticks * 1.0 ) * $theRandomGen.NextDouble() + $theMin.Ticks * 1.0 )
+        [Parameter()]
+        [Alias('TheMax')]
+        [DateTime]
+        $MaxDate = [DateTime]::MaxValue ,
 
-    (new-object DateTime $theRandomTicks).ToString("MM/dd/yyyy")
+        [Parameter()]
+        [String]
+        $Format ,
+
+        [Parameter()]
+        [cultureinfo]
+        $Culture = [cultureinfo]::CurrentCulture
+    )
+
+    if (-not $Format) {
+        $Format = $Culture.DateTimeFormat.ShortDatePattern
+    }
+
+    $theRandomGen = New-Object random
+    $theRandomTicks = [Convert]::ToInt64( ($MaxDate.ticks * 1.0 - $MinDate.Ticks * 1.0 ) * $theRandomGen.NextDouble() + $MinDate.Ticks * 1.0 )
+
+    (New-Object DateTime $theRandomTicks).ToString($Format, $Culture.DateTimeFormat)
 }
 
 function Fortnite {
@@ -522,15 +943,21 @@ function Fortnite {
         $Char
     )
 
-    if ($PSBoundParameters.ContainsKey("Char")) {
-        $adj = $adjectives | Where-Object {$_ -like "$char*"} | Get-Random
-    }
-    else {
-        $adj = $adjectives | Get-Random
-        $char = $adj[0]
+    $Filter = { 
+        if ($_ -like "$Char*") {
+            $_
+        }
     }
 
-    $noun = $nouns | Where-Object {$_ -like "$char*"} | Get-Random
+    $adj = Resolve-LocalizedPath -ContentFile 'adjectives.txt' | 
+        Get-CacheableContent -Transform $Filter -TransformCacheContentOn Read |
+        Get-Random
+
+    $Char = $adj[0]
+
+    $noun = Resolve-LocalizedPath -ContentFile 'nouns.txt' | 
+        Get-CacheableContent -Transform $Filter -TransformCacheContentOn Read |
+        Get-Random
 
     "$adj" + $noun
 }
