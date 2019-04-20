@@ -16,10 +16,12 @@ PowerShell module for randomly generating names
 
 This project is a port of https://github.com/mitchdenny/namerer. Hat tip to [Mitch Denny](https://twitter.com/mitchdenny).
 
-## April 2019
+## April 2019 - 2.0.0
 
 ### New Language Support
 Added support for multiple languages and cultures. Tries to give you results based on your current culture, or ask for a specific one.
+
+![image](https://raw.githubusercontent.com/dfinke/NameIT/master/images/MultipleLanguages.png)
 
 ```ps
 ig "[color]"        # your current culture
