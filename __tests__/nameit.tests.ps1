@@ -2,7 +2,9 @@ Import-Module "$PSScriptRoot/../NameIT.psd1" -Force
 
 Describe "NameIT Tests" {
 
-    Clear-CacheStore
+    InModuleScope NameIT {
+        Clear-CacheStore
+    }
 
     It "Should generate five entries" {
         $actual = Invoke-Generate -Template "[person]" -Count 5
