@@ -16,6 +16,13 @@ PowerShell module for randomly generating names
 
 This project is a port of https://github.com/mitchdenny/namerer. Hat tip to [Mitch Denny](https://twitter.com/mitchdenny).
 
+## What's New - 2.0.0
+
+- Multiple Languages
+
+![image](https://raw.githubusercontent.com/dfinke/NameIT/master/images/MultipleLanguages.png)
+
+
 ## September 2018
 
 Added `New-NameItTemplate`. Pass an object with properties and it will generate a `NameIT` template.
