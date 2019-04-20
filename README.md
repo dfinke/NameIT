@@ -16,6 +16,38 @@ PowerShell module for randomly generating names
 
 This project is a port of https://github.com/mitchdenny/namerer. Hat tip to [Mitch Denny](https://twitter.com/mitchdenny).
 
+## April 2019
+
+### New Language Support
+Added support for multiple languages and cultures. Tries to give you results based on your current culture, or ask for a specific one.
+
+```ps
+ig "[color]"        # your current culture
+ig "[color en-GB]"  # choosing lang-CULTURE
+ig "[color ja]"     # choosing lang only
+```
+
+Falls back to "something in your chosen language" if specific culture is not available. 
+Falls back to US English (en-US) if your language is not available at all.
+
+```ps
+ig "[color en-CA]"  # returns US English color because no Canadian English colors are defined (as of this writing)
+ig "[noun en-GB]"   # returns US English noun because even though British English exists, there's no nouns file
+ig "[color es]"     # returns US English because no Spanish language files exist yet
+```
+
+`randomdate` can now take a lower and upper bound on time and a format string. 
+By default uses chosen culture's short date format.
+
+```ps
+ig "[randomdate]"                                           # a random date in my culture format
+ig "[randomdate '1/1/2000']"                                # a random date from 1 Jan 2000 onward
+ig "[randomdate '1/1/2000' '12/31/2000']"                   # a random date in the year 2000
+ig "[randomdate '1/1/2000' '12/31/2000' 'dd MMM yyyy']"     # a random date in 2000 with a custom format
+```
+
+More information coming soon for contributors on how to deal (or not) with culture stuff.
+
 ## September 2018
 
 Added `New-NameItTemplate`. Pass an object with properties and it will generate a `NameIT` template.
