@@ -16,6 +16,9 @@ PowerShell module for randomly generating names
 
 This project is a port of https://github.com/mitchdenny/namerer. Hat tip to [Mitch Denny](https://twitter.com/mitchdenny).
 
+## April 2019 - 2.1.0
+Internal refactor to individual files.
+
 ## April 2019 - 2.0.0
 
 ### New Language Support
