@@ -88,7 +88,7 @@ function Invoke-Generate {
         [HashTable]$CustomData,
 
         [Parameter(Position = 5)]
-        [String]$CustomDataFile,
+        [String]$CustomDataFile = "$ModuleBase\customData\customData.ps1",
 
         [Switch]$ApprovedVerb,
         [Switch]$AsCsv,
@@ -104,19 +104,14 @@ function Invoke-Generate {
     $script:alphabet = $alphabet
     $script:numbers = $number
 
-    if (-not $PSBoundParameters.ContainsKey("CustomDataFile")) {
-        $customDataFile = "$ModuleBase\customData\customData.ps1"
-    }
-
-    if (Test-Path $customDataFile) {
-        $CustomData += . $customDataFile
+    if (Test-Path $CustomDataFile) {
+        $CustomData += . $CustomDataFile
     }
 
     if ($CustomData) {
         foreach ($key in $CustomData.Keys) {
             Add-GeneratorToSet -Name $key
-            #"function $key { `$CustomData.$key | Get-Random }" | Invoke-Expression
-            $null = New-Item -Path Function: -Name $key -Value { $CustomData.$key | Get-Random } -Force
+            $null = New-Item -Path Function: -Name $key -Value { $CustomData[$MyInvocation.InvocationName] | Get-Random } -Force
         }
     }
 
