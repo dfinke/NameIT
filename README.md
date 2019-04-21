@@ -16,17 +16,34 @@ PowerShell module for randomly generating names
 
 This project is a port of https://github.com/mitchdenny/namerer. Hat tip to [Mitch Denny](https://twitter.com/mitchdenny).
 
+## April 2019 - 2.2.0
+Language/Culture can be passed directly to `Invoke-Generate`, which will apply to everything without an explicit override. 
+
+```powershell
+ig "[color][space][color en-GB]" -Culture ja-JP
+```
+
+This is especially easier when there's lots of arguments you have to get through to get to specify culture (last).
+
+```powershell
+ig "[randomdate]"                                           # implicitly uses culture short date format
+ig "[randomdate 1/1/1999 12/31/1999 'yyyy-MM-dd' ja-JP]"    # can't use culture format this way, have to specify format explicitly
+ig "[randomdate]" -Culture ja-JP                            # lets the other arguments remain optional
+```
+
+Also fixed module auto-loading from a regression in 2.1.0, and includes some internal fixes and changes.
+
 ## April 2019 - 2.1.0
 Internal refactor to individual files.
 
 ## April 2019 - 2.0.0
 
 ### New Language Support
-Added support for multiple languages and cultures. Tries to give you results based on your current culture, or ask for a specific one.
+Added support for multiple languages and cultures. Tries to give you results based on your current culture, or a specific one you provide.
 
 ![image](https://raw.githubusercontent.com/dfinke/NameIT/master/images/MultipleLanguages.png)
 
-```ps
+```powershell
 ig "[color]"        # your current culture
 ig "[color en-GB]"  # choosing lang-CULTURE
 ig "[color ja]"     # choosing lang only
@@ -35,7 +52,7 @@ ig "[color ja]"     # choosing lang only
 Falls back to "something in your chosen language" if specific culture is not available. 
 Falls back to US English (en-US) if your language is not available at all.
 
-```ps
+```powershell
 ig "[color en-CA]"  # returns US English color because no Canadian English colors are defined (as of this writing)
 ig "[noun en-GB]"   # returns US English noun because even though British English exists, there's no nouns file
 ig "[color es]"     # returns US English because no Spanish language files exist yet
@@ -44,7 +61,7 @@ ig "[color es]"     # returns US English because no Spanish language files exist
 `randomdate` can now take a lower and upper bound on time and a format string. 
 By default uses chosen culture's short date format.
 
-```ps
+```powershell
 ig "[randomdate]"                                           # a random date in my culture format
 ig "[randomdate '1/1/2000']"                                # a random date from 1 Jan 2000 onward
 ig "[randomdate '1/1/2000' '12/31/2000']"                   # a random date in the year 2000
@@ -59,7 +76,7 @@ Added `New-NameItTemplate`. Pass an object with properties and it will generate 
 
 If a property name has has the value `name`, `zip`, `address`, or `state` the appropriate `NameIT` template is applied, otherwise the type is inferred as numeric or alpha.
 
-```ps
+```powershell
 New-NameItTemplate {[PSCustomObject]@{Company="";Name=""}}
 ```
 

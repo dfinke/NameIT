@@ -7,11 +7,11 @@ function Resolve-LocalizedPath {
 
         [Parameter()]
         [String]
-        $CulturePath = ($ModuleBase | Join-Path -ChildPath 'cultures') ,
+        $CulturePath = $MyInvocation.MyCommand.Module.PrivateData.CultureNorms.CultureRoot ,
 
         [Parameter()]
         [cultureinfo]
-        $FallbackCulture = 'en' ,
+        $FallbackCulture = $MyInvocation.MyCommand.Module.PrivateData.CultureNorms.FallbackLang ,
 
         [Parameter(
             Mandatory,

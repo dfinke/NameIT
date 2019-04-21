@@ -88,7 +88,7 @@ function Invoke-Generate {
         [HashTable]$CustomData,
 
         [Parameter(Position = 5)]
-        [String]$CustomDataFile,
+        [String]$CustomDataFile = "$ModuleBase\customData\customData.ps1",
 
         [Switch]$ApprovedVerb,
         [Switch]$AsCsv,
@@ -104,60 +104,48 @@ function Invoke-Generate {
     $script:alphabet = $alphabet
     $script:numbers = $number
 
-    $functionList = @(
-         'alpha'
-        ,'synonym'
-        ,'numeric'
-        ,'syllable'
-        ,'vowel',
-        ,'phoneticvowel'
-        ,'consonant'
-        ,'person'
-        ,'address'
-        ,'space'
-        ,'noun'
-        ,'adjective'
-        ,'verb'
-        ,'cmdlet'
-        ,'state'
-        ,'dave'
-        ,'guid'
-        ,'randomdate'
-        ,'fortnite'
-        ,'color'
-    )
-
-    if (-not $PSBoundParameters.ContainsKey("CustomDataFile")) {
-        $customDataFile = "$ModuleBase\customData\customData.ps1"
-    }
-
-    if (Test-Path $customDataFile) {
-        $CustomData += . $customDataFile
+    if (Test-Path $CustomDataFile) {
+        $CustomData += . $CustomDataFile
     }
 
     if ($CustomData) {
         foreach ($key in $CustomData.Keys) {
-            $functionList += $key
-            "function $key { `$CustomData.$key | Get-Random }" | Invoke-Expression
+            Add-GeneratorToSet -Name $key
+            $null = New-Item -Path Function: -Name $key -Value { $CustomData[$MyInvocation.InvocationName] | Get-Random } -Force
         }
     }
 
-    $functionList = $functionList.ToLower()
-
     $template = $template -replace '\?', '[alpha]' -replace '#', '[numeric]'
     $unitOfWork = $template -split "\[(.+?)\]" | Where-Object -FilterScript { $_ }
-    $ApprovedVerb = $ApprovedVerb
+    $tokenizerErrors = $null # must be declared for [ref]
 
     1..$count | ForEach-Object -Process {
-        $r = $($unitOfWork | ForEach-Object -Process {
-                $fn = ($_ -split '\s+')[0]
-                if ($functionList -notcontains $fn) {
+        $r = -join $($unitOfWork | ForEach-Object -Process {
+                $tokens = [System.Management.Automation.PSParser]::Tokenize($_, [ref] $tokenizerErrors)
+                $fn = $tokens[0].Content
+                if (Test-GeneratorInSet -Name $fn) {
+                    $generator = Get-Command -Name $fn -ErrorAction Stop
+                    $arguments = $tokens | 
+                        Select-Object -Skip 1 |
+                        ForEach-Object -Process {
+                            if ($_.Type -eq [System.Management.Automation.PSTokenType]::String) {
+                                '{0}' -f [System.Management.Automation.Language.CodeGeneration]::EscapeSingleQuotedStringContent($_.Content)
+                            } else {
+                                $_.Content
+                            }
+                        }
+
+                    if ($generator.Parameters.ContainsKey('Culture') -and $arguments.Count -le $generator.Parameters['Culture'].Attributes.Position) {
+                        $arguments = @() + $arguments + @('-Culture', $Culture.ToString())
+                    }
+
+                    $generatorExpression = "$fn $arguments"
+                    $generatorExpression | Write-Verbose
+                    $generatorExpression | Invoke-Expression
+                } else {
                     $_
                 }
-                else {
-                    $_ | Invoke-Expression
-                }
-            }) -join ''
+            })
 
         if ($AsPSObject) {
             [pscustomobject](ConvertFrom-StringData $r)
