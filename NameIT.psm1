@@ -25,7 +25,7 @@ $Subs = @(
 
     @{
         Path = 'Public'
-        Export = $true
+        Export = $false  # we use static exports for discovery
         Recurse = $false
         Filter = '*-*.ps1'
         Exclude = @(
@@ -46,7 +46,7 @@ $Subs = @(
 
 
 $thisModule = [System.IO.Path]::GetFileNameWithoutExtension($PSCommandPath)
-($varName = "__${thisModule}_Export_All") | Write-Verbose -Verbose
+$varName = "__${thisModule}_Export_All"
 $exportAll = Get-Variable -Scope Global -Name $varName -ValueOnly -ErrorAction Ignore
 
 $Subs | ForEach-Object -Process {
@@ -56,7 +56,6 @@ $Subs | ForEach-Object -Process {
     Get-ChildItem -Filter $sub.Filter -Exclude $sub.Exclude -Recurse:$sub.Recurse -ErrorAction Ignore | ForEach-Object -Process {
         try {
             $Unit = $_.FullName
-            Write-Verbose -Message "Importing '$Unit'" -Verbose
             . $Unit
             if ($sub.Export -or $exportAll) {
                 Export-ModuleMember -Function $_.BaseName
@@ -69,5 +68,12 @@ $Subs | ForEach-Object -Process {
 }
 
 
-Set-Alias ig Invoke-Generate
-Export-ModuleMember -Alias 'ig'
+Set-Alias -Name 'ig' -Value Invoke-Generate
+
+## Explicit Export for module auto-loading
+Export-ModuleMember -Alias @(
+     'ig'
+) -Function @(
+     'Invoke-Generate'
+    ,'New-NameItTemplate'
+)
