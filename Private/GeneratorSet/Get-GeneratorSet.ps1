@@ -18,6 +18,14 @@ function Get-GeneratorSet {
             ) -Option ReadOnly,AllScope
         }
 
-        Write-Output -InputObject $Script:__generatorSet -NoEnumerate:(-not $Enumerate)
+        if ($Enumerate) {
+            $Script:__generatorSet
+        } else {
+            ,$Script:__generatorSet
+        }
+        # This is a better way, but a bug in PS 6 prevents it from working (fixed in 6.2 it seems)
+        # https://github.com/PowerShell/PowerShell/issues/5955
+        #
+        # Write-Output -InputObject $Script:__generatorSet -NoEnumerate:(-not $Enumerate)
     }
 }
