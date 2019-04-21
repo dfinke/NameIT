@@ -16,7 +16,7 @@ PowerShell module for randomly generating names
 
 This project is a port of https://github.com/mitchdenny/namerer. Hat tip to [Mitch Denny](https://twitter.com/mitchdenny).
 
-## April 2019 - 2.2.0
+## April 2019 - 2.1.0
 Language/Culture can be passed directly to `Invoke-Generate`, which will apply to everything without an explicit override. 
 
 ```powershell
@@ -31,15 +31,9 @@ ig "[randomdate 1/1/1999 12/31/1999 'yyyy-MM-dd' ja-JP]"    # can't use culture 
 ig "[randomdate]" -Culture ja-JP                            # lets the other arguments remain optional
 ```
 
-Also fixed module auto-loading from a regression in 2.1.0, and includes some internal fixes and changes.
-
-## April 2019 - 2.1.0
-Internal refactor to individual files.
-
-## April 2019 - 2.0.0
-
-### New Language Support
-Added support for multiple languages and cultures. Tries to give you results based on your current culture, or a specific one you provide.
+* Fixed module auto-loading from a regression in 2.1.0, and includes some internal fixes and changes.
+* Internal refactor to individual files.
+* Support added for multiple languages and cultures. Tries to give you results based on your current culture, or a specific one you provide.
 
 ![image](https://raw.githubusercontent.com/dfinke/NameIT/master/images/MultipleLanguages.png)
 
