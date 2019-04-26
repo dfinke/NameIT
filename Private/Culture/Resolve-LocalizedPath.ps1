@@ -7,7 +7,7 @@ function Resolve-LocalizedPath {
 
         [Parameter()]
         [String]
-        $CulturePath = $MyInvocation.MyCommand.Module.PrivateData.CultureNorms.CultureRoot ,
+        $CulturePath = $($Script:ModuleBase | Join-Path -ChildPath $MyInvocation.MyCommand.Module.PrivateData.CultureNorms.CultureRoot) ,
 
         [Parameter()]
         [cultureinfo]
