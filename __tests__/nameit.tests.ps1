@@ -1,17 +1,18 @@
-Import-Module "$PSScriptRoot/../NameIT.psd1" -Force
+$manifestPath = $PSScriptRoot | Join-Path -ChildPath '..' | Join-Path -ChildPath 'NameIT.psd1' | Resolve-Path
+Import-Module $manifestPath -Force
 
 Describe "NameIT Tests" {
 
     Context "Module Health" {
         It "Should have a valid module manifest" {
-            Test-ModuleManifest -Path $PSScriptRoot\..\NameIT.psd1 | Should BeOfType ([psmoduleinfo])
+            Test-ModuleManifest -Path $manifestPath | Should BeOfType ([psmoduleinfo])
         }
 
         It "Should have a manifest that meets PSGallery Requirements" {
             # this catches one verified case so far of a valid manifest rejected by PSGallery
             # https://github.com/dfinke/NameIT/issues/24
             
-            Import-PowerShellDataFile -Path $PSScriptRoot\..\NameIt.psd1 | Should BeOfType [hashtable]
+            Import-PowerShellDataFile -Path $manifestPath | Should BeOfType [hashtable]
         }
 
         It "All Static Generators Should Exist as Functions" {
