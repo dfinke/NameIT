@@ -102,7 +102,7 @@
         
         CultureNorms = @{
             FallbackLang = 'en'
-            CultureRoot = "$PSScriptRoot\cultures"
+            CultureRoot = 'cultures'
         }
 
         # PSData is module packaging and gallery metadata embedded in PrivateData
