@@ -1,6 +1,9 @@
 <p align="center">
+<a <a href="https://dougfinke.visualstudio.com/NameIT/_build/latest?definitionId=19&branchName=master"><img src="https://dougfinke.visualstudio.com/NameIT/_apis/build/status/dfinke.NameIT?branchName=master"></a>
 <a <a href="https://ci.appveyor.com/project/dfinke/nameit/branch/master"><img src="https://ci.appveyor.com/api/projects/status/dd6c12ba9q9ojiba/branch/master?svg=true"></a>
 </p>
+
+<!-- [![Build Status](https://dougfinke.visualstudio.com/NameIT/_apis/build/status/dfinke.NameIT?branchName=master)](https://dougfinke.visualstudio.com/NameIT/_build/latest?definitionId=19&branchName=master) -->
 
 <!-- [![Build status](https://ci.appveyor.com/api/projects/status/dd6c12ba9q9ojiba/branch/master?svg=true)](https://ci.appveyor.com/project/dfinke/nameit/branch/master) -->
 
@@ -17,7 +20,7 @@ PowerShell module for randomly generating names
 This project is a port of https://github.com/mitchdenny/namerer. Hat tip to [Mitch Denny](https://twitter.com/mitchdenny).
 
 ## April 2019 - 2.1.0
-Language/Culture can be passed directly to `Invoke-Generate`, which will apply to everything without an explicit override. 
+Language/Culture can be passed directly to `Invoke-Generate`, which will apply to everything without an explicit override.
 
 ```powershell
 ig "[color][space][color en-GB]" -Culture ja-JP
@@ -43,7 +46,7 @@ ig "[color en-GB]"  # choosing lang-CULTURE
 ig "[color ja]"     # choosing lang only
 ```
 
-Falls back to "something in your chosen language" if specific culture is not available. 
+Falls back to "something in your chosen language" if specific culture is not available.
 Falls back to US English (en-US) if your language is not available at all.
 
 ```powershell
@@ -52,7 +55,7 @@ ig "[noun en-GB]"   # returns US English noun because even though British Englis
 ig "[color es]"     # returns US English because no Spanish language files exist yet
 ```
 
-`randomdate` can now take a lower and upper bound on time and a format string. 
+`randomdate` can now take a lower and upper bound on time and a format string.
 By default uses chosen culture's short date format.
 
 ```powershell
