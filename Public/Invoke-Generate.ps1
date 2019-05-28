@@ -97,9 +97,17 @@ function Invoke-Generate {
         [Switch]$AsPSObject ,
 
         [Parameter()]
+        [int]
+        $SetSeed ,
+
+        [Parameter()]
         [cultureinfo]
         $Culture = [cultureinfo]::CurrentCulture
     )
+
+    if ($PSBoundParameters.ContainsKey('SetSeed')) {
+        $null = Get-Random -SetSeed $SetSeed
+    } 
 
     $script:alphabet = $alphabet
     $script:numbers = $number
@@ -129,7 +137,7 @@ function Invoke-Generate {
                         Select-Object -Skip 1 |
                         ForEach-Object -Process {
                             if ($_.Type -eq [System.Management.Automation.PSTokenType]::String) {
-                                '{0}' -f [System.Management.Automation.Language.CodeGeneration]::EscapeSingleQuotedStringContent($_.Content)
+                                "'{0}'" -f [System.Management.Automation.Language.CodeGeneration]::EscapeSingleQuotedStringContent($_.Content)
                             } else {
                                 $_.Content
                             }
