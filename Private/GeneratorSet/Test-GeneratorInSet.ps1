@@ -6,7 +6,8 @@ function Test-GeneratorInSet {
             Mandatory ,
             ValueFromPipeline
         )]
-        [ValidateNotNullOrEmpty()]
+        [ValidateNotNull()]
+        [AllowEmptyString()]
         [String]
         $Name
     )

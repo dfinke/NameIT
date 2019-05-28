@@ -4,7 +4,7 @@
     RootModule        = 'NameIT.psm1'
 
     # Version number of this module.
-    ModuleVersion     = '2.1.0'
+    ModuleVersion     = '2.1.1'
 
     # ID used to uniquely identify this module
     GUID              = '6d4ec85a-e09f-4024-819d-66bafa130a5b'
