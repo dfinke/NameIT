@@ -1,6 +1,6 @@
 $PSVersionTable
 
-if ($null -eq (Get-Module -ListAvailable pester)) {
+if ($null -eq (Get-Module -ListAvailable pester) -or (Get-Module -ListAvailable pester).Version -lt "4.6.0") {
     Install-Module -Name Pester -Repository PSGallery -Force -Scope CurrentUser
 }
 

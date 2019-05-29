@@ -16,16 +16,13 @@ Describe "NameIT Tests" {
             Import-PowerShellDataFile -Path $manifestPath | Should BeOfType [hashtable]
         }
 
-        #
-        # Revisit
-        #
-        # It "All Static Generators Should Exist as Functions" {
-        #     InModuleScope NameIT {
-        #         Clear-GeneratorSet
-        #         $generators = Get-GeneratorSet -Enumerate
-        #         Get-Command -CommandType Function -Name $generators | Should HaveCount $generators.Count
-        #     }
-        # }
+        It "All Static Generators Should Exist as Functions" {
+            InModuleScope NameIT {
+                Clear-GeneratorSet
+                $generators = Get-GeneratorSet -Enumerate
+                Get-Command -CommandType Function -Name $generators | Should HaveCount $generators.Count
+            }
+        }
     }
 
     Context "Generation Tests" {
