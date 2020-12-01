@@ -57,7 +57,7 @@ function person {
         [cultureinfo]$Culture = [cultureinfo]::CurrentCulture
     )
 
-    $AllNames = Resolve-LocalizedPath -Culture $Culture -ContentFile 'names.csv' | Import-CacheableCsv -UseCulture -Culture $Culture
+    $AllNames = Resolve-LocalizedPath -Culture $Culture -ContentFile 'names.csv' | Import-CacheableCsv -Delimiter ','
 
     $AllNamesCount = $AllNames.Count
 
