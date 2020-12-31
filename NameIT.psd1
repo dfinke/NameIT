@@ -4,7 +4,7 @@
     RootModule        = 'NameIT.psm1'
 
     # Version number of this module.
-    ModuleVersion     = '2.2.0'
+    ModuleVersion     = '2.3.0'
 
     # ID used to uniquely identify this module
     GUID              = '6d4ec85a-e09f-4024-819d-66bafa130a5b'
@@ -98,6 +98,38 @@
            ,'randomdate'
            ,'fortnite'
            ,'color'
+           ,'January'
+           ,'February'
+           ,'March'
+           ,'April'
+           ,'May'
+           ,'June'
+           ,'July'
+           ,'August'
+           ,'September'
+           ,'October'
+           ,'November'
+           ,'December'
+           ,'ThisMonth'
+           ,'ThisYear'
+           ,'Today'
+           ,'Tomorrow'
+           ,'Yesterday'
+           ,'ThisQuarter'
+           ,'ThisWeek'
+           ,'LastYear'
+           ,'NextYear'
+           ,'LastMonth'
+           ,'NextMonth'
+           ,'Q1'
+           ,'Q2'
+           ,'Q3'
+           ,'Q4'
+           ,'LastQuarter'
+           ,'NextQuarter'
+           ,'LastWeek'
+           ,'NextWeek'
+           ,'YearToDate'
         )
         
         CultureNorms = @{

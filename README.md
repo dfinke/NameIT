@@ -19,6 +19,35 @@ PowerShell module for randomly generating names
 
 This project is a port of https://github.com/mitchdenny/namerer. Hat tip to [Mitch Denny](https://twitter.com/mitchdenny).
 
+## December 2020 - 2.3.0
+
+- Added
+
+|Item|Description|
+|---|---|
+|January|Generate a random date for this month|
+|February|Generate a random date for this month|
+|March|Generate a random date for this month|
+|April|Generate a random date for this month|
+|May|Generate a random date for this month|
+|June|Generate a random date for this month|
+|July|Generate a random date for this month|
+|August|Generate a random date for this month|
+|September|Generate a random date for this month|
+|October|Generate a random date for this month|
+|November|Generate a random date for this month|
+|December|Generate a random date for this month|
+|ThisQuarter|Generate a random date for this quarter|
+|Q1|Generate a random date for Q1|
+|Q2|Generate a random date for Q2|
+|Q3|Generate a random date for Q3|
+|Q4|Generate a random date for Q4|
+|LastQuarter|Generate a random date for last quarter|
+|NextQuarter|Generate a random date for next quarter|
+|Today|Generate todays date|
+|Tomorrow|Generate tomorrows date|
+|Yesterday|Generate yesterdays date|
+
 ## April 2019 - 2.1.0
 Language/Culture can be passed directly to `Invoke-Generate`, which will apply to everything without an explicit override.
 
