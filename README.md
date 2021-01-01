@@ -23,6 +23,45 @@ This project is a port of https://github.com/mitchdenny/namerer. Hat tip to [Mit
 
 - Added
 
+```powershell
+# Run on 12/31/1960
+
+$templates = $(
+    'ThisQuarter'
+    'q1', 'q3', 'q3', 'q4'
+    'Today', 'Tomorrow', 'Yesterday'
+    'February', 'April', 'October'
+)
+
+foreach ($template in $templates) {
+    $template | ForEach-Object {
+        [PSCustomObject]@{
+            Template = $_
+            Result   = Invoke-Generate "$_" 
+        }
+    }
+}
+```
+
+## Prints
+
+Generates these random dates.
+```
+Template    Result
+--------    ------
+ThisQuarter 10/23/2020
+q1          3/15/2020
+q3          7/12/2020
+q3          9/18/2020
+q4          10/12/2020
+Today       12/31/2020
+Tomorrow    1/1/2021
+Yesterday   12/30/2020
+February    2/15/2020
+April       4/13/2020
+October     10/8/2020
+```
+
 |Item|Description|
 |---|---|
 |January|Generate a random date for this month|
@@ -47,6 +86,7 @@ This project is a port of https://github.com/mitchdenny/namerer. Hat tip to [Mit
 |Today|Generate todays date|
 |Tomorrow|Generate tomorrows date|
 |Yesterday|Generate yesterdays date|
+
 
 ## April 2019 - 2.1.0
 Language/Culture can be passed directly to `Invoke-Generate`, which will apply to everything without an explicit override.
