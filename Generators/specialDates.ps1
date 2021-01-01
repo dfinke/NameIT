@@ -72,10 +72,7 @@ function RandomDayOfMonth {
 }
 
 function RandomDateForMonth {
-    param(
-        $month,
-        $year=()
-    )
+    param($month)
     
     $day = RandomDayOfMonth $month
     
