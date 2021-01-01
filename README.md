@@ -24,7 +24,7 @@ This project is a port of https://github.com/mitchdenny/namerer. Hat tip to [Mit
 - Added
 
 ```powershell
-# Run on 12/31/1960
+# Run on 12/31/2020
 
 $templates = $(
     'ThisQuarter'
