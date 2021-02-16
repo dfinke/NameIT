@@ -1,0 +1,17 @@
+﻿umbra
+beige
+svart
+blå
+brun
+cyan
+grå
+grön
+indigo
+kaki
+magenta
+orange
+rosa
+lila
+röd
+vit
+gul
