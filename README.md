@@ -19,6 +19,31 @@ PowerShell module for randomly generating names
 
 This project is a port of https://github.com/mitchdenny/namerer. Hat tip to [Mitch Denny](https://twitter.com/mitchdenny).
 
+## Feb 2021 - 2.3.2
+
+[Göran Hanell](https://github.com/imaginetobe) added names and color in Swedish.
+
+```powershell
+ig '[color]' -Culture sv-SE -Count 5
+
+grön
+vit
+orange
+grå
+rosa
+```
+
+
+```powershell
+ig '[person]' -Culture sv-SE -Count 5
+
+Helen Holmberg
+Sten Samuelsson
+Sven Abrahamsson
+Mona Ahmed
+Anette Dahlberg
+```
+
 ## December 2020 - 2.3.0
 
 - Added
