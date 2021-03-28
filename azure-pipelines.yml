@@ -24,9 +24,9 @@ jobs:
         pwsh -c '.\DoTests.ps1'
       displayName: 'Run Tests on Linux'
 
-  - job: Build_PSCore_MacOS1013
+  - job: Build_PSCore_MacOSLatest
     pool:
-      vmImage: xcode9-macos10.13
+      vmImage: macOS-latest
     steps:
     - script: |
         brew update
