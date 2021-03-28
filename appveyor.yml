@@ -1,13 +1,13 @@
-image:
-  - Visual Studio 2015
-  - Ubuntu
+# image:
+#   - Visual Studio 2015
+#   - Ubuntu
 
-skip_commits:
-  files:
-    - '**/*.md'
+# skip_commits:
+#   files:
+#     - '**/*.md'
 
-build: off
+# build: off
 
-test_script:
-  - ps:   .\DoTests.ps1
-  - pwsh: .\DoTests.ps1
+# test_script:
+#   - ps:   .\DoTests.ps1
+#   - pwsh: .\DoTests.ps1
