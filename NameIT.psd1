@@ -130,6 +130,7 @@
            ,'LastWeek'
            ,'NextWeek'
            ,'YearToDate'
+           ,'Job'
         )
         
         CultureNorms = @{
