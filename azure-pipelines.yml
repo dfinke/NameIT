@@ -29,8 +29,8 @@ jobs:
       vmImage: macOS-latest
     steps:
     - script: |
-        brew update
-        brew tap caskroom/cask
+        # brew update
+        # brew tap caskroom/cask
         brew cask install powershell
       displayName: 'Install PowerShell Core'
 
