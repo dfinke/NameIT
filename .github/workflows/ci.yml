@@ -1,0 +1,20 @@
+name: NameIT CI
+
+on:
+  push:
+  pull_request:    
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-18.04, macos-latest]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run the scripts
+        shell: pwsh
+        run: ./ContinuousIntegration.ps1          
