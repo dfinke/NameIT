@@ -24,19 +24,19 @@ jobs:
         pwsh -c '.\DoTests.ps1'
       displayName: 'Run Tests on Linux'
 
-  - job: Build_PSCore_MacOSLatest
-    pool:
-      vmImage: macOS-latest
-    steps:
-    - script: |
-        # brew update
-        # brew tap caskroom/cask
-        brew cask install powershell
-      displayName: 'Install PowerShell Core'
+  # - job: Build_PSCore_MacOSLatest
+  #   pool:
+  #     vmImage: macOS-latest
+  #   steps:
+  #   - script: |
+  #       # brew update
+  #       # brew tap caskroom/cask
+  #       brew cask install powershell
+  #     displayName: 'Install PowerShell Core'
 
-    - script: |
-        pwsh -c '.\DoTests.ps1'
-      displayName: 'Run Tests on macOS'
+  #   - script: |
+  #       pwsh -c '.\DoTests.ps1'
+  #     displayName: 'Run Tests on macOS'
 
 trigger:
   paths:
