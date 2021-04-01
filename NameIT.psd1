@@ -133,6 +133,7 @@
            ,'YearToDate'
            ,'Job'
            ,'postalCode'
+           ,'email'
         )
         
         CultureNorms = @{
