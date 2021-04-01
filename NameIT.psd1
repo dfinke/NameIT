@@ -132,6 +132,7 @@
            ,'NextWeek'
            ,'YearToDate'
            ,'Job'
+           ,'postalCode'
         )
         
         CultureNorms = @{
