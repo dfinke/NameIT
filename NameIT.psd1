@@ -134,6 +134,7 @@
            ,'Job'
            ,'postalCode'
            ,'email'
+           ,'company'
         )
         
         CultureNorms = @{
