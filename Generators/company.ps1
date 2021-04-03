@@ -1,7 +1,7 @@
 function company {
     param(
-        [ValidateSet('', 'catch', 'suffix', 'bs')]
-        $which 
+        [ValidateSet('', 'catch', 'suffix', 'fluff')]
+        $CompanyPart
     )
 
     $companySuffixes = 'Inc', 'and Sons', 'LLC', 'Group', 'PLC', 'Ltd'
@@ -319,7 +319,7 @@ function company {
         )
     )
 
-    $bsWords = (
+    $fluffWords = (
         (
             'implement',
             'utilize',
@@ -501,13 +501,13 @@ function company {
         '{0}, {1} and {2}' -f (person both last), (person both last), (person both last)
     )
     
-    if ($which -eq 'suffix') {
+    if ($CompanyPart -eq 'suffix') {
         $companySuffixes | Get-Random
     }
-    elseif ($which -eq 'bs') {
-        $bsWords | Get-Random
+    elseif ($CompanyPart -eq 'fluff') {
+        $fluffWords | Get-Random
     }
-    elseif ($which -eq 'catch') {
+    elseif ($CompanyPart -eq 'catch') {
         $catchPhraseWords | Get-Random
     }
     else {
