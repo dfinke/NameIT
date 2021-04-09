@@ -7,7 +7,7 @@ Describe "City Generation Test" -Tag City {
     }
 
     It "Tests returning a city" {
-        $actual = Invoke-Generate '[city]' -Count 5
+        $actual = Invoke-Generate '[city]' -Count 5 -Culture en
 
         $actual.Count | Should -Be 5
                 
@@ -19,7 +19,7 @@ Describe "City Generation Test" -Tag City {
     }
 
     It "Tests returning a county" {
-        $actual = Invoke-Generate '[city county]' -Count 5
+        $actual = Invoke-Generate '[city county]' -Count 5 -Culture en
 
         $actual.Count | Should -Be 5
         
