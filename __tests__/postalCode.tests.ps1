@@ -1,6 +1,6 @@
 Import-Module  "$PSScriptRoot\..\NameIT.psd1" -Force
 
-Describe "postalCode Gerneration Test" {
+Describe "postalCode Generation Test" {
 
     BeforeEach {
         $null = Get-Random -SetSeed 1        
