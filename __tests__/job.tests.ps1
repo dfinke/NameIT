@@ -9,10 +9,10 @@ Describe "Job Gerneration Test" {
     It "Tests returning a job title" {
         $actual = Invoke-Generate '[job]' -Count 5
 
-        $actual[0] | Should -BeExactly 'Science teacher'
-        $actual[1] | Should -BeExactly 'Scrum master'
-        $actual[2] | Should -BeExactly 'Retail sales associate'
-        $actual[3] | Should -BeExactly 'Dentist'
-        $actual[4] | Should -BeExactly 'International human resources associate'
+        $actual[0] | Should -BeExactly 'Superintendent'
+        $actual[1] | Should -BeExactly 'Tutor'
+        $actual[2] | Should -BeExactly 'Veterinary assistant'
+        $actual[3] | Should -BeExactly 'English teacher'
+        $actual[4] | Should -BeExactly 'Software developer'
     }
 }
