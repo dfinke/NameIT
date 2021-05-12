@@ -131,8 +131,9 @@
            ,'NextWeek'
            ,'YearToDate'
            ,'Job'
+           ,'creditCardNumber'
         )
-        
+
         CultureNorms = @{
             FallbackLang = 'en'
             CultureRoot = 'cultures'
