@@ -1,0 +1,1 @@
+Invoke-Generate '[postalcode]' -Count 5
