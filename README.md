@@ -19,7 +19,10 @@ PowerShell module for randomly generating names
 
 This project is a port of https://github.com/mitchdenny/namerer. Hat tip to [Mitch Denny](https://twitter.com/mitchdenny).
 
-## March 2021 - 2.3.2
+## v2.3.3
+
+- Check [Change log](./changelog.md) for new templates
+## v2.3.2
 - Added `job` to template
 
 ```powershell
@@ -30,7 +33,7 @@ Braiden Patel,Social media coordinator
 Mya Perez,Principal
 ```
 
-## Feb 2021 - 2.3.2
+## v2.3.2
 
 [Göran Hanell](https://github.com/imaginetobe) added names and color in Swedish.
 
@@ -55,7 +58,7 @@ Mona Ahmed
 Anette Dahlberg
 ```
 
-## December 2020 - 2.3.0
+## v2.3.0
 
 - Added
 
