@@ -98,6 +98,7 @@
            ,'randomdate'
            ,'fortnite'
            ,'color'
+           ,'country'
            ,'January'
            ,'February'
            ,'March'
@@ -131,6 +132,10 @@
            ,'NextWeek'
            ,'YearToDate'
            ,'Job'
+           ,'postalCode'
+           ,'email'
+           ,'company'
+           ,'city'
         )
         
         CultureNorms = @{

@@ -1,6 +1,6 @@
 Import-Module  "$PSScriptRoot\..\NameIT.psd1" -Force
 
-Describe "City Generation Test" {
+Describe "company Generation Test" {
 
     BeforeEach {
         $null = Get-Random -SetSeed 1        

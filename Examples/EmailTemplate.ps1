@@ -1,0 +1,1 @@
+Invoke-Generate '[email]' -Count 5
