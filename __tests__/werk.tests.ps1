@@ -10,9 +10,9 @@ Describe "Afrikaans Werk(Work) Generation Test" {
         $actual = Invoke-Generate '[werk]' -Count 5
 
         $actual[0] | Should -BeExactly 'Rekenaar Wetenskaplike'
-        $actual[1] | Should -BeExactly 'Chirug'
-        $actual[2] | Should -BeExactly 'Visserman'
-        $actual[3] | Should -BeExactly 'Kok'
-        $actual[4] | Should -BeExactly 'Kok'
+        $actual[1] | Should -BeExactly 'Onderwyseres'
+        $actual[2] | Should -BeExactly 'Kajaker'
+        $actual[3] | Should -BeExactly 'Skoen Maker'
+        $actual[4] | Should -BeExactly 'Bokser'
     }
 }
