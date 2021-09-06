@@ -1,0 +1,9 @@
+swart
+blou
+bruin
+rooi
+groen
+pink
+purple
+wit
+geel
