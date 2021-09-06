@@ -32,5 +32,6 @@ function Werk {
     'Musikant'
     'Landros'
     'Kajaker'
+    'Juweliersware'
   ) | Get-Random
 }
