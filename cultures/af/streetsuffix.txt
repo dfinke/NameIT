@@ -1,0 +1,9 @@
+straat
+laan
+snelweg
+onderdeur
+verkeersweg
+dorpe
+spoor
+grondpad
+dorp
