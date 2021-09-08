@@ -132,7 +132,7 @@
            ,'NextWeek'
            ,'YearToDate'
            ,'Job'
-           ,'Werk'
+           ,'JobAfrikaans'
            ,'postalCode'
            ,'email'
            ,'company'
