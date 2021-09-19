@@ -1,4 +1,4 @@
-Import-Module  "$PSScriptRoot\..\NameIT.psd1" -Force
+﻿Import-Module  "$PSScriptRoot\..\NameIT.psd1" -Force
 
 Describe "City Generation Test" -Tag City {
 
@@ -18,6 +18,18 @@ Describe "City Generation Test" -Tag City {
         $actual[4] | Should -BeExactly 'Tunkhannock'
     }
 
+    It "Tests returning a city" -Tag CultureSv {
+        $actual = Invoke-Generate '[city]' -Count 5 -Culture sv
+
+        $actual.Count | Should -Be 5
+                
+        $actual[0] | Should -BeExactly 'Duvesjön'
+        $actual[1] | Should -BeExactly 'Piperskärr'
+        $actual[2] | Should -BeExactly 'Sälen'
+        $actual[3] | Should -BeExactly 'Vedevåg'
+        $actual[4] | Should -BeExactly 'Hjortkvarn'
+    }
+
     It "Tests returning a county" {
         $actual = Invoke-Generate '[city county]' -Count 5 -Culture en
 
@@ -28,5 +40,17 @@ Describe "City Generation Test" -Tag City {
         $actual[2] | Should -BeExactly 'RICHLAND'
         $actual[3] | Should -BeExactly 'CATAWBA'
         $actual[4] | Should -BeExactly 'WYOMING'
+    }
+
+    It "Tests returning a county" -Tag CultureSv {
+        $actual = Invoke-Generate '[city county]' -Count 5 -Culture sv
+
+        $actual.Count | Should -Be 5
+        
+        $actual[0] | Should -BeExactly 'Kungälv'
+        $actual[1] | Should -BeExactly 'Västervik'
+        $actual[2] | Should -BeExactly 'Malung-Sälen'
+        $actual[3] | Should -BeExactly 'Lindesberg'
+        $actual[4] | Should -BeExactly 'Hallsberg'
     }
 }

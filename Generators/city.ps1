@@ -8,7 +8,7 @@ function city {
 
     
     # $targetFile = Resolve-LocalizedPath -Culture $Culture -ContentFile 'cities.csv'
-    $cities = Resolve-LocalizedPath -Culture $Culture -ContentFile 'cities.csv' | Import-CacheableCsv -UseCulture -Culture $Culture
+    $cities = Resolve-LocalizedPath -Culture $Culture -ContentFile 'cities.csv' | Import-CacheableCsv -Delimiter ','
     
     $city = $cities | Get-Random
     
