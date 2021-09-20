@@ -2,7 +2,7 @@ function cmdlet {
     [CmdletBinding()]
     param (
         [Parameter()]
-        [ValidateSet('approved','any')]
+        [ValidateSet('approved', 'any')]
         [string]
         $ApprovedVerb,
         [Parameter()]
@@ -13,8 +13,9 @@ function cmdlet {
         $verb = (Get-Verb | Get-Random).verb
     }
     else {
-        $verb =  (verb -Culture $Culture)
+        $verb = (verb -Culture $Culture)
     }
 
-    "{0}-{1}" -f $verb, (noun -Culture $Culture)
+    $noun = noun -Culture $Culture
+    "{0}-{1}" -f $verb, ((Get-Culture).TextInfo.ToTitleCase($noun))
 }
