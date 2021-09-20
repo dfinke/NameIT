@@ -1,3 +1,7 @@
+# v2.3.4
+
+- Thank you [Göran Hanell](https://github.com/imaginetobe) - Changed the city generator to use , as separator in the datafile, regardless of culture.
+
 # v2.3.3
 
 - Added generators, see [Examples](./Examples)
