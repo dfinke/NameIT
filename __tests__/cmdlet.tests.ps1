@@ -1,8 +1,9 @@
 ﻿Import-Module  "$PSScriptRoot\..\NameIT.psd1" -Force
 
-Describe "Cmdlet Generation Test" -Tag Cmdlet {
+Describe "Cmdlet Generation Test (en culture)" -Tag Cmdlet {
 
     BeforeEach {
+        # Get-Random generates different numbers for PS 5.1 or PS 7*. Values based on 7's implementation.
         $null = Get-Random -SetSeed 1        
     }
 
@@ -22,16 +23,17 @@ Describe "Cmdlet Generation Test" -Tag Cmdlet {
 
         $actual.Count | Should -Be 5
                 
-        $actual[0] | Should -BeExactly 'Skip-Quit'
-        $actual[1] | Should -BeExactly 'Send-Lift'
-        $actual[2] | Should -BeExactly 'Set-Prior'
-        $actual[3] | Should -BeExactly 'Use-Hang'
-        $actual[4] | Should -BeExactly 'ConvertTo-Sweet'
+        $actual[0] | Should -BeExactly 'Skip-Question'
+        $actual[1] | Should -BeExactly 'Submit-Library'
+        $actual[2] | Should -BeExactly 'Search-Primary'
+        $actual[3] | Should -BeExactly 'Wait-Guy'
+        $actual[4] | Should -BeExactly 'Undo-Suggestion'
     }
 }
 Describe "Cmdlet Generation Test (sv culture)" -Tag Cmdlet, CultureSv {
 
     BeforeEach {
+        # Get-Random generates different numbers for PS 5.1 or PS 7*. Values based on 7's implementation.
         $null = Get-Random -SetSeed 1        
     }
 
@@ -40,21 +42,21 @@ Describe "Cmdlet Generation Test (sv culture)" -Tag Cmdlet, CultureSv {
 
         $actual.Count | Should -Be 5
                 
-        $actual[0] | Should -BeExactly 'Placerar-Ide'
-        $actual[1] | Should -BeExactly 'Tål-Gran'
-        $actual[2] | Should -BeExactly 'Dukar-Ide'
-        $actual[3] | Should -BeExactly 'Anar-Tall'
-        $actual[4] | Should -BeExactly 'Sjuder-Tall'
+        $actual[0] | Should -BeExactly 'Placerar-Brev'
+        $actual[1] | Should -BeExactly 'Överraskar-Arbetsplats'
+        $actual[2] | Should -BeExactly 'Vänjer-Make'
+        $actual[3] | Should -BeExactly 'Klipper-Fjärrkontroll'
+        $actual[4] | Should -BeExactly 'Dör-Förmiddag'
     }
     It "Generates a cmdlet-like name with an approved verb" {
         $actual = Invoke-Generate '[cmdlet approved]' -Count 5 -Culture sv
 
         $actual.Count | Should -Be 5
                 
-        $actual[0] | Should -BeExactly 'Skip-Ide'
-        $actual[1] | Should -BeExactly 'Receive-Ide'
-        $actual[2] | Should -BeExactly 'Compress-Mo'
-        $actual[3] | Should -BeExactly 'Export-Mo'
-        $actual[4] | Should -BeExactly 'Write-Tall'
+        $actual[0] | Should -BeExactly 'Skip-Kapitel'
+        $actual[1] | Should -BeExactly 'Invoke-Fotboll'
+        $actual[2] | Should -BeExactly 'Search-Banan'
+        $actual[3] | Should -BeExactly 'Clear-Tulpan'
+        $actual[4] | Should -BeExactly 'Deny-Päron'
     }
 }
