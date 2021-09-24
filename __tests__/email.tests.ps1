@@ -1,6 +1,6 @@
 Import-Module  "$PSScriptRoot\..\NameIT.psd1" -Force
 
-Describe "email Generation Test (en culture)" {
+Describe "email Generation Test (en culture)" -Tag Email, CultureEn {
 
     BeforeEach {
         $null = Get-Random -SetSeed 1        
@@ -16,7 +16,8 @@ Describe "email Generation Test (en culture)" {
         $actual[4] | Should -BeExactly 'leon.tapia@gmail.com'
     }
 }
-Describe "email Generation Test (sv culture)" -Tag CultureSv {
+
+Describe "email Generation Test (sv culture)" -Tag Email, CultureSv {
 
     BeforeEach {
         $null = Get-Random -SetSeed 1        
