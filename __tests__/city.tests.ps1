@@ -1,12 +1,15 @@
-﻿Import-Module  "$PSScriptRoot\..\NameIT.psd1" -Force
+﻿BeforeDiscovery {
+    Import-Module  "$PSScriptRoot\..\NameIT.psd1" -Force
+}
 
-Describe "City Generation Test" -Tag City {
+
+Describe "City Generation Test (culture en)" -Tag City, CultureEn {
 
     BeforeEach {
         $null = Get-Random -SetSeed 1        
     }
 
-    It "Tests returning a city" {
+    It "Tests returning a city (en culture)" {
         $actual = Invoke-Generate '[city]' -Count 5 -Culture en
 
         $actual.Count | Should -Be 5
@@ -18,7 +21,25 @@ Describe "City Generation Test" -Tag City {
         $actual[4] | Should -BeExactly 'Tunkhannock'
     }
 
-    It "Tests returning a city" -Tag CultureSv {
+    It "Tests returning a county (en culture)" {
+        $actual = Invoke-Generate '[city county]' -Count 5 -Culture en
+
+        $actual.Count | Should -Be 5
+        
+        $actual[0] | Should -BeExactly 'POLK'
+        $actual[1] | Should -BeExactly 'APPOMATTOX'
+        $actual[2] | Should -BeExactly 'RICHLAND'
+        $actual[3] | Should -BeExactly 'CATAWBA'
+        $actual[4] | Should -BeExactly 'WYOMING'
+    }
+}
+
+Describe "City Generation Test (culture sv)" -Tag City, CultureSv {
+    BeforeEach {
+        $null = Get-Random -SetSeed 1        
+    }
+
+    It "Tests returning a city (sv culture)" -Tag City, CultureSv {
         $actual = Invoke-Generate '[city]' -Count 5 -Culture sv
 
         $actual.Count | Should -Be 5
@@ -30,19 +51,7 @@ Describe "City Generation Test" -Tag City {
         $actual[4] | Should -BeExactly 'Hjortkvarn'
     }
 
-    It "Tests returning a county" {
-        $actual = Invoke-Generate '[city county]' -Count 5 -Culture en
-
-        $actual.Count | Should -Be 5
-        
-        $actual[0] | Should -BeExactly 'POLK'
-        $actual[1] | Should -BeExactly 'APPOMATTOX'
-        $actual[2] | Should -BeExactly 'RICHLAND'
-        $actual[3] | Should -BeExactly 'CATAWBA'
-        $actual[4] | Should -BeExactly 'WYOMING'
-    }
-
-    It "Tests returning a county" -Tag CultureSv {
+    It "Tests returning a county (sv culture)" -Tag City, CultureSv {
         $actual = Invoke-Generate '[city county]' -Count 5 -Culture sv
 
         $actual.Count | Should -Be 5

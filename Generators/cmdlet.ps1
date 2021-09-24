@@ -1,10 +1,21 @@
 function cmdlet {
-    if ($ApprovedVerb) {
+    [CmdletBinding()]
+    param (
+        [Parameter()]
+        [ValidateSet('approved', 'any')]
+        [string]
+        $ApprovedVerb,
+        [Parameter()]
+        [cultureinfo]
+        $Culture = [cultureinfo]::CurrentCulture
+    )
+    if ($ApprovedVerb -eq 'approved') {
         $verb = (Get-Verb | Get-Random).verb
     }
     else {
-        $verb = (verb)
+        $verb = (verb -Culture $Culture)
     }
 
-    "{0}-{1}" -f $verb, (noun)
+    $noun = noun -Culture $Culture
+    "{0}-{1}" -f $verb, ((Get-Culture).TextInfo.ToTitleCase($noun))
 }
