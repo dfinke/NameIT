@@ -10,6 +10,9 @@ foreach ($module in $modules) {
 
 $pesterResults = Invoke-Pester -Output Detailed -PassThru
 
+$os = $PSVersionTable.Platform
+$pesterResults | Export-NUnitReport -Path "./pesterTestResults-$os.xml"
+
 if (!$pesterResults) {
     Throw "Tests failed"
 }
