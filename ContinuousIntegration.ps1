@@ -12,10 +12,10 @@ $pesterResults = Invoke-Pester -Output Detailed -PassThru
 
 $os = if($IsWindows) {
     "windows"
-} elseif($IsLinux) {
-    "linux"
 } elseif ($IsMacOS) {
     "macos"
+} elseif($IsLinux) {
+    "linux"
 }
 
 $pesterResults | Export-NUnitReport -Path "./pesterTestResults-$os.xml"
