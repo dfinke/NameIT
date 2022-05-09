@@ -10,7 +10,14 @@ foreach ($module in $modules) {
 
 $pesterResults = Invoke-Pester -Output Detailed -PassThru
 
-$os = $PSVersionTable.Platform
+$os = if($IsWindows) {
+    "windows"
+} elseif($IsLinux) {
+    "linux"
+} elseif ($IsMacOS) {
+    "macos"
+}
+
 $pesterResults | Export-NUnitReport -Path "./pesterTestResults-$os.xml"
 
 if (!$pesterResults) {
