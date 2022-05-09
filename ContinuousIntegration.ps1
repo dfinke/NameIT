@@ -10,15 +10,15 @@ foreach ($module in $modules) {
 
 $pesterResults = Invoke-Pester -Output Detailed -PassThru
 
-$os = if($IsWindows) {
-    "windows"
-} elseif ($IsMacOS) {
-    "macos"
-} elseif($IsLinux) {
-    "linux"
-}
+# $os = if($IsWindows) {
+#     "windows"
+# } elseif ($IsMacOS) {
+#     "macos"
+# } elseif($IsLinux) {
+#     "linux"
+# }
 
-$pesterResults | Export-NUnitReport -Path "./pesterTestResults-$os.xml"
+# $pesterResults | Export-NUnitReport -Path "./pesterTestResults-$os.xml"
 
 if (!$pesterResults) {
     Throw "Tests failed"
