@@ -32,11 +32,11 @@ Describe "color Generation Test (pl culture)" -Tag color, CulturePl {
 
         $actual.Count | Should -Be 5
                 
-        $actual[0] | Should -BeExactly 'beżowy'
-        $actual[1] | Should -BeExactly 'biały'
-        $actual[2] | Should -BeExactly 'brązowy'
-        $actual[3] | Should -BeExactly 'brunatny'
-        $actual[4] | Should -BeExactly 'bursztynowy'
+        $actual[0] | Should -BeExactly 'pomarańczowy'
+        $actual[1] | Should -BeExactly 'brunatny'
+        $actual[2] | Should -BeExactly 'granatowy'
+        $actual[3] | Should -BeExactly 'morski'
+        $actual[4] | Should -BeExactly 'perłowy'
     }
 }
 
