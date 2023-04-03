@@ -33,21 +33,21 @@ function country {
     https://www.back4app.com/database/back4app/list-of-all-continents-countries-cities
         
     .EXAMPLE
-    [PS] > Invoke-Generator "[country]"
+    [PS] > Invoke-Generate "[country]"
 
     China
 
     One country returned as string
 
     .EXAMPLE
-    [PS] Invoke-Generator "[country -continent Europe]"
+    [PS] Invoke-Generate "[country -continent Europe]"
 
     Austria
 
     One country returned as a string, but limited to Europe for the continent
 
     .EXAMPLE
-    [PS] Invoke-Generator "[country -ReturnType Enhanced -AsObject]"
+    [PS] Invoke-Generate "[country -ReturnType Enhanced -AsObject]"
 
     Name        ShortName   Continent
     ------      ----------  ---------
@@ -56,14 +56,14 @@ function country {
     One country is returned as a PSCustomObject with additional details
 
     .EXAMPLE
-    [PS] Invoke-Generator "[country -ReturnType Enhanced]"
+    [PS] Invoke-Generate "[country -ReturnType Enhanced]"
 
     Ethiopia, ET, Africa
 
     One country is returned as a string with additional details
 
     .EXAMPLE
-    [PS] Invoke-Generator "[country -ReturnType All -AsObject]"
+    [PS] Invoke-Generate "[country -ReturnType All -AsObject]"
 
     Name        Shortname Continent Capital    PhonePrefix
     ----        --------- --------- -------    -----------

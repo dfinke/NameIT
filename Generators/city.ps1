@@ -38,21 +38,21 @@ function city {
     Note: Countries that do not permit use of Zip code data are not represented
 
     .EXAMPLE
-    [PS] > Invoke-Generator "[city]"
+    [PS] > Invoke-Generate "[city]"
 
     Kadalu
 
     One city returned as string
 
     .EXAMPLE
-    [PS] Invoke-Generator "[city -countrycode SE]"
+    [PS] Invoke-Generate "[city -countrycode SE]"
 
     Stockholm
 
     One city returned as a string, but limited to Switzerland for the country
 
     .EXAMPLE
-    [PS] Invoke-Generator "[city -propertyName All -AsObject]"
+    [PS] Invoke-Generate "[city -propertyName All -AsObject]"
 
     countryCode postalCode  city    state   stateShort  countyProvince  countyProvinceShort community   communityShort  latitude    longitude   accuracy
     ----------- ----------  ----    -----   ----------  --------------  ------------------- ---------   --------------  --------    ---------   --------
@@ -61,7 +61,7 @@ function city {
     One city is returned as a PSCustomObject with all properties available
 
     .EXAMPLE
-    [PS] Invoke-Generator "[city -propertyName city,postalcode]"
+    [PS] Invoke-Generate "[city -propertyName city,postalcode]"
 
     PUERTA DE TASTIL, 4409
 

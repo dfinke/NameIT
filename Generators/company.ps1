@@ -37,13 +37,13 @@ function company {
     https://en.wikipedia.org/wiki/Global_Industry_Classification_Standard
 
     .EXAMPLE
-    [PS] > Invoke-Generator "[company]"
+    [PS] > Invoke-Generate "[company]"
     Rogers and Sons
 
     The one name returned as plain text.
 
     .EXAMPLE
-    [PS] > Invoke-Generator "[company Enhanced -AsObject]"
+    [PS] > Invoke-Generate "[company Enhanced -AsObject]"
 
     Name        Description                         Tagline                             EIN         Domain          Address
     -----       ------------                        --------                            ----        -------         --------
@@ -86,9 +86,9 @@ function company {
 
             # Generate an address - Generator: Address
             if($CountryCode){
-                $companyAddress = Invoke-Generator "[address $CountryCode]"
+                $companyAddress = Invoke-Generate "[address $CountryCode]"
             }else {
-                $companyAddress = Invoke-Generator "[address]"
+                $companyAddress = Invoke-Generate "[address]"
             }
 
             # Generate a generic Employer Identification Number - Generator: Numeric

@@ -34,14 +34,14 @@ function address {
     0.2.0 - 2023-03-23 - Enhanced version published as a part of forked NameIT powershell module updates made by Topher Whitfield
 
     .EXAMPLE
-    [PS] > Invoke-Generator "[address]"
+    [PS] > Invoke-Generate "[address]"
 
     5486 Past Salad Drive
 
     One address returned as string
 
     .EXAMPLE
-    [PS] Invoke-Generator "[address -countrycode SE -AsObject]"
+    [PS] Invoke-Generate "[address -countrycode SE -AsObject]"
 
     streetAddress                   city        State   postalCode  country
     -------------                   ----        -----   ----------  -------
@@ -84,11 +84,11 @@ function address {
         $houseNumber = Get-RandomValue -Template "[numeric $numberLength]" -As int
 
         # Leverage generators for street elements - Noun generator
-        $streetBase = Invoke-Generator "[noun]"
+        $streetBase = Invoke-Generate "[noun]"
 
         # Randomly determine if a modifier prefix will be applied - Generator: Adjective
         $streetCoin = Get-Random -Minimum 1 -Maximum 100
-        if($streetCoin%2){ $streetPre = Invoke-Generator "[adjective]" }
+        if($streetCoin%2){ $streetPre = Invoke-Generate "[adjective]" }
 
         # Randomly determine if a Suite will be added - Generator: Numeric
         $suiteCoin = Get-Random -Minimum 1 -Maximum 100
@@ -104,7 +104,7 @@ function address {
             $gen = "[city -DataSet Full -IncludeGeo -AsObject]"
         }
     
-        $cityInfo = Invoke-Generator $gen
+        $cityInfo = Invoke-Generate $gen
     
     #endregion ExternalGen
 
