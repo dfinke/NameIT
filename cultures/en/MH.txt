@@ -1,2 +1,0 @@
-MH	96960	Majuro	Marshall Islands	68	Ailinginae	007			11.1405	166.4103	4
-MH	96970	Ebeye	Marshall Islands	68	Ailinginae	007			11.1405	166.4103	4

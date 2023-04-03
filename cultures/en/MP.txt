@@ -1,3 +1,0 @@
-MP	96951	Rota	Rota	100					14.154	145.201	6
-MP	96950	Saipan	Saipan	110					15.1685	145.7408	6
-MP	96952	Tinian	Tinian	120					15.029	145.616	6

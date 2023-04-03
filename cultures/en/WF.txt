@@ -1,3 +1,0 @@
-WF	98610	Alo	Circonscription d'Alo	98611					-14.3066	-178.1188	5
-WF	98620	Sigave	Circonscription de Sigave	98612					-14.2667	-178.1667	5
-WF	98600	Uvéa	Circonscription d'Uvéa	98613					-13.2988	-176.2205	5

@@ -1,7 +1,0 @@
-AD	AD100	Canillo	Canillo	02					42.5833	1.6667	6
-AD	AD200	Encamp	Encamp	03					42.5333	1.6333	6
-AD	AD400	La Massana	La Massana	04					42.5667	1.4833	6
-AD	AD300	Ordino	Ordino	05					42.6	1.55	6
-AD	AD600	Sant Julià de Lòria	Sant Julià de Lòria	06					42.4667	1.5	6
-AD	AD500	Andorra la Vella	Andorra la Vella	07					42.5	1.5	6
-AD	AD700	Escaldes-Engordany	Escaldes-Engordany	08					42.5	1.5667	6

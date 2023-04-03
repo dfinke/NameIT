@@ -1,4 +1,0 @@
-FM	96944	Kosrae	State of Kosrae	01					7.1383	151.5031	1
-FM	96941	Pohnpei	State of Pohnpei	02					7.1383	151.5031	1
-FM	96942	Chuuk	State of Chuuk	03					7.1383	151.5031	1
-FM	96943	Yap	State of Yap	04					7.1383	151.5031	4

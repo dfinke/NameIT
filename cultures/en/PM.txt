@@ -1,2 +1,0 @@
-PM	97500	Miquelon	Miquelon-Langlade	97501	Miquelon-Langlade	97501			47.0975	-56.3814	5
-PM	97500	Saint-Pierre	Saint-Pierre	97502					46.7809	-56.172	5
