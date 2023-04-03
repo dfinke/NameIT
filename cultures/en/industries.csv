@@ -1,0 +1,186 @@
+Sector,IndustryGroup,Industry,Sub-Industry
+Energy,Energy,Energy Equipment and Services,Oil and Gas Drilling
+Energy,Energy,Energy Equipment and Services,Oil and Gas Equipment
+Energy,Energy,Energy Equipment and Services,Oil and Gas Services
+Energy,Energy,Oil-Gas and Consumable Fuels,Integrated Oil and Gas
+Energy,Energy,Oil-Gas and Consumable Fuels,Oil and Gas Exploration
+Energy,Energy,Oil-Gas and Consumable Fuels,Oil and Gas Production
+Energy,Energy,Oil-Gas and Consumable Fuels,Oil and Gas Refining
+Energy,Energy,Oil-Gas and Consumable Fuels,Oil and Gas Marketing
+Energy,Energy,Oil-Gas and Consumable Fuels,Oil and Gas Storage
+Energy,Energy,Oil-Gas and Consumable Fuels,Oil and Gas Transportation
+Energy,Energy,Oil-Gas and Consumable Fuels,Coal
+Energy,Energy,Oil-Gas and Consumable Fuels,Consumer Fuels
+Materials,Materials,Chemicals,Commodity Chemicals
+Materials,Materials,Chemicals,Diversified Chemicals
+Materials,Materials,Chemicals,Fertilizers
+Materials,Materials,Chemicals,Agricultural Chemicals
+Materials,Materials,Chemicals,Industrial Gases
+Materials,Materials,Chemicals,Specialty Chemicals
+Materials,Materials,Construction Materials,Construction Materials
+Materials,Materials,Containers and Packaging,Metal Containers
+Materials,Materials,Containers and Packaging,Glass Containers
+Materials,Materials,Containers and Packaging,Plastic Containers
+Materials,Materials,Containers and Packaging,Paper Packaging
+Materials,Materials,Containers and Packaging,Plastic Packaging
+Materials,Materials,Metals and Mining,Aluminum
+Materials,Materials,Metals and Mining,Diversified Metals and Mining
+Materials,Materials,Metals and Mining,Copper
+Materials,Materials,Metals and Mining,Gold
+Materials,Materials,Metals and Mining,Precious Metals and Minerals
+Materials,Materials,Metals and Mining,Silver
+Materials,Materials,Metals and Mining,Steel
+Materials,Materials,Paper and Forest Products,Forest Products
+Materials,Materials,Paper and Forest Products,Paper Products
+Industrials,Capital Goods,Aerospace and Defense,Aerospace
+Industrials,Capital Goods,Aerospace and Defense,Defense
+Industrials,Capital Goods,Building Products,Building Products
+Industrials,Capital Goods,Construction and Engineering,Construction and Engineering
+Industrials,Capital Goods,Electrical Equipment,Electrical Components and Equipment
+Industrials,Capital Goods,Electrical Equipment,Heavy Electrical Equipment
+Industrials,Capital Goods,Industrial Conglomerates,Industrial Conglomerates
+Industrials,Capital Goods,Machinery,Contruction Machinery
+Industrials,Capital Goods,Machinery,Heavy Transportation Equipment
+Industrials,Capital Goods,Machinery,Agricultural Machinery
+Industrials,Capital Goods,Machinery,Farm Machinery
+Industrials,Capital Goods,Machinery,Industrial Machinery
+Industrials,Capital Goods,Machinery,Industrial Machinery Supplies
+Industrials,Capital Goods,Machinery,Industrial Machinery Components
+Industrials,Capital Goods,Trading Companies and Distributors,Trading Companies and Distributors
+Industrials,Commercial and Professional Services,Commercial Services and Supplies,Commercial Printing
+Industrials,Commercial and Professional Services,Commercial Services and Supplies,Environmental Services
+Industrials,Commercial and Professional Services,Commercial Services and Supplies,Facilities Services
+Industrials,Commercial and Professional Services,Commercial Services and Supplies,Office Services
+Industrials,Commercial and Professional Services,Commercial Services and Supplies,Office Supplies
+Industrials,Commercial and Professional Services,Commercial Services and Supplies,Office Services and Supplies
+Industrials,Commercial and Professional Services,Commercial Services and Supplies,Diversified Support Services
+Industrials,Commercial and Professional Services,Commercial Services and Supplies,Security Services
+Industrials,Commercial and Professional Services,Commercial Services and Supplies,Alarm Services
+Industrials,Commercial and Professional Services,Commercial Services and Supplies,Security and Alarm Services
+Industrials,Commercial and Professional Services,Professional Services,Human Resources and Employment Services
+Industrials,Commercial and Professional Services,Professional Services,Research and Consulting Services
+Industrials,Commercial and Professional Services,Professional Services,Data Processing Services
+Industrials,Commercial and Professional Services,Professional Services,Outsourced Services
+Industrials,Transportation,Air Freight and Logistics,Air Freight and Logistics
+Industrials,Transportation,Passenger Airlines,Passenger Airlines
+Industrials,Transportation,Marine Transportation,Marine Transportation
+Industrials,Transportation,Ground Transportation,Rail
+Industrials,Transportation,Ground Transportation,Cargo Ground
+Industrials,Transportation,Ground Transportation,Passenger Ground
+Industrials,Transportation,Transportation Infrastructure,Airport Services
+Industrials,Transportation,Transportation Infrastructure,Highways and Railtracks
+Industrials,Transportation,Transportation Infrastructure,Marine Ports and Services
+Consumer Discretionary,Automobiles and Components,Automobile Components,Automotive Parts and Equipment
+Consumer Discretionary,Automobiles and Components,Automobile Components,Tires and Rubber
+Consumer Discretionary,Automobiles and Components,Automobiles,Automobile Manufacturing
+Consumer Discretionary,Automobiles and Components,Automobiles,Motorcycle Manufacturing
+Consumer Discretionary,Consumer Durables and Apparel,Household Durables,Consumer Electronics
+Consumer Discretionary,Consumer Durables and Apparel,Household Durables,Home Furnishing
+Consumer Discretionary,Consumer Durables and Apparel,Household Durables,Homebuilding
+Consumer Discretionary,Consumer Durables and Apparel,Household Durables,Household Appliances
+Consumer Discretionary,Consumer Durables and Apparel,Household Durables,Housewares and Specialities
+Consumer Discretionary,Consumer Durables and Apparel,Leisure Products,Leisure Products
+Consumer Discretionary,Consumer Durables and Apparel,Textiles-Apparel and Luxury Goods,Apparel
+Consumer Discretionary,Consumer Durables and Apparel,Textiles-Apparel and Luxury Goods,Accessories
+Consumer Discretionary,Consumer Durables and Apparel,Textiles-Apparel and Luxury Goods,Luxury Goods
+Consumer Discretionary,Consumer Durables and Apparel,Textiles-Apparel and Luxury Goods,Footwear
+Consumer Discretionary,Consumer Durables and Apparel,Textiles-Apparel and Luxury Goods,Textiles
+Consumer Discretionary,Consumer Services,Hotels-Restaurants-Leisure,Casinos and Gaming
+Consumer Discretionary,Consumer Services,Hotels-Restaurants-Leisure,Hotels and Resorts
+Consumer Discretionary,Consumer Services,Hotels-Restaurants-Leisure,Cruise Lines
+Consumer Discretionary,Consumer Services,Hotels-Restaurants-Leisure,Leisure Facilities
+Consumer Discretionary,Consumer Services,Hotels-Restaurants-Leisure,Restaurants
+Consumer Discretionary,Consumer Services,Diversified Consumer Services,Education Services
+Consumer Discretionary,Consumer Services,Diversified Consumer Services,Specialized Consumer Services
+Consumer Discretionary,Consumer Discretionary Distribution and Retail,Distributors,Distribution
+Consumer Discretionary,Consumer Discretionary Distribution and Retail,Broadline Retail,Broadline Retail
+Consumer Discretionary,Consumer Discretionary Distribution and Retail,Specialty Retail,Apparel Retail
+Consumer Discretionary,Consumer Discretionary Distribution and Retail,Specialty Retail,Computer and Electronics Retail
+Consumer Discretionary,Consumer Discretionary Distribution and Retail,Specialty Retail,Home Improvement Retail
+Consumer Discretionary,Consumer Discretionary Distribution and Retail,Specialty Retail,Automotive Retail
+Consumer Discretionary,Consumer Discretionary Distribution and Retail,Specialty Retail,Homefurnishing Retail
+Consumer Discretionary,Consumer Discretionary Distribution and Retail,Specialty Retail,Other Specialty Retail
+Consumer Staples,Consumer Staples Distribution and Retail,Consumer Staples Distribution and Retail,Drug Retail
+Consumer Staples,Consumer Staples Distribution and Retail,Consumer Staples Distribution and Retail,Food Distribution
+Consumer Staples,Consumer Staples Distribution and Retail,Consumer Staples Distribution and Retail,Food Retail
+Consumer Staples,Consumer Staples Distribution and Retail,Consumer Staples Distribution and Retail,Consumer Staples Merchandise Retail
+Consumer Staples,Food-Beverage-Tobacco,Beverages,Brewery
+Consumer Staples,Food-Beverage-Tobacco,Beverages,Distillers and Vintners
+Consumer Staples,Food-Beverage-Tobacco,Beverages,Soft Drinks and Non-alchoholic Beverages
+Consumer Staples,Food-Beverage-Tobacco,Food Products,Agricultural Products and Services
+Consumer Staples,Food-Beverage-Tobacco,Food Products,Packaged Foods and Meals
+Consumer Staples,Food-Beverage-Tobacco,Tobacco,Tobacco
+Consumer Staples,Personal Care Products,Household Products,Household Products
+Consumer Staples,Personal Care Products,Personal Care Products,Personal Care Products
+Health Care,Health Care Equipment and Services,Health Care Equipment and Supplies,Health Care Equipment
+Health Care,Health Care Equipment and Services,Health Care Equipment and Supplies,Health Care Supplies
+Health Care,Health Care Equipment and Services,Health Care Providers and Services,Health Care Distributors
+Health Care,Health Care Equipment and Services,Health Care Providers and Services,Health Care Services
+Health Care,Health Care Equipment and Services,Health Care Providers and Services,Health Care Facilities
+Health Care,Health Care Equipment and Services,Health Care Providers and Services,Managed Health Care
+Health Care,Health Care Equipment and Services,Health Care Technology,Health Care Technology
+Health Care,Pharmaceuticals-Biotechnology and Life Sciences,Biotechnology,Biotechnology
+Health Care,Pharmaceuticals-Biotechnology and Life Sciences,Pharmaceuticals,Pharmaceuticals
+Health Care,Pharmaceuticals-Biotechnology and Life Sciences,Life Sciences Tools and Services,Life Sciences Tools and Services
+Financials,Banks,Banks,Diversified Banks
+Financials,Banks,Banks,Regional Banks
+Financials,Financial Services,Financial Services,Diversified Financial Services
+Financials,Financial Services,Financial Services,Multi-Sector Holdings
+Financials,Financial Services,Financial Services,Specialized Finance
+Financials,Financial Services,Financial Services,Commercial and Residential Mortgage Finance
+Financials,Financial Services,Financial Services,Transaction and Payment Processing Services
+Financials,Financial Services,Consumer Finance,Consumer Finance
+Financials,Financial Services,Capital Markets,Asset Management and Custody Banks
+Financials,Financial Services,Capital Markets,Investment Banking and Brokerage
+Financials,Financial Services,Capital Markets,Diversified Capital Markets
+Financials,Financial Services,Capital Markets,Financial Exchanges and Data
+Financials,Financial Services,Mortgage Real Estate Investment Trusts,Mortgage REITs
+Financials,Insurance,Insurance,Insurance Brokers
+Financials,Insurance,Insurance,Life and Health Insurance
+Financials,Insurance,Insurance,Multi-line Insurance
+Financials,Insurance,Insurance,Property and Casualty Insurance
+Financials,Insurance,Insurance,Reinsurance
+Information Technology,Software and Services,IT Services,IT Consulting and Other Services
+Information Technology,Software and Services,IT Services,Internet Services and Infrastructure
+Information Technology,Software and Services,Software,Application Software
+Information Technology,Software and Services,Software,Systems Software
+Information Technology,Technology Hardware and Equipment,Communications Equipment,Communications Equipment
+Information Technology,Technology Hardware and Equipment,Technology Hardware-Storage and Peripherals,Technology Hardware-Storage-Peripherals
+Information Technology,Technology Hardware and Equipment,Electronic Equipment-Instruments and Components,Electronic Equipment and Instruments
+Information Technology,Technology Hardware and Equipment,Electronic Equipment-Instruments and Components,Electronic Components
+Information Technology,Technology Hardware and Equipment,Electronic Equipment-Instruments and Components,Electronic Manufacturing Services
+Information Technology,Technology Hardware and Equipment,Electronic Equipment-Instruments and Components,Technology Distributors
+Information Technology,Semiconductors and Semiconductor Equipment,Semiconductors and Semiconductor Equipment,Semiconductor Materials and Equipment
+Information Technology,Semiconductors and Semiconductor Equipment,Semiconductors and Semiconductor Equipment,Semiconductors
+Communication Services,Telecommunication Services,Diversified Telecommunication Services,Alternative Carriers
+Communication Services,Telecommunication Services,Diversified Telecommunication Services,Integrated Telecommunication Services
+Communication Services,Telecommunication Services,Wireless Telecommunication Services,Wireless Telecommunication Services
+Communication Services,Media and Entertainment,Media,Advertising
+Communication Services,Media and Entertainment,Media,Broadcasting
+Communication Services,Media and Entertainment,Media,Cable and Satellite
+Communication Services,Media and Entertainment,Media,Publishing
+Communication Services,Media and Entertainment,Entertainment,Movies and Entertainment
+Communication Services,Media and Entertainment,Entertainment,Interactive Home Entertainment
+Communication Services,Media and Entertainment,Interactive Media and Services,Interactive Media and Services
+Utilities,Utilities,Electric Utilities,Electric Utilities
+Utilities,Utilities,Gas Utilities,Gas Utilities
+Utilities,Utilities,Multi-Utilities,Multi-Utilities
+Utilities,Utilities,Water Utilities,Water Utilities
+Utilities,Utilities,Idependent Power and Renewable Electricity Producers,Idependent Power and Renewable Electricity Producers
+Utilities,Utilities,Idependent Power and Renewable Electricity Producers,Renewable Electricity
+Real Estate,Equity Real Estate Investment Trusts (REITs),Diversified REITs,Diversified REITs
+Real Estate,Equity Real Estate Investment Trusts (REITs),Industrial REITs,Industrial REITs
+Real Estate,Equity Real Estate Investment Trusts (REITs),Hotal and Resort REITs,Hotal and Resort REITs
+Real Estate,Equity Real Estate Investment Trusts (REITs),Office REITs,Office REITs
+Real Estate,Equity Real Estate Investment Trusts (REITs),Health Care REITs,Health Care REITs
+Real Estate,Equity Real Estate Investment Trusts (REITs),Residential REITs,Multi-Family Residential REITs
+Real Estate,Equity Real Estate Investment Trusts (REITs),Residential REITs,Single-Family Residential REITs
+Real Estate,Equity Real Estate Investment Trusts (REITs),Retail REITs,Retail REITs
+Real Estate,Equity Real Estate Investment Trusts (REITs),Specialized REITs,Other Specialized REITs
+Real Estate,Equity Real Estate Investment Trusts (REITs),Specialized REITs,Self-Storage REITs
+Real Estate,Equity Real Estate Investment Trusts (REITs),Specialized REITs,Telecom Tower REITs
+Real Estate,Equity Real Estate Investment Trusts (REITs),Specialized REITs,Data Center REITs
+Real Estate,Real Estate Management and Development,Real Estate Management and Development,Diversified Real Estate Activities
+Real Estate,Real Estate Management and Development,Real Estate Management and Development,Real Estate Operating Companies
+Real Estate,Real Estate Management and Development,Real Estate Management and Development,Real Estate Development
+Real Estate,Real Estate Management and Development,Real Estate Management and Development,Real Estate Services

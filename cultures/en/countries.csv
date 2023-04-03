@@ -1,0 +1,251 @@
+Name,Code,Phone,Capital,Continent,PostalCode
+Angola,AO,244,Luanda,Africa,0
+Burkina Faso,BF,226,Ouagadougou,Africa,0
+Burundi,BI,257,Bujumbura,Africa,0
+Benin,BJ,229,Porto-Novo,Africa,0
+Botswana,BW,267,Gaborone,Africa,0
+Democratic Republic of the Congo,CD,243,Kinshasa,Africa,0
+Central African Republic,CF,236,Bangui,Africa,0
+Republic of the Congo,CG,242,Brazzaville,Africa,0
+Ivory Coast,CI,225,Yamoussoukro,Africa,0
+Cameroon,CM,237,Yaounde,Africa,0
+Cape Verde,CV,238,Praia,Africa,0
+Djibouti,DJ,253,Djibouti,Africa,0
+Algeria,DZ,213,Algiers,Africa,1
+Egypt,EG,20,Cairo,Africa,0
+Western Sahara,EH,212,Laayoune,Africa,0
+Eritrea,ER,291,Asmara,Africa,0
+Ethiopia,ET,251,Addis Ababa,Africa,0
+Gabon,GA,241,Libreville,Africa,0
+Ghana,GH,233,Accra,Africa,0
+Gambia,GM,220,Banjul,Africa,0
+Guinea,GN,224,Conakry,Africa,0
+Equatorial Guinea,GQ,240,Malabo,Africa,0
+Guinea-Bissau,GW,245,Bissau,Africa,0
+Kenya,KE,254,Nairobi,Africa,0
+Comoros,KM,269,Moroni,Africa,0
+Liberia,LR,231,Monrovia,Africa,0
+Lesotho,LS,266,Maseru,Africa,0
+Libya,LY,218,Tripoli,Africa,0
+Morocco,MA,212,Rabat,Africa,1
+Madagascar,MG,261,Antananarivo,Africa,0
+Mali,ML,223,Bamako,Africa,0
+Mauritania,MR,222,Nouakchott,Africa,0
+Mauritius,MU,230,Port Louis,Africa,0
+Malawi,MW,265,Lilongwe,Africa,1
+Mozambique,MZ,258,Maputo,Africa,0
+Namibia,NA,264,Windhoek,Africa,0
+Niger,NE,227,Niamey,Africa,0
+Nigeria,NG,234,Abuja,Africa,0
+Reunion,RE,262,Saint-Denis,Africa,1
+Rwanda,RW,250,Kigali,Africa,0
+Seychelles,SC,248,Victoria,Africa,0
+Sudan,SD,249,Khartoum,Africa,0
+Saint Helena,SH,290,Jamestown,Africa,0
+Sierra Leone,SL,232,Freetown,Africa,0
+Senegal,SN,221,Dakar,Africa,0
+Somalia,SO,252,Mogadishu,Africa,0
+South Sudan,SS,211,Juba,Africa,0
+Sao Tome and Principe,ST,239,Sao Tome,Africa,0
+Swaziland,SZ,268,Lobamba,Africa,0
+Chad,TD,235,N'Djamena,Africa,0
+Togo,TG,228,Lome,Africa,0
+Tunisia,TN,216,Tunis,Africa,0
+Tanzania,TZ,255,Dodoma,Africa,0
+Uganda,UG,256,Kampala,Africa,0
+Mayotte,YT,262,Mamoudzou,Africa,1
+South Africa,ZA,27,Pretoria,Africa,1
+Zambia,ZM,260,Lusaka,Africa,0
+Zimbabwe,ZW,263,Harare,Africa,0
+Antarctica,AQ,672,,Antarctica,0
+Bouvet Island,BV,47,,Antarctica,0
+South Georgia and the South Sandwich Islands,GS,500,King Edward Point,Antarctica,0
+Heard Island and McDonald Islands,HM,61,,Antarctica,0
+French Southern Territories,TF,262,Port-aux-Francais,Antarctica,0
+United Arab Emirates,AE,971,Abu Dhabi,Asia,0
+Afghanistan,AF,93,Kabul,Asia,0
+Armenia,AM,374,Yerevan,Asia,0
+Azerbaijan,AZ,994,Baku,Asia,1
+Bangladesh,BD,880,Dhaka,Asia,1
+Bahrain,BH,973,Manama,Asia,0
+Brunei,BN,673,Bandar Seri Begawan,Asia,0
+Bhutan,BT,975,Thimphu,Asia,0
+Cocos [Keeling] Islands,CC,61,West Island,Asia,0
+China,CN,86,Beijing,Asia,0
+Christmas Island,CX,61,Flying Fish Cove,Asia,0
+Georgia,GE,995,Tbilisi,Asia,0
+Hong Kong,HK,852,City of Victoria,Asia,0
+Indonesia,ID,62,Jakarta,Asia,0
+Israel,IL,972,Jerusalem,Asia,0
+India,IN,91,New Delhi,Asia,1
+British Indian Ocean Territory,IO,246,Diego Garcia,Asia,0
+Iraq,IQ,964,Baghdad,Asia,0
+Iran,IR,98,Tehran,Asia,0
+Jordan,JO,962,Amman,Asia,0
+Japan,JP,81,Tokyo,Asia,1
+Kyrgyzstan,KG,996,Bishkek,Asia,0
+Cambodia,KH,855,Phnom Penh,Asia,0
+North Korea,KP,850,Pyongyang,Asia,0
+South Korea,KR,82,Seoul,Asia,1
+Kuwait,KW,965,Kuwait City,Asia,0
+Kazakhstan,KZ,"76,77",Astana,Asia,0
+Laos,LA,856,Vientiane,Asia,0
+Lebanon,LB,961,Beirut,Asia,0
+Sri Lanka,LK,94,Colombo,Asia,1
+Myanmar [Burma],MM,95,Naypyidaw,Asia,0
+Mongolia,MN,976,Ulan Bator,Asia,0
+Macao,MO,853,,Asia,0
+Maldives,MV,960,Male,Asia,0
+Malaysia,MY,60,Kuala Lumpur,Asia,1
+Nepal,NP,977,Kathmandu,Asia,0
+Oman,OM,968,Muscat,Asia,0
+Philippines,PH,63,Manila,Asia,1
+Pakistan,PK,92,Islamabad,Asia,1
+Palestine,PS,970,Ramallah,Asia,0
+Qatar,QA,974,Doha,Asia,0
+Saudi Arabia,SA,966,Riyadh,Asia,0
+Singapore,SG,65,Singapore,Asia,1
+Syria,SY,963,Damascus,Asia,0
+Thailand,TH,66,Bangkok,Asia,1
+Tajikistan,TJ,992,Dushanbe,Asia,0
+Turkmenistan,TM,993,Ashgabat,Asia,0
+Turkey,TR,90,Ankara,Asia,1
+Taiwan,TW,886,Taipei,Asia,0
+Uzbekistan,UZ,998,Tashkent,Asia,0
+Vietnam,VN,84,Hanoi,Asia,0
+Yemen,YE,967,Sana'a,Asia,0
+Andorra,AD,376,Andorra la Vella,Europe,1
+Albania,AL,355,Tirana,Europe,0
+Austria,AT,43,Vienna,Europe,1
+Aland Islands,AX,358,Mariehamn,Europe,1
+Bosnia and Herzegovina,BA,387,Sarajevo,Europe,0
+Belgium,BE,32,Brussels,Europe,1
+Bulgaria,BG,359,Sofia,Europe,1
+Belarus,BY,375,Minsk,Europe,1
+Switzerland,CH,41,Bern,Europe,1
+Cyprus,CY,357,Nicosia,Europe,1
+Czech Republic,CZ,420,Prague,Europe,1
+Germany,DE,49,Berlin,Europe,1
+Denmark,DK,45,Copenhagen,Europe,1
+Estonia,EE,372,Tallinn,Europe,1
+Spain,ES,34,Madrid,Europe,1
+Finland,FI,358,Helsinki,Europe,1
+Faroe Islands,FO,298,Torshavn,Europe,1
+France,FR,33,Paris,Europe,1
+United Kingdom,GB,44,London,Europe,1
+Guernsey,GG,44,St. Peter Port,Europe,1
+Gibraltar,GI,350,Gibraltar,Europe,0
+Greece,GR,30,Athens,Europe,0
+Croatia,HR,385,Zagreb,Europe,1
+Hungary,HU,36,Budapest,Europe,1
+Ireland,IE,353,Dublin,Europe,1
+Isle of Man,IM,44,Douglas,Europe,1
+Iceland,IS,354,Reykjavik,Europe,1
+Italy,IT,39,Rome,Europe,1
+Jersey,JE,44,Saint Helier,Europe,1
+Liechtenstein,LI,423,Vaduz,Europe,1
+Lithuania,LT,370,Vilnius,Europe,1
+Luxembourg,LU,352,Luxembourg,Europe,1
+Latvia,LV,371,Riga,Europe,1
+Monaco,MC,377,Monaco,Europe,1
+Moldova,MD,373,Chisinau,Europe,1
+Montenegro,ME,382,Podgorica,Europe,0
+North Macedonia,MK,389,Skopje,Europe,1
+Malta,MT,356,Valletta,Europe,1
+Netherlands,NL,31,Amsterdam,Europe,1
+Norway,NO,47,Oslo,Europe,1
+Poland,PL,48,Warsaw,Europe,1
+Portugal,PT,351,Lisbon,Europe,1
+Romania,RO,40,Bucharest,Europe,1
+Serbia,RS,381,Belgrade,Europe,1
+Russia,RU,7,Moscow,Europe,1
+Sweden,SE,46,Stockholm,Europe,1
+Slovenia,SI,386,Ljubljana,Europe,1
+Svalbard and Jan Mayen,SJ,4779,Longyearbyen,Europe,1
+Slovakia,SK,421,Bratislava,Europe,1
+San Marino,SM,378,City of San Marino,Europe,1
+Ukraine,UA,380,Kyiv,Europe,1
+Vatican City,VA,"39,066,379",Vatican City,Europe,1
+Kosovo,XK,"377,381,383,386",Pristina,Europe,0
+Antigua and Barbuda,AG,1268,Saint John's,North America,0
+Anguilla,AI,1264,The Valley,North America,0
+Aruba,AW,297,Oranjestad,North America,0
+Barbados,BB,1246,Bridgetown,North America,0
+Saint Barthelemy,BL,590,Gustavia,North America,0
+Bermuda,BM,1441,Hamilton,North America,1
+Bonaire,BQ,5997,Kralendijk,North America,0
+Bahamas,BS,1242,Nassau,North America,0
+Belize,BZ,501,Belmopan,North America,0
+Canada,CA,1,Ottawa,North America,1
+Costa Rica,CR,506,San Jose,North America,1
+Cuba,CU,53,Havana,North America,0
+Curacao,CW,5999,Willemstad,North America,0
+Dominica,DM,1767,Roseau,North America,0
+Dominican Republic,DO,"180,918,291,849",Santo Domingo,North America,1
+Grenada,GD,1473,St. George's,North America,0
+Greenland,GL,299,Nuuk,North America,1
+Guadeloupe,GP,590,Basse-Terre,North America,1
+Guatemala,GT,502,Guatemala City,North America,1
+Honduras,HN,504,Tegucigalpa,North America,0
+Haiti,HT,509,Port-au-Prince,North America,1
+Jamaica,JM,1876,Kingston,North America,0
+Saint Kitts and Nevis,KN,1869,Basseterre,North America,0
+Cayman Islands,KY,1345,George Town,North America,0
+Saint Lucia,LC,1758,Castries,North America,0
+Saint Martin,MF,590,Marigot,North America,0
+Martinique,MQ,596,Fort-de-France,North America,1
+Montserrat,MS,1664,Plymouth,North America,0
+Mexico,MX,52,Mexico City,North America,1
+Nicaragua,NI,505,Managua,North America,0
+Panama,PA,507,Panama City,North America,0
+Saint Pierre and Miquelon,PM,508,Saint-Pierre,North America,1
+Puerto Rico,PR,"17,871,939",San Juan,North America,1
+El Salvador,SV,503,San Salvador,North America,0
+Sint Maarten,SX,1721,Philipsburg,North America,0
+Turks and Caicos Islands,TC,1649,Cockburn Town,North America,0
+Trinidad and Tobago,TT,1868,Port of Spain,North America,0
+United States,US,1,Washington D.C.,North America,1
+Saint Vincent and the Grenadines,VC,1784,Kingstown,North America,0
+British Virgin Islands,VG,1284,Road Town,North America,0
+U.S. Virgin Islands,VI,1340,Charlotte Amalie,North America,1
+American Samoa,AS,1684,Pago Pago,Oceania,1
+Australia,AU,61,Canberra,Oceania,1
+Cook Islands,CK,682,Avarua,Oceania,0
+Fiji,FJ,679,Suva,Oceania,0
+Micronesia,FM,691,Palikir,Oceania,1
+Guam,GU,1671,Hagatna,Oceania,1
+Kiribati,KI,686,South Tarawa,Oceania,0
+Marshall Islands,MH,692,Majuro,Oceania,1
+Northern Mariana Islands,MP,1670,Saipan,Oceania,1
+New Caledonia,NC,687,Noumea,Oceania,1
+Norfolk Island,NF,672,Kingston,Oceania,0
+Nauru,NR,674,Yaren,Oceania,0
+Niue,NU,683,Alofi,Oceania,0
+New Zealand,NZ,64,Wellington,Oceania,1
+French Polynesia,PF,689,Papeete,Oceania,0
+Papua New Guinea,PG,675,Port Moresby,Oceania,0
+Pitcairn Islands,PN,64,Adamstown,Oceania,0
+Palau,PW,680,Ngerulmud,Oceania,1
+Solomon Islands,SB,677,Honiara,Oceania,0
+Tokelau,TK,690,Fakaofo,Oceania,0
+East Timor,TL,670,Dili,Oceania,0
+Tonga,TO,676,Nuku'alofa,Oceania,0
+Tuvalu,TV,688,Funafuti,Oceania,0
+U.S. Minor Outlying Islands,UM,1,,Oceania,0
+Vanuatu,VU,678,Port Vila,Oceania,0
+Wallis and Futuna,WF,681,Mata-Utu,Oceania,1
+Samoa,WS,685,Apia,Oceania,0
+Argentina,AR,54,Buenos Aires,South America,1
+Bolivia,BO,591,Sucre,South America,0
+Brazil,BR,55,Brasilia,South America,1
+Chile,CL,56,Santiago,South America,1
+Colombia,CO,57,Bogota,South America,1
+Ecuador,EC,593,Quito,South America,0
+Falkland Islands,FK,500,Stanley,South America,0
+French Guiana,GF,594,Cayenne,South America,1
+Guyana,GY,592,Georgetown,South America,0
+Peru,PE,51,Lima,South America,1
+Paraguay,PY,595,Asuncion,South America,0
+Suriname,SR,597,Paramaribo,South America,0
+Uruguay,UY,598,Montevideo,South America,1
+Venezuela,VE,58,Caracas,South America,0

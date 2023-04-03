@@ -1,0 +1,236 @@
+HT	HT3110	Port-de-Paix	Nord-Ouest	03					19.9398	-72.8304	4
+HT	HT3111	La Pointe	Nord-Ouest	03					19.9452	-72.7751	4
+HT	HT3120	La Tortue	Nord-Ouest	03					20.0251	-72.7778	1
+HT	HT3121	Pointe des Oiseaux	Nord-Ouest	03					20.0157	-72.764	4
+HT	HT3122	Mare Rouge	Nord-Ouest	03					20.0344	-72.7916	4
+HT	HT3130	Bassin-Bleu	Nord-Ouest	03					19.9637	-72.7993	1
+HT	HT3140	Chansolme	Nord-Ouest	03					19.8832	-72.8355	4
+HT	HT3210	Saint-Louis-du-Nord	Nord-Ouest	03					19.9038	-72.6868	1
+HT	HT3211	Bonneau	Nord-Ouest	03					19.9076	-72.6569	4
+HT	HT3212	Guichard	Nord-Ouest	03					19.9	-72.7167	4
+HT	HT3220	Anse-à-Foleur	Nord-Ouest	03					19.8926	-72.6201	4
+HT	HT3310	Môle-Saint-Nicolas	Nord-Ouest	03					19.7361	-73.2461	1
+HT	HT3320	Bombardopolis	Nord-Ouest	03					19.6914	-73.3377	4
+HT	HT3330	Baie-de-Henne	Nord-Ouest	03					19.6631	-73.2094	4
+HT	HT3340	Jean-Rabel	Nord-Ouest	03					19.8538	-73.1913	4
+HT	HT4110	Gonaïves	Artibonite	06					19.4475	-72.6893	4
+HT	HT4111	Petite Rivière de l’Artibonite	Artibonite	06					19.124	-72.4817	4
+HT	HT4120	Ennery	Artibonite	06					19.4834	-72.4854	4
+HT	HT4130	L'Estère	Artibonite	06					19.3031	-72.6097	4
+HT	HT4210	Gros Morne	Artibonite	06					19.6708	-72.6781	4
+HT	HT4220	Terre-Neuve	Artibonite	06					19.5995	-72.7809	4
+HT	HT4230	Anse-Rouge	Artibonite	06					19.6345	-72.9179	1
+HT	HT4231	Sources Chaudes	Artibonite	06					19.6345	-72.9179	4
+HT	HT4310	Saint-Marc	Artibonite	06					19.1082	-72.6938	4
+HT	HT4311	Montrouis	Artibonite	06					19.0977	-72.7082	4
+HT	HT4320	Verrettes	Artibonite	06					19.0505	-72.4658	4
+HT	HT4321	Désarmes	Artibonite	06					18.9935	-72.3906	4
+HT	HT4322	Deschapelles	Artibonite	06					19.0736	-72.4918	4
+HT	HT4323	Liancourt	Artibonite	06					19.1247	-72.5371	4
+HT	HT4410	Dessalines (Marchand-Dessalines)	Artibonite	06					19.1731	-72.5656	1
+HT	HT4420	Petite-Rivière-de-l’Artibonite	Artibonite	06					19.124	-72.4817	4
+HT	HT4421	Savane à Roches	Artibonite	06					19.011	-72.367	4
+HT	HT4430	Grande-Saline	Artibonite	06					19.2651	-72.769	4
+HT	HT4440	Desdunes	Artibonite	06					19.2924	-72.6448	4
+HT	HT4510	Marmelade	Artibonite	06					19.5174	-72.3613	4
+HT	HT4520	Saint-Michel-de-l’Attalaye	Artibonite	06					19.5174	-72.3613	1
+HT	HT4530	Moreau Paye	Artibonite	06					19.5174	-72.3613	1
+HT	HT5110	Hinche	Centre	07					19.15	-72.0167	4
+HT	HT5111	Los Palis	Centre	07					19.1417	-71.9402	4
+HT	HT5120	Maïssade	Centre	07					19.1761	-72.1396	4
+HT	HT5121	Louverture	Centre	07					19.4263	-72.3139	4
+HT	HT5130	Thomonde	Centre	07					19.0173	-71.9623	4
+HT	HT5140	Cerca-Carvajal	Centre	07					19.2696	-71.9386	4
+HT	HT5210	Mirebalais	Centre	07					18.8345	-72.1048	4
+HT	HT5211	Dufailly	Centre	07					18.5128	-74.2844	4
+HT	HT5220	Saut-d’Eau	Centre	07					18.7502	-72.8095	1
+HT	HT5230	Boucan-Carré	Centre	07					18.9033	-72.0392	1
+HT	HT5231	Péligre	Centre	07					18.9033	-72.0392	4
+HT	HT5310	Lascahobas	Centre	07					18.8305	-71.9356	4
+HT	HT5320	Belladère	Centre	07					18.8679	-71.7622	4
+HT	HT5321	Baptiste	Centre	07					18.7976	-71.7831	4
+HT	HT5330	Savanette	Centre	07					18.7443	-71.8219	4
+HT	HT5410	Cerca-la-Source	Centre	07					19.1887	-71.7308	1
+HT	HT5411	Saltadère	Centre	07					19.1342	-71.7327	4
+HT	HT5412	Lamielle	Centre	07					19.2432	-71.7288	4
+HT	HT5420	Thomassique	Centre	07					19.0821	-71.8385	4
+HT	HT1110	Cap-Haïtien (la ville)	Nord	09					19.7394	-72.1825	1
+HT	HT1111	Bande-du-Nord (quartier du Cap)	Nord	09					19.7394	-72.1825	1
+HT	HT1112	Labadie (quartier du Cap)	Nord	09					19.7394	-72.1825	1
+HT	HT1113	Haut-du-Cap (quartier du Cap)	Nord	09					19.7394	-72.1825	1
+HT	HT1114	Petite-Anse	Nord	09					19.7394	-72.1825	4
+HT	HT1120	Quartier-Morin	Nord	09					19.697	-72.1571	4
+HT	HT1130	Limonade	Nord	09					19.6701	-72.1243	4
+HT	HT1210	Acul-du-Nord	Nord	09					19.6052	-72.3522	1
+HT	HT1211	La Soufrière	Nord	09					19.6052	-72.3522	4
+HT	HT1220	Plaine-du-Nord	Nord	09					19.612	-72.2607	1
+HT	HT1221	Robillard	Nord	09					19.612	-72.2607	4
+HT	HT1230	Milot	Nord	09					19.6084	-72.2132	4
+HT	HT1231	Carrefour-des-Pères	Nord	09					19.685	-72.2047	4
+HT	HT1310	Grande-Rivière-du-Nord	Nord	09					19.631	-72.3013	1
+HT	HT1320	Barbon	Nord	09					19.631	-72.3013	1
+HT	HT1410	Saint-Raphaël	Nord	09					19.4388	-72.1991	4
+HT	HT1420	Dondon	Nord	09					19.5273	-72.2434	4
+HT	HT1430	Ranquitte	Nord	09					19.4133	-72.0808	4
+HT	HT1440	Pignon	Nord	09					19.3359	-72.1166	4
+HT	HT1450	La Victoire	Nord	09					19.3375	-72.0206	4
+HT	HT1510	Borgne	Nord	09					19.8451	-72.5235	4
+HT	HT1511	Petit-Bourg-de-Borgne	Nord	09					19.8451	-72.5235	1
+HT	HT1517	Côte-de-Fer et Fond	Nord	09					19.8451	-72.5235	1
+HT	HT1520	Port-Margot	Nord	09					19.7518	-72.4301	4
+HT	HT1521	Bayeux	Nord	09					19.808	-72.4321	4
+HT	HT1522	Margot	Nord	09					19.8036	-72.5428	4
+HT	HT1610	Limbé	Nord	09					19.706	-72.4034	4
+HT	HT1611	Camp-Coq	Nord	09					19.6333	-72.4333	4
+HT	HT1620	Bas-Limbé	Nord	09					19.7684	-72.3847	4
+HT	HT1710	Plaisance	Nord	09					19.598	-72.4699	4
+HT	HT1720	Pilate	Nord	09					19.6675	-72.5523	4
+HT	HT1723	Ravine-Trompette	Nord	09					19.6675	-72.5523	1
+HT	HT2110	Fort-Liberté	Nord-Est	10					19.5868	-71.8483	1
+HT	HT2111	Dérac	Nord-Est	10					19.6548	-71.8145	4
+HT	HT2112	Acul Samedi	Nord-Est	10					19.5188	-71.8821	4
+HT	HT2120	Ferrier	Nord-Est	10					19.6155	-71.7779	4
+HT	HT2121	Maribahoux	Nord-Est	10					19.6155	-71.7779	1
+HT	HT2130	Perches	Nord-Est	10					19.522	-71.9232	4
+HT	HT2210	Ouanaminthe	Nord-Est	10					19.5493	-71.7248	4
+HT	HT2220	Capotille	Nord-Est	10					19.448	-71.6929	4
+HT	HT2230	Mont-Organisé	Nord-Est	10					19.4082	-71.7813	4
+HT	HT2310	Trou-duNord	Nord-Est	10					19.6231	-71.9885	1
+HT	HT2320	Sainte-Suzanne	Nord-Est	10					19.5834	-72.0889	4
+HT	HT2321	Dupity	Nord-Est	10					19.4833	-72.05	4
+HT	HT2330	Terrier-Rouge	Nord-Est	10					19.6363	-71.9548	4
+HT	HT2331	Phaëton	Nord-Est	10					19.6753	-71.8969	4
+HT	HT2332	Paulette	Nord-Est	10					19.6676	-71.9232	4
+HT	HT2340	Caracol	Nord-Est	10					19.6927	-72.0173	4
+HT	HT2410	Vallières	Nord-Est	10					19.4355	-71.9209	4
+HT	HT2411	Grosse-Roche	Nord-Est	10					19.4355	-71.9209	1
+HT	HT2420	Carice	Nord-Est	10					19.3779	-71.8303	4
+HT	HT2430	Mombin-Crochu	Nord-Est	10					19.3688	-71.9824	4
+HT	HT2431	Bois-Laurence	Nord-Est	10					19.3281	-71.8625	4
+HT	HT3408	Puits Blain 38	Ouest	11					19.8843	-72.8844	1
+HT	HT6110	Port-au-Prince	Ouest	11					18.5435	-72.3388	4
+HT	HT6111	Bel-Air et Bourdon	Ouest	11					18.5333	-72.3374	1
+HT	HT6113	Turgeau	Ouest	11					18.5347	-72.3317	4
+HT	HT6114	Bois Verna	Ouest	11					18.5364	-72.33	4
+HT	HT6115	Lalue	Ouest	11					18.5333	-72.3374	1
+HT	HT6116	Carrefour Feuilles	Ouest	11					18.5231	-72.3378	4
+HT	HT6117	Morne de l’Hôpital	Ouest	11					18.5333	-72.3374	1
+HT	HT6118	Bolosse	Ouest	11					18.5286	-72.3489	4
+HT	HT6119	Martissant et Fontamara	Ouest	11					18.5333	-72.3374	1
+HT	HT6120	Delmas	Ouest	11					18.5201	-72.4911	1
+HT	HT6121	Varreux	Ouest	11					18.3833	-72.85	4
+HT	HT6122	Cité soleil	Ouest	11					18.5803	-72.3381	4
+HT	HT6123	Maïs Gâté, Tabarre zone 1	Ouest	11					18.5201	-72.4911	1
+HT	HT6123	Tabarre (zone1)	Ouest	11					18.5201	-72.4911	1
+HT	HT6124	Petite Place Cazeau, Tabarre zone 2	Ouest	11					18.5201	-72.4911	1
+HT	HT6124	Tabarre (zone2)	Ouest	11					18.5201	-72.4911	1
+HT	HT6125	Croix-des-Missions	Ouest	11					18.5968	-72.2852	4
+HT	HT6130	Carrefour	Ouest	11					18.5411	-72.3992	4
+HT	HT6131	Bizoton	Ouest	11					18.5298	-72.3777	4
+HT	HT6132	Diquini, Thor	Ouest	11					18.5406	-72.4171	1
+HT	HT6133	Côte-Page, Mahotière	Ouest	11					18.5406	-72.4171	1
+HT	HT6134	Arcachon	Ouest	11					18.5425	-72.3986	4
+HT	HT6134	Warney	Ouest	11					18.5425	-72.3986	3
+HT	HT6135	Brochette	Ouest	11					18.5358	-72.4175	4
+HT	HT6136	Mariani	Ouest	11					18.5414	-72.4278	4
+HT	HT6136	Lamentin	Ouest	11					18.5521	-72.4089	4
+HT	HT6136	Merger	Ouest	11					18.5415	-72.4902	4
+HT	HT6140	Pétion-Ville	Ouest	11					18.5125	-72.2853	4
+HT	HT6141	Frères, pergnier,peguy-ville	Ouest	11					18.4966	-72.2896	1
+HT	HT6142	Pèlerin	Ouest	11					18.5042	-72.2958	4
+HT	HT6143	Tête de l’Eau	Ouest	11					18.5	-72.2833	4
+HT	HT6144	Laboule	Ouest	11					18.4966	-72.2896	1
+HT	HT6145	Thomassin	Ouest	11					18.4966	-72.2896	1
+HT	HT6146	Fermathe	Ouest	11					18.4696	-72.294	4
+HT	HT6147	Pergnier	Ouest	11					18.4966	-72.2896	1
+HT	HT6150	Kenscoff	Ouest	11					18.4477	-72.284	4
+HT	HT6160	Gressier	Ouest	11					18.5409	-72.5268	4
+HT	HT6210	Léogâne	Ouest	11					18.5111	-72.6334	4
+HT	HT6211	Trouin	Ouest	11					18.3651	-72.6557	4
+HT	HT6212	Orangers	Ouest	11					18.4438	-72.5467	4
+HT	HT6220	PetitGoâve	Ouest	11					18.4194	-72.9334	1
+HT	HT6221	Vialet	Ouest	11					18.4194	-72.9334	4
+HT	HT6230	Grand Goâve	Ouest	11					18.4259	-72.7699	4
+HT	HT6310	Croix-des-Bouquets	Ouest	11					18.5768	-72.2262	4
+HT	HT6311	Santo	Ouest	11					18.6025	-72.264	4
+HT	HT6312	Bon Repos	Ouest	11					18.6278	-72.2693	4
+HT	HT6320	Thomazeau	Ouest	11					18.653	-72.0939	4
+HT	HT6330	Cornillon	Ouest	11					18.6755	-71.9527	4
+HT	HT6330	Ganthier	Ouest	11					18.5316	-72.0633	4
+HT	HT6331	Fonds Parisien et Galette Bonbon	Ouest	11					18.6035	-72.008	1
+HT	HT6340	Fonds Verettes	Ouest	11					18.3957	-71.8563	4
+HT	HT6410	Arcahaie	Ouest	11					18.7702	-72.5123	4
+HT	HT6411	Saintard	Ouest	11					18.8253	-72.5496	4
+HT	HT6420	Cabaret	Ouest	11					18.7358	-72.4193	4
+HT	HT6421	Casale	Ouest	11					18.7999	-72.3828	4
+HT	HT6510	Anse à Galets (La Gonâve)	Ouest	11					18.8345	-72.8664	4
+HT	HT6520	Pointe à Raquette (La Gonâve)	Ouest	11					18.8345	-72.8664	1
+HT	HT8110	Les Cayes	Sud	12					18.1933	-73.746	4
+HT	HT8120	Torbeck	Sud	12					18.1634	-73.8095	4
+HT	HT8121	puits Blain	Sud	12					18.1978	-73.847	1
+HT	HT8122	Ducis	Sud	12					18.2323	-73.8846	4
+HT	HT8130	Chantal	Sud	12					18.2017	-73.8896	4
+HT	HT8140	Camp Perrin	Sud	12					18.3265	-73.8673	4
+HT	HT8150	Maniche	Sud	12					18.345	-73.7772	4
+HT	HT8160	L’Ïle à Vaches	Sud	12					18.2437	-73.829	1
+HT	HT8210	Port-Salut	Sud	12					18.077	-73.9173	4
+HT	HT8220	Saint Jean du Sud	Sud	12					18.0761	-73.8125	4
+HT	HT8230	Arniquet	Sud	12					18.1167	-73.9167	4
+HT	HT8310	Aquin	Sud	12					18.2797	-73.3943	4
+HT	HT8311	Fond-Des-Blancs	Sud	12					18.2982	-73.3222	1
+HT	HT8312	Vieux Bourg d’Aquin	Sud	12					18.2982	-73.3222	1
+HT	HT8313	La Colline	Sud	12					18.3167	-73.25	4
+HT	HT8320	Saint Louis du Sud	Sud	12					18.2624	-73.546	4
+HT	HT8330	Cavaillon	Sud	12					18.2999	-73.6546	4
+HT	HT8410	Côteaux	Sud	12					18.206	-74.0401	4
+HT	HT8411	Damassin	Sud	12					18.2333	-74.0667	4
+HT	HT8412	La Côte	Sud	12					18.2197	-74.0534	1
+HT	HT8420	Port à Piment	Sud	12					18.2496	-74.0971	4
+HT	HT8430	Roche à Bateau	Sud	12					18.1818	-74.0034	4
+HT	HT8510	Chardonnières	Sud	12					18.2748	-74.1661	4
+HT	HT8511	Randel	Sud	12					18.309	-74.1009	4
+HT	HT8520	Les Anglais	Sud	12					18.3054	-74.2197	4
+HT	HT8530	Tiburon	Sud	12					18.3259	-74.396	4
+HT	HT8531	Cahonane	Sud	12					18.3259	-74.396	1
+HT	HT9110	Jacmel	Sud-Est	13					18.2343	-72.5354	4
+HT	HT9111	Marbial	Sud-Est	13					18.3327	-72.4661	4
+HT	HT9120	Marigot	Sud-Est	13					18.2317	-72.3229	4
+HT	HT9121	Seguin	Sud-Est	13					18.2833	-72.3667	4
+HT	HT9130	Cayes Jacmel	Sud-Est	13					18.2311	-72.3954	4
+HT	HT9140	La Vallée de Jacmel	Sud-Est	13					18.2694	-72.667	4
+HT	HT9210	Bainet	Sud-Est	13					18.184	-72.7523	4
+HT	HT9220	Côtes de Fer	Sud-Est	13					18.1887	-73.0029	4
+HT	HT9310	Belle-Anse	Sud-Est	13					18.2377	-72.0664	4
+HT	HT9311	Mapou	Sud-Est	13					18.3	-72.05	4
+HT	HT9320	Grand Gosier	Sud-Est	13					18.1854	-71.9182	4
+HT	HT9321	Bodarie	Sud-Est	13					18.2569	-71.8988	4
+HT	HT9330	Thiotte	Sud-Est	13					18.2438	-71.8416	4
+HT	HT9340	Anse à Pitre	Sud-Est	13					18.05	-71.75	4
+HT	HT9341	Banane	Sud-Est	13					18.1428	-71.7612	4
+HT	HT7110	Jérémie	Grande Anse	14					18.65	-74.1167	4
+HT	HT7111	Léon	Grande Anse	14					18.6162	-74.1674	1
+HT	HT7112	Marfranc	Grande Anse	14					18.5825	-74.2182	4
+HT	HT7120	Abricots	Grande Anse	14					18.649	-74.3079	4
+HT	HT7130	Bonbon	Grande Anse	14					18.6655	-74.2451	4
+HT	HT7140	Moron	Grande Anse	14					18.5604	-74.2578	4
+HT	HT7141	Sources Chaudes	Grande Anse	14					18.4839	-74.2867	4
+HT	HT7150	Chambellan	Grande Anse	14					18.5504	-74.3132	4
+HT	HT7210	Anse-d’Hainault	Grande Anse	14					18.4882	-74.4216	1
+HT	HT7220	Dame-Marie	Grande Anse	14					18.5611	-74.4217	4
+HT	HT7221	Lesson	Grande Anse	14					18.6167	-74.3667	4
+HT	HT7230	Les Irois	Grande Anse	14					18.4049	-74.4528	4
+HT	HT7231	Carcasse	Grande Anse	14					18.3703	-74.4453	4
+HT	HT7310	Corail	Grande Anse	14					18.5677	-73.8894	4
+HT	HT7320	Roseaux	Grande Anse	14					18.6006	-74.0195	4
+HT	HT7330	Beaumont	Grande Anse	14					18.4787	-73.9564	4
+HT	HT7340	Pestel	Grande Anse	14					18.5413	-73.7952	4
+HT	HT7410	Miragoâne	Nippes	15					18.446	-73.0896	4
+HT	HT7411	Saint-Michel-du-Sud	Nippes	15					18.3732	-73.1167	4
+HT	HT7412	Paillant	Nippes	15					18.4176	-73.1457	4
+HT	HT7413	Fonds-des-Nègres	Nippes	15					18.4123	-73.1173	1
+HT	HT7420	Petite-Rivière-de-Nippes	Nippes	15					18.4761	-73.2349	4
+HT	HT7510	Anse-à-Veau	Nippes	15					18.4863	-73.5382	1
+HT	HT7520	Baradères	Nippes	15					18.4826	-73.6388	4
+HT	HT7521	Grand-Boucan	Nippes	15					18.5535	-73.5915	4
+HT	HT7530	Petit-Trou-de-Nippes	Nippes	15					18.5254	-73.5081	4
+HT	HT7540	L’Asile	Nippes	15					18.384	-73.4144	4

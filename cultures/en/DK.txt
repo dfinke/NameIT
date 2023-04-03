@@ -1,0 +1,1159 @@
+DK	1050	København K	Capital Region	17	Copenhagen	101			55.6806	12.5857	
+DK	1051	København K	Capital Region	17	Copenhagen	101			55.68	12.5906	
+DK	1052	København K	Capital Region	17	Copenhagen	101			55.6789	12.5901	
+DK	1053	København K	Capital Region	17	Copenhagen	101			55.678	12.5907	
+DK	1054	København K	Capital Region	17	Copenhagen	101			55.678	12.5888	
+DK	1055	København K	Capital Region	17	Copenhagen	101			55.6781	12.5877	
+DK	1056	København K	Capital Region	17	Copenhagen	101			55.6794	12.5883	
+DK	1057	København K	Capital Region	17	Copenhagen	101			55.6784	12.5893	
+DK	1058	København K	Capital Region	17	Copenhagen	101			55.6773	12.59	
+DK	1059	København K	Capital Region	17	Copenhagen	101			55.6767	12.5869	
+DK	1060	København K	Capital Region	17	Copenhagen	101			55.6778	12.5851	
+DK	1061	København K	Capital Region	17	Copenhagen	101			55.6775	12.5813	
+DK	1062	København K	Capital Region	17	Copenhagen	101			55.6775	12.582	
+DK	1063	København K	Capital Region	17	Copenhagen	101			55.678	12.5838	
+DK	1064	København K	Capital Region	17	Copenhagen	101			55.6784	12.5841	
+DK	1065	København K	Capital Region	17	Copenhagen	101			55.678	12.5812	
+DK	1066	København K	Capital Region	17	Copenhagen	101			55.6777	12.5822	
+DK	1067	København K	Capital Region	17	Copenhagen	101			55.6787	12.5817	
+DK	1068	København K	Capital Region	17	Copenhagen	101			55.6779	12.5828	
+DK	1069	København K	Capital Region	17	Copenhagen	101			55.6785	12.5832	
+DK	1070	København K	Capital Region	17	Copenhagen	101			55.6786	12.5835	
+DK	1071	København K	Capital Region	17	Copenhagen	101			55.6781	12.5832	
+DK	1072	København K	Capital Region	17	Copenhagen	101			55.6785	12.5807	
+DK	1073	København K	Capital Region	17	Copenhagen	101			55.6788	12.5804	
+DK	1074	København K	Capital Region	17	Copenhagen	101			55.6796	12.5836	
+DK	1100	København K	Capital Region	17	Copenhagen	101			55.6798	12.5827	
+DK	1101	København K	Capital Region	17	Copenhagen	101			55.6812	12.5826	
+DK	1102	København K	Capital Region	17	Copenhagen	101			55.6808	12.5827	
+DK	1103	København K	Capital Region	17	Copenhagen	101			55.6808	12.584	
+DK	1104	København K	Capital Region	17	Copenhagen	101			55.6813	12.584	
+DK	1105	København K	Capital Region	17	Copenhagen	101			55.6802	12.5821	
+DK	1106	København K	Capital Region	17	Copenhagen	101			55.6804	12.5812	
+DK	1107	København K	Capital Region	17	Copenhagen	101			55.6813	12.583	
+DK	1110	København K	Capital Region	17	Copenhagen	101			55.6817	12.5823	
+DK	1111	København K	Capital Region	17	Copenhagen	101			55.682	12.581	
+DK	1112	København K	Capital Region	17	Copenhagen	101			55.6807	12.5801	
+DK	1113	København K	Capital Region	17	Copenhagen	101			55.6801	12.58	
+DK	1114	København K	Capital Region	17	Copenhagen	101			55.6807	12.5792	
+DK	1115	København K	Capital Region	17	Copenhagen	101			55.681	12.5784	
+DK	1116	København K	Capital Region	17	Copenhagen	101			55.6818	12.5796	
+DK	1117	København K	Capital Region	17	Copenhagen	101			55.6814	12.5808	
+DK	1118	København K	Capital Region	17	Copenhagen	101			55.6811	12.5807	
+DK	1119	København K	Capital Region	17	Copenhagen	101			55.6825	12.5769	
+DK	1120	København K	Capital Region	17	Copenhagen	101			55.6824	12.5786	
+DK	1121	København K	Capital Region	17	Copenhagen	101			55.6828	12.5788	
+DK	1122	København K	Capital Region	17	Copenhagen	101			55.6826	12.5797	
+DK	1123	København K	Capital Region	17	Copenhagen	101			55.6835	12.5776	
+DK	1124	København K	Capital Region	17	Copenhagen	101			55.6832	12.5762	
+DK	1125	København K	Capital Region	17	Copenhagen	101			55.6823	12.5763	
+DK	1126	København K	Capital Region	17	Copenhagen	101			55.6822	12.5752	
+DK	1127	København K	Capital Region	17	Copenhagen	101			55.6829	12.5756	
+DK	1128	København K	Capital Region	17	Copenhagen	101			55.6828	12.5746	
+DK	1129	København K	Capital Region	17	Copenhagen	101			55.6831	12.5744	
+DK	1130	København K	Capital Region	17	Copenhagen	101			55.6835	12.574	
+DK	1131	København K	Capital Region	17	Copenhagen	101			55.6839	12.5739	
+DK	1150	København K	Capital Region	17	Copenhagen	101			55.6806	12.5775	
+DK	1151	København K	Capital Region	17	Copenhagen	101			55.6798	12.5773	
+DK	1152	København K	Capital Region	17	Copenhagen	101			55.6804	12.5769	
+DK	1153	København K	Capital Region	17	Copenhagen	101			55.6797	12.577	
+DK	1154	København K	Capital Region	17	Copenhagen	101			55.6797	12.5759	
+DK	1155	København K	Capital Region	17	Copenhagen	101			55.68	12.5754	
+DK	1156	København K	Capital Region	17	Copenhagen	101			55.6795	12.5752	
+DK	1157	København K	Capital Region	17	Copenhagen	101			55.6792	12.5753	
+DK	1158	København K	Capital Region	17	Copenhagen	101			55.6786	12.5736	
+DK	1159	København K	Capital Region	17	Copenhagen	101			55.6798	12.5747	
+DK	1160	København K	Capital Region	17	Copenhagen	101			55.6788	12.578	
+DK	1161	København K	Capital Region	17	Copenhagen	101			55.6786	12.575	
+DK	1162	København K	Capital Region	17	Copenhagen	101			55.6789	12.5742	
+DK	1164	København K	Capital Region	17	Copenhagen	101			55.6783	12.5735	
+DK	1165	København K	Capital Region	17	Copenhagen	101			55.6809	12.5712	
+DK	1166	København K	Capital Region	17	Copenhagen	101			55.6791	12.5731	
+DK	1167	København K	Capital Region	17	Copenhagen	101			55.6791	12.5715	
+DK	1168	København K	Capital Region	17	Copenhagen	101			55.6799	12.5722	
+DK	1169	København K	Capital Region	17	Copenhagen	101			55.6806	12.5746	
+DK	1170	København K	Capital Region	17	Copenhagen	101			55.6802	12.5747	
+DK	1171	København K	Capital Region	17	Copenhagen	101			55.6814	12.5726	
+DK	1172	København K	Capital Region	17	Copenhagen	101			55.6808	12.5734	
+DK	1173	København K	Capital Region	17	Copenhagen	101			55.6817	12.574	
+DK	1174	København K	Capital Region	17	Copenhagen	101			55.6823	12.5728	
+DK	1175	København K	Capital Region	17	Copenhagen	101			55.6824	12.5738	
+DK	1200	København K	Capital Region	17	Copenhagen	101			55.6784	12.58	
+DK	1201	København K	Capital Region	17	Copenhagen	101			55.6781	12.5781	
+DK	1202	København K	Capital Region	17	Copenhagen	101			55.6777	12.5784	
+DK	1203	København K	Capital Region	17	Copenhagen	101			55.6764	12.5761	
+DK	1204	København K	Capital Region	17	Copenhagen	101			55.6765	12.5755	
+DK	1205	København K	Capital Region	17	Copenhagen	101			55.6771	12.5765	
+DK	1206	København K	Capital Region	17	Copenhagen	101			55.6775	12.5771	
+DK	1207	København K	Capital Region	17	Copenhagen	101			55.6781	12.5766	
+DK	1208	København K	Capital Region	17	Copenhagen	101			55.6771	12.5753	
+DK	1209	København K	Capital Region	17	Copenhagen	101			55.678	12.5753	
+DK	1210	København K	Capital Region	17	Copenhagen	101			55.6775	12.575	
+DK	1211	København K	Capital Region	17	Copenhagen	101			55.6776	12.5747	
+DK	1212	København K	Capital Region	17	Copenhagen	101			55.6769	12.5789	
+DK	1213	København K	Capital Region	17	Copenhagen	101			55.6764	12.5783	
+DK	1214	København K	Capital Region	17	Copenhagen	101			55.6747	12.579	
+DK	1215	København K	Capital Region	17	Copenhagen	101			55.6756	12.5846	
+DK	1216	København K	Capital Region	17	Copenhagen	101			55.6752	12.584	
+DK	1218	København K	Capital Region	17	Copenhagen	101			55.6757	12.5795	
+DK	1219	København K	Capital Region	17	Copenhagen	101			55.6731	12.5818	
+DK	1220	København K	Capital Region	17	Copenhagen	101			55.6742	12.5772	
+DK	1221	København K	Capital Region	17	Copenhagen	101			55.6743	12.5845	
+DK	1250	København K	Capital Region	17	Copenhagen	101			55.6815	12.5915	
+DK	1251	København K	Capital Region	17	Copenhagen	101			55.6798	12.5935	
+DK	1252	København K	Capital Region	17	Copenhagen	101			55.6813	12.5953	
+DK	1253	København K	Capital Region	17	Copenhagen	101			55.6831	12.594	
+DK	1254	København K	Capital Region	17	Copenhagen	101			55.6809	12.5901	
+DK	1255	København K	Capital Region	17	Copenhagen	101			55.6811	12.5887	
+DK	1256	København K	Capital Region	17	Copenhagen	101			55.6848	12.5936	
+DK	1257	København K	Capital Region	17	Copenhagen	101			55.6842	12.5929	
+DK	1259	København K	Capital Region	17	Copenhagen	101			55.69	12.5995	
+DK	1260	København K	Capital Region	17	Copenhagen	101			55.6839	12.59	
+DK	1261	København K	Capital Region	17	Copenhagen	101			55.6819	12.5869	
+DK	1263	København K	Capital Region	17	Copenhagen	101			55.6875	12.5935	
+DK	1264	København K	Capital Region	17	Copenhagen	101			55.685	12.5879	
+DK	1265	København K	Capital Region	17	Copenhagen	101			55.6849	12.5902	
+DK	1266	København K	Capital Region	17	Copenhagen	101			55.6878	12.5911	
+DK	1267	København K	Capital Region	17	Copenhagen	101			55.6884	12.5907	
+DK	1268	København K	Capital Region	17	Copenhagen	101			55.6888	12.5903	
+DK	1270	København K	Capital Region	17	Copenhagen	101			55.689	12.591	
+DK	1271	København K	Capital Region	17	Copenhagen	101			55.6892	12.5898	
+DK	1300	København K	Capital Region	17	Copenhagen	101			55.685	12.5863	
+DK	1301	København K	Capital Region	17	Copenhagen	101			55.6832	12.5856	
+DK	1302	København K	Capital Region	17	Copenhagen	101			55.6839	12.5862	
+DK	1303	København K	Capital Region	17	Copenhagen	101			55.686	12.5882	
+DK	1304	København K	Capital Region	17	Copenhagen	101			55.6846	12.5843	
+DK	1306	København K	Capital Region	17	Copenhagen	101			55.6857	12.5834	
+DK	1307	København K	Capital Region	17	Copenhagen	101			55.6878	12.5789	
+DK	1308	København K	Capital Region	17	Copenhagen	101			55.6866	12.5847	
+DK	1309	København K	Capital Region	17	Copenhagen	101			55.6873	12.5836	
+DK	1310	København K	Capital Region	17	Copenhagen	101			55.6864	12.5884	
+DK	1311	København K	Capital Region	17	Copenhagen	101			55.6872	12.5868	
+DK	1312	København K	Capital Region	17	Copenhagen	101			55.6875	12.5858	
+DK	1313	København K	Capital Region	17	Copenhagen	101			55.6875	12.5871	
+DK	1314	København K	Capital Region	17	Copenhagen	101			55.6878	12.5869	
+DK	1315	København K	Capital Region	17	Copenhagen	101			55.6876	12.5879	
+DK	1316	København K	Capital Region	17	Copenhagen	101			55.6881	12.583	
+DK	1317	København K	Capital Region	17	Copenhagen	101			55.689	12.5829	
+DK	1318	København K	Capital Region	17	Copenhagen	101			55.6885	12.5848	
+DK	1319	København K	Capital Region	17	Copenhagen	101			55.6882	12.5872	
+DK	1320	København K	Capital Region	17	Copenhagen	101			55.6886	12.5873	
+DK	1321	København K	Capital Region	17	Copenhagen	101			55.6879	12.5894	
+DK	1322	København K	Capital Region	17	Copenhagen	101			55.6889	12.5873	
+DK	1323	København K	Capital Region	17	Copenhagen	101			55.6897	12.5857	
+DK	1324	København K	Capital Region	17	Copenhagen	101			55.6891	12.588	
+DK	1325	København K	Capital Region	17	Copenhagen	101			55.6895	12.5876	
+DK	1326	København K	Capital Region	17	Copenhagen	101			55.6897	12.5879	
+DK	1327	København K	Capital Region	17	Copenhagen	101			55.6902	12.5876	
+DK	1328	København K	Capital Region	17	Copenhagen	101			55.6902	12.5882	
+DK	1329	København K	Capital Region	17	Copenhagen	101			55.689	12.5851	
+DK	1350	København K	Capital Region	17	Copenhagen	101			55.6885	12.5813	
+DK	1352	København K	Capital Region	17	Copenhagen	101			55.6896	12.5726	
+DK	1353	København K	Capital Region	17	Copenhagen	101			55.6879	12.572	
+DK	1354	København K	Capital Region	17	Copenhagen	101			55.6893	12.5719	
+DK	1355	København K	Capital Region	17	Copenhagen	101			55.6891	12.5713	
+DK	1356	København K	Capital Region	17	Copenhagen	101			55.6869	12.5676	
+DK	1357	København K	Capital Region	17	Copenhagen	101			55.6884	12.569	
+DK	1358	København K	Capital Region	17	Copenhagen	101			55.6819	12.5701	
+DK	1359	København K	Capital Region	17	Copenhagen	101			55.6833	12.5655	
+DK	1360	København K	Capital Region	17	Copenhagen	101			55.6843	12.5698	
+DK	1361	København K	Capital Region	17	Copenhagen	101			55.684	12.5706	
+DK	1362	København K	Capital Region	17	Copenhagen	101			55.6843	12.5691	
+DK	1363	København K	Capital Region	17	Copenhagen	101			55.6844	12.5671	
+DK	1364	København K	Capital Region	17	Copenhagen	101			55.683	12.5662	
+DK	1365	København K	Capital Region	17	Copenhagen	101			55.6821	12.5644	
+DK	1366	København K	Capital Region	17	Copenhagen	101			55.6833	12.5649	
+DK	1367	København K	Capital Region	17	Copenhagen	101			55.6831	12.5635	
+DK	1368	København K	Capital Region	17	Copenhagen	101			55.6815	12.5632	
+DK	1369	København K	Capital Region	17	Copenhagen	101			55.6808	12.5622	
+DK	1370	København K	Capital Region	17	Copenhagen	101			55.6833	12.563	
+DK	1371	København K	Capital Region	17	Copenhagen	101			55.686	12.5651	
+DK	1400	København K	Capital Region	17	Copenhagen	101			55.6726	12.591	
+DK	1401	København K	Capital Region	17	Copenhagen	101			55.6752	12.5922	
+DK	1402	København K	Capital Region	17	Copenhagen	101			55.6724	12.5864	
+DK	1403	København K	Capital Region	17	Copenhagen	101			55.6755	12.594	
+DK	1406	København K	Capital Region	17	Copenhagen	101			55.6752	12.593	
+DK	1407	København K	Capital Region	17	Copenhagen	101			55.6741	12.5946	
+DK	1408	København K	Capital Region	17	Copenhagen	101			55.6733	12.5903	
+DK	1409	København K	Capital Region	17	Copenhagen	101			55.6737	12.5877	
+DK	1410	København K	Capital Region	17	Copenhagen	101			55.672	12.5911	
+DK	1411	København K	Capital Region	17	Copenhagen	101			55.6704	12.5849	
+DK	1412	København K	Capital Region	17	Copenhagen	101			55.6706	12.586	
+DK	1413	København K	Capital Region	17	Copenhagen	101			55.6706	12.5866	
+DK	1414	København K	Capital Region	17	Copenhagen	101			55.6729	12.5908	
+DK	1415	København K	Capital Region	17	Copenhagen	101			55.6733	12.5929	
+DK	1416	København K	Capital Region	17	Copenhagen	101			55.6731	12.5931	
+DK	1417	København K	Capital Region	17	Copenhagen	101			55.6728	12.5924	
+DK	1418	København K	Capital Region	17	Copenhagen	101			55.671	12.5908	
+DK	1419	København K	Capital Region	17	Copenhagen	101			55.6705	12.5888	
+DK	1420	København K	Capital Region	17	Copenhagen	101			55.6716	12.5912	
+DK	1421	København K	Capital Region	17	Copenhagen	101			55.6703	12.5882	
+DK	1422	København K	Capital Region	17	Copenhagen	101			55.6732	12.5956	
+DK	1423	København K	Capital Region	17	Copenhagen	101			55.6707	12.5926	
+DK	1424	København K	Capital Region	17	Copenhagen	101			55.6704	12.5917	
+DK	1425	København K	Capital Region	17	Copenhagen	101			55.6718	12.5942	
+DK	1426	København K	Capital Region	17	Copenhagen	101			55.6723	12.5969	
+DK	1427	København K	Capital Region	17	Copenhagen	101			55.6751	12.597	
+DK	1428	København K	Capital Region	17	Copenhagen	101			55.6758	12.5979	
+DK	1429	København K	Capital Region	17	Copenhagen	101			55.6755	12.5986	
+DK	1430	København K	Capital Region	17	Copenhagen	101			55.6764	12.5993	
+DK	1432	København K	Capital Region	17	Copenhagen	101			55.6878	12.6129	
+DK	1433	København K	Capital Region	17	Copenhagen	101			55.7119	12.6981	
+DK	1434	København K	Capital Region	17	Copenhagen	101			55.6797	12.6028	
+DK	1435	København K	Capital Region	17	Copenhagen	101			55.6806	12.6053	
+DK	1436	København K	Capital Region	17	Copenhagen	101			55.6775	12.6034	
+DK	1437	København K	Capital Region	17	Copenhagen	101			55.6801	12.6043	
+DK	1438	København K	Capital Region	17	Copenhagen	101			55.6823	12.6021	
+DK	1439	København K	Capital Region	17	Copenhagen	101			55.6865	12.6085	
+DK	1440	København K	Capital Region	17	Copenhagen	101			55.6748	12.6034	
+DK	1441	København K	Capital Region	17	Copenhagen	101			55.6769	12.6099	
+DK	1450	København K	Capital Region	17	Copenhagen	101			55.6775	12.5734	
+DK	1451	København K	Capital Region	17	Copenhagen	101			55.6801	12.5695	
+DK	1452	København K	Capital Region	17	Copenhagen	101			55.6795	12.5684	
+DK	1453	København K	Capital Region	17	Copenhagen	101			55.6791	12.5686	
+DK	1454	København K	Capital Region	17	Copenhagen	101			55.6784	12.5694	
+DK	1455	København K	Capital Region	17	Copenhagen	101			55.6785	12.5692	
+DK	1456	København K	Capital Region	17	Copenhagen	101			55.6777	12.57	
+DK	1457	København K	Capital Region	17	Copenhagen	101			55.6782	12.5719	
+DK	1458	København K	Capital Region	17	Copenhagen	101			55.677	12.5714	
+DK	1459	København K	Capital Region	17	Copenhagen	101			55.6772	12.5709	
+DK	1460	København K	Capital Region	17	Copenhagen	101			55.6766	12.571	
+DK	1461	København K	Capital Region	17	Copenhagen	101			55.6768	12.5728	
+DK	1462	København K	Capital Region	17	Copenhagen	101			55.6763	12.5717	
+DK	1463	København K	Capital Region	17	Copenhagen	101			55.6758	12.5723	
+DK	1464	København K	Capital Region	17	Copenhagen	101			55.6765	12.5728	
+DK	1465	København K	Capital Region	17	Copenhagen	101			55.6761	12.5735	
+DK	1466	København K	Capital Region	17	Copenhagen	101			55.6768	12.5741	
+DK	1467	København K	Capital Region	17	Copenhagen	101			55.6761	12.5741	
+DK	1468	København K	Capital Region	17	Copenhagen	101			55.6755	12.5735	
+DK	1470	København K	Capital Region	17	Copenhagen	101			55.6751	12.574	
+DK	1471	København K	Capital Region	17	Copenhagen	101			55.6743	12.5756	
+DK	1472	København K	Capital Region	17	Copenhagen	101			55.6737	12.5765	
+DK	1473	København K	Capital Region	17	Copenhagen	101			55.6722	12.579	
+DK	1550	København V	Capital Region	17	Copenhagen	101			55.6761	12.5695	
+DK	1551	København V	Capital Region	17	Copenhagen	101			55.6788	12.566	
+DK	1552	København V	Capital Region	17	Copenhagen	101			55.675	12.5724	
+DK	1553	København V	Capital Region	17	Copenhagen	101			55.6744	12.5711	
+DK	1554	København V	Capital Region	17	Copenhagen	101			55.6771	12.5654	
+DK	1555	København V	Capital Region	17	Copenhagen	101			55.6746	12.5739	
+DK	1556	København V	Capital Region	17	Copenhagen	101			55.6736	12.5735	
+DK	1557	København V	Capital Region	17	Copenhagen	101			55.6731	12.5748	
+DK	1558	København V	Capital Region	17	Copenhagen	101			55.672	12.577	
+DK	1559	København V	Capital Region	17	Copenhagen	101			55.6716	12.5776	
+DK	1560	København V	Capital Region	17	Copenhagen	101			55.6664	12.569	
+DK	1561	København V	Capital Region	17	Copenhagen	101			55.6607	12.5628	
+DK	1562	København V	Capital Region	17	Copenhagen	101			55.6705	12.5741	
+DK	1563	København V	Capital Region	17	Copenhagen	101			55.6709	12.5741	
+DK	1564	København V	Capital Region	17	Copenhagen	101			55.672	12.5755	
+DK	1567	København V	Capital Region	17	Copenhagen	101			55.6703	12.5709	
+DK	1568	København V	Capital Region	17	Copenhagen	101			55.67	12.5713	
+DK	1569	København V	Capital Region	17	Copenhagen	101			55.6713	12.5708	
+DK	1570	København V	Capital Region	17	Copenhagen	101			55.6735	12.5642	
+DK	1571	København V	Capital Region	17	Copenhagen	101			55.6711	12.5728	
+DK	1572	København V	Capital Region	17	Copenhagen	101			55.6716	12.5732	
+DK	1573	København V	Capital Region	17	Copenhagen	101			55.6716	12.5745	
+DK	1574	København V	Capital Region	17	Copenhagen	101			55.6718	12.5724	
+DK	1575	København V	Capital Region	17	Copenhagen	101			55.6718	12.5709	
+DK	1576	København V	Capital Region	17	Copenhagen	101			55.6712	12.57	
+DK	1577	København V	Capital Region	17	Copenhagen	101			55.669	12.5663	
+DK	1600	København V	Capital Region	17	Copenhagen	101			55.6801	12.5619	
+DK	1601	København V	Capital Region	17	Copenhagen	101			55.6782	12.56	
+DK	1602	København V	Capital Region	17	Copenhagen	101			55.6786	12.561	
+DK	1603	København V	Capital Region	17	Copenhagen	101			55.6792	12.5623	
+DK	1604	København V	Capital Region	17	Copenhagen	101			55.6777	12.5614	
+DK	1605	København V	Capital Region	17	Copenhagen	101			55.6761	12.5607	
+DK	1606	København V	Capital Region	17	Copenhagen	101			55.6772	12.5623	
+DK	1607	København V	Capital Region	17	Copenhagen	101			55.6782	12.5634	
+DK	1608	København V	Capital Region	17	Copenhagen	101			55.6761	12.5658	
+DK	1609	København V	Capital Region	17	Copenhagen	101			55.6758	12.5648	
+DK	1610	København V	Capital Region	17	Copenhagen	101			55.6739	12.5548	
+DK	1611	København V	Capital Region	17	Copenhagen	101			55.676	12.5638	
+DK	1612	København V	Capital Region	17	Copenhagen	101			55.6752	12.562	
+DK	1613	København V	Capital Region	17	Copenhagen	101			55.6745	12.5617	
+DK	1614	København V	Capital Region	17	Copenhagen	101			55.6739	12.5606	
+DK	1615	København V	Capital Region	17	Copenhagen	101			55.6737	12.5591	
+DK	1616	København V	Capital Region	17	Copenhagen	101			55.6732	12.557	
+DK	1617	København V	Capital Region	17	Copenhagen	101			55.673	12.5545	
+DK	1618	København V	Capital Region	17	Copenhagen	101			55.6736	12.551	
+DK	1619	København V	Capital Region	17	Copenhagen	101			55.6737	12.5501	
+DK	1620	København V	Capital Region	17	Copenhagen	101			55.6722	12.5507	
+DK	1621	København V	Capital Region	17	Copenhagen	101			55.6729	12.548	
+DK	1622	København V	Capital Region	17	Copenhagen	101			55.6724	12.5463	
+DK	1623	København V	Capital Region	17	Copenhagen	101			55.6719	12.5453	
+DK	1624	København V	Capital Region	17	Copenhagen	101			55.6721	12.546	
+DK	1631	København V	Capital Region	17	Copenhagen	101			55.6827	12.5555	
+DK	1632	København V	Capital Region	17	Copenhagen	101			55.6827	12.5549	
+DK	1633	København V	Capital Region	17	Copenhagen	101			55.6823	12.5564	
+DK	1634	København V	Capital Region	17	Copenhagen	101			55.6819	12.5558	
+DK	1635	København V	Capital Region	17	Copenhagen	101			55.6829	12.5561	
+DK	1650	København V	Capital Region	17	Copenhagen	101			55.6697	12.5549	
+DK	1651	København V	Capital Region	17	Copenhagen	101			55.6722	12.5637	
+DK	1652	København V	Capital Region	17	Copenhagen	101			55.6718	12.5626	
+DK	1653	København V	Capital Region	17	Copenhagen	101			55.672	12.5612	
+DK	1654	København V	Capital Region	17	Copenhagen	101			55.6715	12.5595	
+DK	1655	København V	Capital Region	17	Copenhagen	101			55.6714	12.5581	
+DK	1656	København V	Capital Region	17	Copenhagen	101			55.6711	12.5568	
+DK	1657	København V	Capital Region	17	Copenhagen	101			55.6704	12.5558	
+DK	1658	København V	Capital Region	17	Copenhagen	101			55.6704	12.5548	
+DK	1659	København V	Capital Region	17	Copenhagen	101			55.6718	12.5545	
+DK	1660	København V	Capital Region	17	Copenhagen	101			55.67	12.5528	
+DK	1661	København V	Capital Region	17	Copenhagen	101			55.6714	12.5518	
+DK	1662	København V	Capital Region	17	Copenhagen	101			55.6698	12.551	
+DK	1663	København V	Capital Region	17	Copenhagen	101			55.6692	12.5499	
+DK	1664	København V	Capital Region	17	Copenhagen	101			55.6719	12.5492	
+DK	1665	København V	Capital Region	17	Copenhagen	101			55.6687	12.549	
+DK	1666	København V	Capital Region	17	Copenhagen	101			55.6699	12.5485	
+DK	1667	København V	Capital Region	17	Copenhagen	101			55.6691	12.547	
+DK	1668	København V	Capital Region	17	Copenhagen	101			55.6684	12.548	
+DK	1669	København V	Capital Region	17	Copenhagen	101			55.6672	12.5474	
+DK	1670	København V	Capital Region	17	Copenhagen	101			55.667	12.546	
+DK	1671	København V	Capital Region	17	Copenhagen	101			55.6667	12.5461	
+DK	1672	København V	Capital Region	17	Copenhagen	101			55.6685	12.5464	
+DK	1673	København V	Capital Region	17	Copenhagen	101			55.668	12.5465	
+DK	1674	København V	Capital Region	17	Copenhagen	101			55.6685	12.5447	
+DK	1675	København V	Capital Region	17	Copenhagen	101			55.6665	12.5468	
+DK	1676	København V	Capital Region	17	Copenhagen	101			55.6662	12.5485	
+DK	1677	København V	Capital Region	17	Copenhagen	101			55.666	12.5469	
+DK	1699	København V	Capital Region	17	Copenhagen	101			55.6677	12.5619	
+DK	1700	København V	Capital Region	17	Copenhagen	101			55.6695	12.5597	
+DK	1701	København V	Capital Region	17	Copenhagen	101			55.6718	12.5633	
+DK	1702	København V	Capital Region	17	Copenhagen	101			55.6713	12.5637	
+DK	1703	København V	Capital Region	17	Copenhagen	101			55.6705	12.5629	
+DK	1704	København V	Capital Region	17	Copenhagen	101			55.6711	12.567	
+DK	1705	København V	Capital Region	17	Copenhagen	101			55.6647	12.5522	
+DK	1706	København V	Capital Region	17	Copenhagen	101			55.6707	12.56	
+DK	1707	København V	Capital Region	17	Copenhagen	101			55.6718	12.5607	
+DK	1708	København V	Capital Region	17	Copenhagen	101			55.6696	12.5575	
+DK	1709	København V	Capital Region	17	Copenhagen	101			55.6685	12.5543	
+DK	1710	København V	Capital Region	17	Copenhagen	101			55.6703	12.5625	
+DK	1711	København V	Capital Region	17	Copenhagen	101			55.6679	12.5596	
+DK	1712	København V	Capital Region	17	Copenhagen	101			55.6683	12.5577	
+DK	1714	København V	Capital Region	17	Copenhagen	101			55.6663	12.5586	
+DK	1715	København V	Capital Region	17	Copenhagen	101			55.6686	12.5609	
+DK	1716	København V	Capital Region	17	Copenhagen	101			55.6689	12.5588	
+DK	1717	København V	Capital Region	17	Copenhagen	101			55.6667	12.5574	
+DK	1718	København V	Capital Region	17	Copenhagen	101			55.6666	12.5561	
+DK	1719	København V	Capital Region	17	Copenhagen	101			55.6663	12.5554	
+DK	1720	København V	Capital Region	17	Copenhagen	101			55.6654	12.5481	
+DK	1721	København V	Capital Region	17	Copenhagen	101			55.6663	12.5524	
+DK	1722	København V	Capital Region	17	Copenhagen	101			55.666	12.5548	
+DK	1723	København V	Capital Region	17	Copenhagen	101			55.6674	12.5524	
+DK	1724	København V	Capital Region	17	Copenhagen	101			55.668	12.552	
+DK	1725	København V	Capital Region	17	Copenhagen	101			55.6655	12.5542	
+DK	1726	København V	Capital Region	17	Copenhagen	101			55.6654	12.5529	
+DK	1727	København V	Capital Region	17	Copenhagen	101			55.6651	12.5517	
+DK	1728	København V	Capital Region	17	Copenhagen	101			55.6648	12.5506	
+DK	1729	København V	Capital Region	17	Copenhagen	101			55.6646	12.5492	
+DK	1730	København V	Capital Region	17	Copenhagen	101			55.6644	12.5482	
+DK	1731	København V	Capital Region	17	Copenhagen	101			55.6641	12.5468	
+DK	1732	København V	Capital Region	17	Copenhagen	101			55.6639	12.5458	
+DK	1733	København V	Capital Region	17	Copenhagen	101			55.6637	12.5443	
+DK	1734	København V	Capital Region	17	Copenhagen	101			55.6652	12.5457	
+DK	1735	København V	Capital Region	17	Copenhagen	101			55.665	12.5452	
+DK	1736	København V	Capital Region	17	Copenhagen	101			55.6654	12.5441	
+DK	1737	København V	Capital Region	17	Copenhagen	101			55.6648	12.5444	
+DK	1738	København V	Capital Region	17	Copenhagen	101			55.6646	12.5437	
+DK	1739	København V	Capital Region	17	Copenhagen	101			55.6644	12.543	
+DK	1749	København V	Capital Region	17	Copenhagen	101			55.6696	12.5369	
+DK	1750	København V	Capital Region	17	Copenhagen	101			55.6678	12.5397	
+DK	1751	København V	Capital Region	17	Copenhagen	101			55.6703	12.5446	
+DK	1752	København V	Capital Region	17	Copenhagen	101			55.6701	12.5432	
+DK	1753	København V	Capital Region	17	Copenhagen	101			55.6696	12.5433	
+DK	1754	København V	Capital Region	17	Copenhagen	101			55.6692	12.5441	
+DK	1755	København V	Capital Region	17	Copenhagen	101			55.6696	12.5428	
+DK	1756	København V	Capital Region	17	Copenhagen	101			55.6695	12.5418	
+DK	1757	København V	Capital Region	17	Copenhagen	101			55.6691	12.5408	
+DK	1758	København V	Capital Region	17	Copenhagen	101			55.6682	12.542	
+DK	1759	København V	Capital Region	17	Copenhagen	101			55.6686	12.5435	
+DK	1760	København V	Capital Region	17	Copenhagen	101			55.6657	12.5448	
+DK	1761	København V	Capital Region	17	Copenhagen	101			55.6666	12.5401	
+DK	1762	København V	Capital Region	17	Copenhagen	101			55.6651	12.5408	
+DK	1763	København V	Capital Region	17	Copenhagen	101			55.6651	12.5417	
+DK	1764	København V	Capital Region	17	Copenhagen	101			55.665	12.5408	
+DK	1765	København V	Capital Region	17	Copenhagen	101			55.6643	12.5391	
+DK	1766	København V	Capital Region	17	Copenhagen	101			55.6641	12.5407	
+DK	1770	København V	Capital Region	17	Copenhagen	101			55.6686	12.538	
+DK	1771	København V	Capital Region	17	Copenhagen	101			55.6685	12.5392	
+DK	1772	København V	Capital Region	17	Copenhagen	101			55.6684	12.5386	
+DK	1773	København V	Capital Region	17	Copenhagen	101			55.6682	12.538	
+DK	1774	København V	Capital Region	17	Copenhagen	101			55.6678	12.5383	
+DK	1775	København V	Capital Region	17	Copenhagen	101			55.6679	12.5368	
+DK	1777	København V	Capital Region	17	Copenhagen	101			55.6675	12.5376	
+DK	1799	København V	Capital Region	17	Copenhagen	101			55.6661	12.5347	
+DK	2100	København Ø	Capital Region	17	Copenhagen	101			55.7072	12.572	
+DK	2150	Nordhavn	Capital Region	17	Copenhagen	101			55.7119	12.5984	
+DK	2200	København N	Capital Region	17	Copenhagen	101			55.6948	12.5503	
+DK	2300	København S	Capital Region	17	Copenhagen	101			55.6511	12.603	
+DK	2400	København NV	Capital Region	17	Copenhagen	101			55.7086	12.5263	
+DK	2450	København SV	Capital Region	17	Copenhagen	101			55.6484	12.5359	
+DK	2500	Valby	Capital Region	17	Copenhagen	101			55.661	12.5006	
+DK	2700	Brønshøj	Capital Region	17	Copenhagen	101			55.7069	12.4845	
+DK	2720	Vanløse	Capital Region	17	Copenhagen	101			55.6896	12.4869	
+DK	1800	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6707	12.5345	
+DK	1801	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6693	12.5342	
+DK	1802	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6698	12.534	
+DK	1803	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6701	12.5335	
+DK	1804	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6698	12.5322	
+DK	1805	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.668	12.5313	
+DK	1806	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6722	12.5334	
+DK	1807	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6714	12.5333	
+DK	1808	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6715	12.5342	
+DK	1809	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6724	12.5358	
+DK	1810	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6719	12.5397	
+DK	1811	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.673	12.5369	
+DK	1812	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6721	12.5375	
+DK	1813	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6722	12.5387	
+DK	1814	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6724	12.5412	
+DK	1815	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6728	12.5424	
+DK	1816	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6728	12.5435	
+DK	1817	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6722	12.543	
+DK	1818	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6727	12.5446	
+DK	1819	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6736	12.5496	
+DK	1820	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6739	12.5418	
+DK	1822	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6726	12.5458	
+DK	1823	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6729	12.5454	
+DK	1824	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6743	12.547	
+DK	1825	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6745	12.5456	
+DK	1826	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6748	12.5445	
+DK	1827	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6749	12.5433	
+DK	1828	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.675	12.542	
+DK	1829	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6752	12.541	
+DK	1850	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6763	12.5424	
+DK	1851	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6755	12.5396	
+DK	1852	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6758	12.5382	
+DK	1853	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6754	12.5364	
+DK	1854	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6755	12.5346	
+DK	1855	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6762	12.5355	
+DK	1856	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6768	12.5371	
+DK	1857	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6771	12.5356	
+DK	1860	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6809	12.536	
+DK	1861	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6793	12.5351	
+DK	1862	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6795	12.536	
+DK	1863	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6798	12.5375	
+DK	1864	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6785	12.5383	
+DK	1865	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6789	12.5386	
+DK	1866	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6779	12.5382	
+DK	1867	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6786	12.54	
+DK	1868	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6775	12.5404	
+DK	1870	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6804	12.5417	
+DK	1871	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6812	12.545	
+DK	1872	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6803	12.5452	
+DK	1873	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.68	12.5444	
+DK	1874	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6796	12.5465	
+DK	1875	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6789	12.5452	
+DK	1876	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.678	12.5449	
+DK	1877	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.677	12.5433	
+DK	1878	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6768	12.5446	
+DK	1879	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6802	12.5485	
+DK	1900	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6778	12.555	
+DK	1901	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6761	12.5464	
+DK	1902	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6774	12.5481	
+DK	1903	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.677	12.5492	
+DK	1904	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6764	12.5503	
+DK	1905	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6757	12.5508	
+DK	1906	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6752	12.5515	
+DK	1908	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6748	12.5536	
+DK	1909	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6758	12.5525	
+DK	1910	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6794	12.551	
+DK	1911	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6781	12.5509	
+DK	1912	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.679	12.5512	
+DK	1913	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6786	12.5524	
+DK	1914	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6781	12.5536	
+DK	1915	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6787	12.5531	
+DK	1916	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6776	12.5554	
+DK	1917	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6769	12.5552	
+DK	1920	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.68	12.5516	
+DK	1921	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6799	12.5529	
+DK	1922	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6801	12.5534	
+DK	1923	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6811	12.5503	
+DK	1924	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6812	12.5514	
+DK	1925	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6808	12.5536	
+DK	1926	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6801	12.556	
+DK	1927	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6794	12.5557	
+DK	1928	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6788	12.5558	
+DK	1950	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6817	12.5371	
+DK	1951	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6821	12.5364	
+DK	1952	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6824	12.537	
+DK	1953	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6828	12.5377	
+DK	1954	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6839	12.5392	
+DK	1955	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6836	12.5403	
+DK	1956	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6835	12.5413	
+DK	1957	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6832	12.5421	
+DK	1958	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6848	12.5425	
+DK	1959	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6858	12.5413	
+DK	1960	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6847	12.5512	
+DK	1961	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6816	12.5471	
+DK	1962	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6824	12.5475	
+DK	1963	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6813	12.5481	
+DK	1964	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6842	12.548	
+DK	1965	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6833	12.5483	
+DK	1966	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6833	12.5508	
+DK	1967	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6843	12.5499	
+DK	1970	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6826	12.5499	
+DK	1971	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6841	12.5521	
+DK	1972	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6836	12.5526	
+DK	1973	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6835	12.5538	
+DK	1974	Frederiksberg C	Capital Region	17	Frederiksberg Kommune	147			55.6828	12.5543	
+DK	2000	Frederiksberg	Capital Region	17	Frederiksberg Kommune	147			55.6825	12.5179	
+DK	2740	Skovlunde	Capital Region	17	Ballerup Kommune	151			55.7154	12.3989	
+DK	2750	Ballerup	Capital Region	17	Ballerup Kommune	151			55.7333	12.3566	
+DK	2760	Måløv	Capital Region	17	Ballerup Kommune	151			55.7513	12.3197	
+DK	2605	Brøndby	Capital Region	17	Brøndby Kommune	153			55.6527	12.4132	
+DK	2660	Brøndby Strand	Capital Region	17	Brøndby Kommune	153			55.6227	12.417	
+DK	2791	Dragør	Capital Region	17	Dragør Kommune	155			55.5882	12.6482	
+DK	2820	Gentofte	Capital Region	17	Gentofte Kommune	157			55.751	12.5302	
+DK	2870	Dyssegård	Capital Region	17	Gentofte Kommune	157			55.7328	12.5268	
+DK	2900	Hellerup	Capital Region	17	Gentofte Kommune	157			55.7344	12.5601	
+DK	2920	Charlottenlund	Capital Region	17	Gentofte Kommune	157			55.7582	12.573	
+DK	2930	Klampenborg	Capital Region	17	Gentofte Kommune	157			55.7701	12.5886	
+DK	2860	Søborg	Capital Region	17	Gladsaxe Municipality	159			55.7361	12.483	
+DK	2880	Bagsværd	Capital Region	17	Gladsaxe Municipality	159			55.7571	12.4558	
+DK	2600	Glostrup	Capital Region	17	Glostrup Kommune	161			55.6813	12.4039	
+DK	2730	Herlev	Capital Region	17	Herlev Kommune	163			55.7338	12.4278	
+DK	2620	Albertslund	Capital Region	17	Albertslund Kommune	165			55.6671	12.349	
+DK	2650	Hvidovre	Capital Region	17	Hvidovre Kommune	167			55.6367	12.4717	
+DK	2630	Taastrup	Capital Region	17	Høje-Taastrup Kommune	169			55.65	12.2904	
+DK	2640	Hedehusene	Capital Region	17	Høje-Taastrup Kommune	169			55.6508	12.1977	
+DK	2800	Kongens Lyngby	Capital Region	17	Lyngby-Tårbæk Kommune	173			55.7801	12.5122	
+DK	2830	Virum	Capital Region	17	Lyngby-Tårbæk Kommune	173			55.7912	12.4705	
+DK	2610	Rødovre	Capital Region	17	Rødovre Kommune	175			55.6889	12.451	
+DK	2635	Ishøj	Capital Region	17	Ishøj Kommune	183			55.6154	12.3395	
+DK	2770	Kastrup	Capital Region	17	Tårnby Kommune	185			55.6227	12.6094	
+DK	2625	Vallensbæk	Capital Region	17	Vallensbæk Kommune	187			55.6477	12.3623	
+DK	2665	Vallensbæk Strand	Capital Region	17	Vallensbæk Kommune	187			55.6218	12.3864	
+DK	3500	Værløse	Capital Region	17	Furesø Kommune	190			55.7763	12.364	
+DK	3520	Farum	Capital Region	17	Furesø Kommune	190			55.8171	12.3713	
+DK	3450	Allerød	Capital Region	17	Allerød Kommune	201			55.8692	12.3484	
+DK	3540	Lynge	Capital Region	17	Allerød Kommune	201			55.8379	12.2804	
+DK	2980	Kokkedal	Capital Region	17	Fredensborg Kommune	210			55.9115	12.4889	
+DK	2990	Nivå	Capital Region	17	Fredensborg Kommune	210			55.9374	12.5002	
+DK	3050	Humlebæk	Capital Region	17	Fredensborg Kommune	210			55.9604	12.5221	
+DK	3480	Fredensborg	Capital Region	17	Fredensborg Kommune	210			55.9727	12.4105	
+DK	3000	Helsingør	Capital Region	17	Helsingør Kommune	217			56.0337	12.5881	
+DK	3060	Espergærde	Capital Region	17	Helsingør Kommune	217			55.9917	12.5419	
+DK	3070	Snekkersten	Capital Region	17	Helsingør Kommune	217			56.0119	12.5766	
+DK	3080	Tikøb	Capital Region	17	Helsingør Kommune	217			56.029	12.4465	
+DK	3100	Hornbæk	Capital Region	17	Helsingør Kommune	217			56.084	12.4523	
+DK	3140	Ålsgårde	Capital Region	17	Helsingør Kommune	217			56.0774	12.5283	
+DK	3150	Hellebæk	Capital Region	17	Helsingør Kommune	217			56.0668	12.5577	
+DK	3490	Kvistgård	Capital Region	17	Helsingør Kommune	217			55.9961	12.501	
+DK	3320	Skævinge	Capital Region	17	Hillerød Kommune	219			55.9179	12.1528	
+DK	3330	Gørløse	Capital Region	17	Hillerød Kommune	219			55.8839	12.1997	
+DK	3400	Hillerød	Capital Region	17	Hillerød Kommune	219			55.9359	12.2918	
+DK	2960	Rungsted Kyst	Capital Region	17	Hørsholm Kommune	223			55.8868	12.5306	
+DK	2970	Hørsholm	Capital Region	17	Hørsholm Kommune	223			55.8892	12.4963	
+DK	2840	Holte	Capital Region	17	Rudersdal Kommune	230			55.8192	12.4855	
+DK	2850	Nærum	Capital Region	17	Rudersdal Kommune	230			55.8182	12.533	
+DK	2942	Skodsborg	Capital Region	17	Rudersdal Kommune	230			55.8275	12.5719	
+DK	2950	Vedbæk	Capital Region	17	Rudersdal Kommune	230			55.8461	12.5454	
+DK	3460	Birkerød	Capital Region	17	Rudersdal Kommune	230			55.8423	12.4296	
+DK	2765	Smørum	Capital Region	17	Egedal Kommune	240			55.7361	12.2977	
+DK	3650	Ølstykke	Capital Region	17	Egedal Kommune	240			55.7836	12.1609	
+DK	3660	Stenløse	Capital Region	17	Egedal Kommune	240			55.7772	12.2177	
+DK	3670	Veksø Sjælland	Capital Region	17	Egedal Kommune	240			55.7576	12.2386	
+DK	3550	Slangerup	Capital Region	17	Frederikssund Kommune	250			55.8462	12.1744	
+DK	3600	Frederikssund	Capital Region	17	Frederikssund Kommune	250			55.8383	12.0732	
+DK	3630	Jægerspris	Capital Region	17	Frederikssund Kommune	250			55.8631	11.96	
+DK	4050	Skibby	Capital Region	17	Frederikssund Kommune	250			55.7585	11.9552	
+DK	3300	Frederiksværk	Capital Region	17	Halsnæs Kommune	260			55.9787	12.0242	
+DK	3310	Ølsted	Capital Region	17	Halsnæs Kommune	260			55.9124	12.0604	
+DK	3360	Liseleje	Capital Region	17	Halsnæs Kommune	260			56.0078	11.9679	
+DK	3370	Melby	Capital Region	17	Halsnæs Kommune	260			55.992	11.9718	
+DK	3390	Hundested	Capital Region	17	Halsnæs Kommune	260			55.9662	11.8782	
+DK	3120	Dronningmølle	Capital Region	17	Gribskov Kommune	270			56.0969	12.3818	
+DK	3200	Helsinge	Capital Region	17	Gribskov Kommune	270			56.016	12.1849	
+DK	3210	Vejby	Capital Region	17	Gribskov Kommune	270			56.0804	12.1437	
+DK	3220	Tisvildeleje	Capital Region	17	Gribskov Kommune	270			56.0579	12.0915	
+DK	3230	Græsted	Capital Region	17	Gribskov Kommune	270			56.0765	12.2586	
+DK	3250	Gilleleje	Capital Region	17	Gribskov Kommune	270			56.116	12.2866	
+DK	3700	Rønne	Capital Region	17	Bornholm Kommune	400			55.1065	14.7247	
+DK	3720	Aakirkeby	Capital Region	17	Bornholm Kommune	400			55.053	14.9259	
+DK	3730	Nexø	Capital Region	17	Bornholm Kommune	400			55.0428	15.1073	
+DK	3740	Svaneke	Capital Region	17	Bornholm Kommune	400			55.1313	15.1295	
+DK	3751	Østermarie	Capital Region	17	Bornholm Kommune	400			55.1385	15.0191	
+DK	3760	Gudhjem	Capital Region	17	Bornholm Kommune	400			55.1964	14.9504	
+DK	3770	Allinge	Capital Region	17	Bornholm Kommune	400			55.2654	14.805	
+DK	3782	Klemensker	Capital Region	17	Bornholm Kommune	400			55.18	14.8112	
+DK	3790	Hasle	Capital Region	17	Bornholm Kommune	400			55.1928	14.7193	
+DK	8700	Horsens	Central Jutland	18	Horsens Kommune	615			55.8623	9.8468	
+DK	8732	Hovedgård	Central Jutland	18	Horsens Kommune	615			55.9484	9.9577	
+DK	8740	Brædstrup	Central Jutland	18	Horsens Kommune	615			55.9727	9.6192	
+DK	8751	Gedved	Central Jutland	18	Horsens Kommune	615			55.9319	9.8467	
+DK	8752	Østbirk	Central Jutland	18	Horsens Kommune	615			55.9699	9.7518	
+DK	8789	Endelave	Central Jutland	18	Horsens Kommune	615			55.755	10.284	
+DK	6933	Kibæk	Central Jutland	18	Herning Kommune	657			56.0102	8.8682	
+DK	6973	Ørnhøj	Central Jutland	18	Herning Kommune	657			56.1973	8.5671	
+DK	7270	Stakroge	Central Jutland	18	Herning Kommune	657			55.8965	8.847	
+DK	7280	Sønder Felding	Central Jutland	18	Herning Kommune	657			55.9411	8.7837	
+DK	7400	Herning	Central Jutland	18	Herning Kommune	657			56.1331	8.9736	
+DK	7451	Sunds	Central Jutland	18	Herning Kommune	657			56.2173	9.0229	
+DK	7480	Vildbjerg	Central Jutland	18	Herning Kommune	657			56.1877	8.7674	
+DK	7490	Aulum	Central Jutland	18	Herning Kommune	657			56.2731	8.8037	
+DK	7540	Haderup	Central Jutland	18	Herning Kommune	657			56.3566	8.9744	
+DK	7550	Sørvad	Central Jutland	18	Herning Kommune	657			56.2605	8.6559	
+DK	6990	Ulfborg	Central Jutland	18	Holstebro Kommune	661			56.2967	8.2163	
+DK	7500	Holstebro	Central Jutland	18	Holstebro Kommune	661			56.363	8.6301	
+DK	7570	Vemb	Central Jutland	18	Holstebro Kommune	661			56.3474	8.3622	
+DK	7830	Vinderup	Central Jutland	18	Holstebro Kommune	661			56.4743	8.7959	
+DK	7620	Lemvig	Central Jutland	18	Lemvig Kommune	665			56.541	8.292	
+DK	7650	Bøvlingbjerg	Central Jutland	18	Lemvig Kommune	665			56.4376	8.2097	
+DK	7660	Bækmarksbro	Central Jutland	18	Lemvig Kommune	665			56.4146	8.3202	
+DK	7673	Harboøre	Central Jutland	18	Lemvig Kommune	665			56.6012	8.1592	
+DK	7680	Thyborøn	Central Jutland	18	Lemvig Kommune	665			56.6984	8.2122	
+DK	7560	Hjerm	Central Jutland	18	Struer Kommune	671			56.4395	8.6457	
+DK	7600	Struer	Central Jutland	18	Struer Kommune	671			56.4925	8.5722	
+DK	7790	Thyholm	Central Jutland	18	Struer Kommune	671			56.6368	8.5454	
+DK	8400	Ebeltoft	Central Jutland	18	Syddjurs Kommune	706			56.2173	10.6747	
+DK	8410	Rønde	Central Jutland	18	Syddjurs Kommune	706			56.3108	10.4664	
+DK	8420	Knebel	Central Jutland	18	Syddjurs Kommune	706			56.1792	10.4728	
+DK	8444	Balle	Central Jutland	18	Syddjurs Kommune	706			56.3145	10.7922	
+DK	8543	Hornslet	Central Jutland	18	Syddjurs Kommune	706			56.3161	10.3114	
+DK	8544	Mørke	Central Jutland	18	Syddjurs Kommune	706			56.3521	10.3423	
+DK	8550	Ryomgård	Central Jutland	18	Syddjurs Kommune	706			56.3849	10.4826	
+DK	8560	Kolind	Central Jutland	18	Syddjurs Kommune	706			56.3532	10.5908	
+DK	8581	Nimtofte	Central Jutland	18	Syddjurs Kommune	706			56.4133	10.5803	
+DK	8500	Grenaa	Central Jutland	18	Norddjurs Kommune	707			56.4213	10.8743	
+DK	8570	Trustrup	Central Jutland	18	Norddjurs Kommune	707			56.3567	10.7585	
+DK	8585	Glesborg	Central Jutland	18	Norddjurs Kommune	707			56.5089	10.6657	
+DK	8586	Ørum Djurs	Central Jutland	18	Norddjurs Kommune	707			56.445	10.6601	
+DK	8592	Anholt	Central Jutland	18	Norddjurs Kommune	707			56.7066	11.5396	
+DK	8950	Ørsted	Central Jutland	18	Norddjurs Kommune	707			56.5294	10.3334	
+DK	8961	Allingåbro	Central Jutland	18	Norddjurs Kommune	707			56.4807	10.4173	
+DK	8963	Auning	Central Jutland	18	Norddjurs Kommune	707			56.4306	10.3752	
+DK	8370	Hadsten	Central Jutland	18	Favrskov Kommune	710			56.3324	10.0663	
+DK	8382	Hinnerup	Central Jutland	18	Favrskov Kommune	710			56.2595	10.0657	
+DK	8450	Hammel	Central Jutland	18	Favrskov Kommune	710			56.2572	9.8651	
+DK	8472	Sporup	Central Jutland	18	Favrskov Kommune	710			56.2128	9.8331	
+DK	8860	Ulstrup	Central Jutland	18	Favrskov Kommune	710			56.3874	9.7928	
+DK	8881	Thorsø	Central Jutland	18	Favrskov Kommune	710			56.3045	9.7856	
+DK	8300	Odder	Central Jutland	18	Odder Kommune	727			55.9626	10.1795	
+DK	8350	Hundslund	Central Jutland	18	Odder Kommune	727			55.913	10.0565	
+DK	8799	Tunø	Central Jutland	18	Odder Kommune	727			55.9512	10.4371	
+DK	8870	Langå	Central Jutland	18	Randers Kommune	730			56.4097	9.9173	
+DK	8900	Randers C	Central Jutland	18	Randers Kommune	730			56.464	10.0341	
+DK	8920	Randers NV	Central Jutland	18	Randers Kommune	730			56.4764	9.9773	
+DK	8930	Randers NØ	Central Jutland	18	Randers Kommune	730			56.4835	10.0844	
+DK	8940	Randers SV	Central Jutland	18	Randers Kommune	730			56.4358	10.0334	
+DK	8960	Randers SØ	Central Jutland	18	Randers Kommune	730			56.4422	10.1127	
+DK	8970	Havndal	Central Jutland	18	Randers Kommune	730			56.6359	10.2281	
+DK	8981	Spentrup	Central Jutland	18	Randers Kommune	730			56.54	10.0408	
+DK	8983	Gjerlev J	Central Jutland	18	Randers Kommune	730			56.5835	10.1393	
+DK	8990	Fårup	Central Jutland	18	Randers Kommune	730			56.5456	9.879	
+DK	8600	Silkeborg	Central Jutland	18	Silkeborg Kommune	740			56.1726	9.5564	
+DK	8620	Kjellerup	Central Jutland	18	Silkeborg Kommune	740			56.286	9.4126	
+DK	8632	Lemming	Central Jutland	18	Silkeborg Kommune	740			56.2401	9.5379	
+DK	8641	Sorring	Central Jutland	18	Silkeborg Kommune	740			56.1772	9.7805	
+DK	8643	Ans By	Central Jutland	18	Silkeborg Kommune	740			56.2993	9.6023	
+DK	8653	Them	Central Jutland	18	Silkeborg Kommune	740			56.0898	9.5503	
+DK	8654	Bryrup	Central Jutland	18	Silkeborg Kommune	740			56.026	9.517	
+DK	8882	Fårvang	Central Jutland	18	Silkeborg Kommune	740			56.2703	9.7072	
+DK	8883	Gjern	Central Jutland	18	Silkeborg Kommune	740			56.2244	9.738	
+DK	8305	Samsø	Central Jutland	18	Samsø Kommune	741			55.8602	10.5856	
+DK	8362	Hørning	Central Jutland	18	Skanderborg Kommune	746			56.0848	10.0333	
+DK	8464	Galten	Central Jutland	18	Skanderborg Kommune	746			56.1563	9.9273	
+DK	8660	Skanderborg	Central Jutland	18	Skanderborg Kommune	746			56.0401	9.9302	
+DK	8670	Låsby	Central Jutland	18	Skanderborg Kommune	746			56.1514	9.8075	
+DK	8680	Ry	Central Jutland	18	Skanderborg Kommune	746			56.0885	9.759	
+DK	8000	Aarhus C	Central Jutland	18	Aarhus Kommune	751			56.1535	10.2034	
+DK	8200	Aarhus N	Central Jutland	18	Aarhus Kommune	751			56.1888	10.1901	
+DK	8210	Aarhus V	Central Jutland	18	Aarhus Kommune	751			56.1712	10.1605	
+DK	8220	Brabrand	Central Jutland	18	Aarhus Kommune	751			56.1578	10.1092	
+DK	8230	Åbyhøj	Central Jutland	18	Aarhus Kommune	751			56.1526	10.1602	
+DK	8240	Risskov	Central Jutland	18	Aarhus Kommune	751			56.1976	10.2292	
+DK	8250	Egå	Central Jutland	18	Aarhus Kommune	751			56.2216	10.293	
+DK	8260	Viby J	Central Jutland	18	Aarhus Kommune	751			56.1284	10.1421	
+DK	8270	Højbjerg	Central Jutland	18	Aarhus Kommune	751			56.1119	10.1907	
+DK	8310	Tranbjerg J	Central Jutland	18	Aarhus Kommune	751			56.0904	10.1318	
+DK	8320	Mårslet	Central Jutland	18	Aarhus Kommune	751			56.0698	10.1619	
+DK	8330	Beder	Central Jutland	18	Aarhus Kommune	751			56.0578	10.2156	
+DK	8340	Malling	Central Jutland	18	Aarhus Kommune	751			56.036	10.2065	
+DK	8355	Solbjerg	Central Jutland	18	Aarhus Kommune	751			56.0396	10.0881	
+DK	8361	Hasselager	Central Jutland	18	Aarhus Kommune	751			56.1077	10.0882	
+DK	8380	Trige	Central Jutland	18	Aarhus Kommune	751			56.2648	10.1466	
+DK	8381	Tilst	Central Jutland	18	Aarhus Kommune	751			56.1859	10.1089	
+DK	8462	Harlev J	Central Jutland	18	Aarhus Kommune	751			56.1449	9.9963	
+DK	8471	Sabro	Central Jutland	18	Aarhus Kommune	751			56.2079	10.0395	
+DK	8520	Lystrup	Central Jutland	18	Aarhus Kommune	751			56.2374	10.2318	
+DK	8530	Hjortshøj	Central Jutland	18	Aarhus Kommune	751			56.2628	10.2499	
+DK	8541	Skødstrup	Central Jutland	18	Aarhus Kommune	751			56.2658	10.3144	
+DK	7330	Brande	Central Jutland	18	Ikast-Brande Kommune	756			55.9339	9.11	
+DK	7361	Ejstrupholm	Central Jutland	18	Ikast-Brande Kommune	756			55.9894	9.2921	
+DK	7362	Hampen	Central Jutland	18	Ikast-Brande Kommune	756			56.0173	9.3582	
+DK	7430	Ikast	Central Jutland	18	Ikast-Brande Kommune	756			56.1334	9.1573	
+DK	7441	Bording	Central Jutland	18	Ikast-Brande Kommune	756			56.1509	9.2703	
+DK	7442	Engesvang	Central Jutland	18	Ikast-Brande Kommune	756			56.1689	9.3436	
+DK	8765	Klovborg	Central Jutland	18	Ikast-Brande Kommune	756			55.9306	9.4903	
+DK	8766	Nørre Snede	Central Jutland	18	Ikast-Brande Kommune	756			55.9653	9.3974	
+DK	6880	Tarm	Central Jutland	18	Ringkøbing-Skjern Kommune	760			55.8883	8.5146	
+DK	6893	Hemmet	Central Jutland	18	Ringkøbing-Skjern Kommune	760			55.8418	8.3124	
+DK	6900	Skjern	Central Jutland	18	Ringkøbing-Skjern Kommune	760			55.9668	8.4999	
+DK	6920	Videbæk	Central Jutland	18	Ringkøbing-Skjern Kommune	760			56.0762	8.6563	
+DK	6940	Lem St	Central Jutland	18	Ringkøbing-Skjern Kommune	760			56.0361	8.3917	
+DK	6950	Ringkøbing	Central Jutland	18	Ringkøbing-Skjern Kommune	760			56.1039	8.2118	
+DK	6960	Hvide Sande	Central Jutland	18	Ringkøbing-Skjern Kommune	760			55.9573	8.1433	
+DK	6971	Spjald	Central Jutland	18	Ringkøbing-Skjern Kommune	760			56.137	8.5018	
+DK	6980	Tim	Central Jutland	18	Ringkøbing-Skjern Kommune	760			56.1977	8.2896	
+DK	7130	Juelsminde	Central Jutland	18	Hedensted Kommune	766			55.7519	9.9985	
+DK	7140	Stouby	Central Jutland	18	Hedensted Kommune	766			55.7077	9.798	
+DK	7150	Barrit	Central Jutland	18	Hedensted Kommune	766			55.7131	9.8894	
+DK	7160	Tørring	Central Jutland	18	Hedensted Kommune	766			55.8592	9.504	
+DK	7171	Uldum	Central Jutland	18	Hedensted Kommune	766			55.8443	9.591	
+DK	8721	Daugård	Central Jutland	18	Hedensted Kommune	766			55.7314	9.7117	
+DK	8722	Hedensted	Central Jutland	18	Hedensted Kommune	766			55.7692	9.7022	
+DK	8723	Løsning	Central Jutland	18	Hedensted Kommune	766			55.8028	9.6973	
+DK	8762	Flemming	Central Jutland	18	Hedensted Kommune	766			55.8706	9.6629	
+DK	8763	Rask Mølle	Central Jutland	18	Hedensted Kommune	766			55.875	9.6114	
+DK	8781	Stenderup	Central Jutland	18	Hedensted Kommune	766			55.7903	9.8068	
+DK	8783	Hornsyld	Central Jutland	18	Hedensted Kommune	766			55.7627	9.8514	
+DK	7800	Skive	Central Jutland	18	Skive Kommune	779			56.5678	9.0226	
+DK	7840	Højslev	Central Jutland	18	Skive Kommune	779			56.5815	9.1723	
+DK	7860	Spøttrup	Central Jutland	18	Skive Kommune	779			56.615	8.8218	
+DK	7870	Roslev	Central Jutland	18	Skive Kommune	779			56.7234	8.9892	
+DK	7884	Fur	Central Jutland	18	Skive Kommune	779			56.822	9.0224	
+DK	7470	Karup J	Central Jutland	18	Viborg Kommune	791			56.3262	9.2049	
+DK	7850	Stoholm Jyll	Central Jutland	18	Viborg Kommune	791			56.484	9.1354	
+DK	8800	Viborg	Central Jutland	18	Viborg Kommune	791			56.4451	9.3909	
+DK	8830	Tjele	Central Jutland	18	Viborg Kommune	791			56.502	9.6119	
+DK	8831	Løgstrup	Central Jutland	18	Viborg Kommune	791			56.519	9.3224	
+DK	8832	Skals	Central Jutland	18	Viborg Kommune	791			56.5807	9.3716	
+DK	8840	Rødkærsbro	Central Jutland	18	Viborg Kommune	791			56.3503	9.5115	
+DK	8850	Bjerringbro	Central Jutland	18	Viborg Kommune	791			56.379	9.6515	
+DK	9632	Møldrup	Central Jutland	18	Viborg Kommune	791			56.6077	9.5031	
+DK	7900	Nykøbing M	North Denmark	19	Morsø Kommune	773			56.8107	8.8325	
+DK	7950	Erslev	North Denmark	19	Morsø Kommune	773			56.8472	8.7063	
+DK	7960	Karby	North Denmark	19	Morsø Kommune	773			56.7533	8.5789	
+DK	7970	Redsted M	North Denmark	19	Morsø Kommune	773			56.741	8.6453	
+DK	7980	Vils	North Denmark	19	Morsø Kommune	773			56.7585	8.7271	
+DK	7990	Øster Assels	North Denmark	19	Morsø Kommune	773			56.7025	8.7222	
+DK	7700	Thisted	North Denmark	19	Thisted Kommune	787			56.9726	8.6263	
+DK	7730	Hanstholm	North Denmark	19	Thisted Kommune	787			57.107	8.6391	
+DK	7741	Frøstrup	North Denmark	19	Thisted Kommune	787			57.1063	8.9832	
+DK	7742	Vesløs	North Denmark	19	Thisted Kommune	787			57.022	8.9721	
+DK	7752	Snedsted	North Denmark	19	Thisted Kommune	787			56.8782	8.5045	
+DK	7755	Bedsted Thy	North Denmark	19	Thisted Kommune	787			56.821	8.4021	
+DK	7760	Hurup Thy	North Denmark	19	Thisted Kommune	787			56.7306	8.4147	
+DK	7770	Vestervig	North Denmark	19	Thisted Kommune	787			56.7726	8.2802	
+DK	9320	Hjallerup	North Denmark	19	Brønderslev Kommune	810			57.1772	10.1484	
+DK	9330	Dronninglund	North Denmark	19	Brønderslev Kommune	810			57.1791	10.2976	
+DK	9340	Asaa	North Denmark	19	Brønderslev Kommune	810			57.1367	10.3919	
+DK	9700	Brønderslev	North Denmark	19	Brønderslev Kommune	810			57.273	9.9482	
+DK	9740	Jerslev J	North Denmark	19	Brønderslev Kommune	810			57.2896	10.1101	
+DK	9300	Sæby	North Denmark	19	Frederikshavn Kommune	813			57.3102	10.5013	
+DK	9352	Dybvad	North Denmark	19	Frederikshavn Kommune	813			57.2803	10.3281	
+DK	9750	Østervrå	North Denmark	19	Frederikshavn Kommune	813			57.3401	10.2594	
+DK	9900	Frederikshavn	North Denmark	19	Frederikshavn Kommune	813			57.4404	10.5041	
+DK	9970	Strandby	North Denmark	19	Frederikshavn Kommune	813			57.4956	10.4893	
+DK	9981	Jerup	North Denmark	19	Frederikshavn Kommune	813			57.5261	10.4362	
+DK	9982	Ålbæk	North Denmark	19	Frederikshavn Kommune	813			57.5996	10.4044	
+DK	9990	Skagen	North Denmark	19	Frederikshavn Kommune	813			57.7208	10.5621	
+DK	9600	Aars	North Denmark	19	Vesthimmerland Kommune	820			56.8062	9.4964	
+DK	9620	Aalestrup	North Denmark	19	Vesthimmerland Kommune	820			56.694	9.4909	
+DK	9631	Gedsted	North Denmark	19	Vesthimmerland Kommune	820			56.6911	9.3438	
+DK	9640	Farsø	North Denmark	19	Vesthimmerland Kommune	820			56.7691	9.2872	
+DK	9670	Løgstør	North Denmark	19	Vesthimmerland Kommune	820			56.9303	9.2656	
+DK	9681	Ranum	North Denmark	19	Vesthimmerland Kommune	820			56.8967	9.2038	
+DK	9940	Læsø	North Denmark	19	Læso Kommune	825			57.288	11.0146	
+DK	9520	Skørping	North Denmark	19	Rebild Kommune	840			56.8442	9.9058	
+DK	9530	Støvring	North Denmark	19	Rebild Kommune	840			56.8945	9.8197	
+DK	9541	Suldrup	North Denmark	19	Rebild Kommune	840			56.8479	9.6904	
+DK	9574	Bælum	North Denmark	19	Rebild Kommune	840			56.8271	10.1248	
+DK	9575	Terndrup	North Denmark	19	Rebild Kommune	840			56.8125	10.0575	
+DK	9610	Nørager	North Denmark	19	Rebild Kommune	840			56.7454	9.6701	
+DK	9500	Hobro	North Denmark	19	Mariagerfjord Kommune	846			56.6469	9.7953	
+DK	9510	Arden	North Denmark	19	Mariagerfjord Kommune	846			56.7647	9.892	
+DK	9550	Mariager	North Denmark	19	Mariagerfjord Kommune	846			56.6527	10.008	
+DK	9560	Hadsund	North Denmark	19	Mariagerfjord Kommune	846			56.7505	10.2076	
+DK	9440	Aabybro	North Denmark	19	Jammerbugt Kommune	849			57.1458	9.7416	
+DK	9460	Brovst	North Denmark	19	Jammerbugt Kommune	849			57.1072	9.5186	
+DK	9490	Pandrup	North Denmark	19	Jammerbugt Kommune	849			57.2111	9.6381	
+DK	9492	Blokhus	North Denmark	19	Jammerbugt Kommune	849			57.2542	9.6048	
+DK	9493	Saltum	North Denmark	19	Jammerbugt Kommune	849			57.2809	9.6602	
+DK	9690	Fjerritslev	North Denmark	19	Jammerbugt Kommune	849			57.0961	9.2608	
+DK	9000	Aalborg	North Denmark	19	Ålborg Kommune	851			57.0394	9.9135	
+DK	9200	Aalborg SV	North Denmark	19	Ålborg Kommune	851			57.0116	9.8702	
+DK	9210	Aalborg SØ	North Denmark	19	Ålborg Kommune	851			57.0108	9.9382	
+DK	9220	Aalborg Øst	North Denmark	19	Ålborg Kommune	851			57.0291	9.9939	
+DK	9230	Svenstrup J	North Denmark	19	Ålborg Kommune	851			56.9679	9.8502	
+DK	9240	Nibe	North Denmark	19	Ålborg Kommune	851			56.9807	9.6229	
+DK	9260	Gistrup	North Denmark	19	Ålborg Kommune	851			56.9813	9.9943	
+DK	9270	Klarup	North Denmark	19	Ålborg Kommune	851			57.0119	10.05	
+DK	9280	Storvorde	North Denmark	19	Ålborg Kommune	851			56.9769	10.1718	
+DK	9293	Kongerslev	North Denmark	19	Ålborg Kommune	851			56.8928	10.1153	
+DK	9310	Vodskov	North Denmark	19	Ålborg Kommune	851			57.1002	10.0665	
+DK	9362	Gandrup	North Denmark	19	Ålborg Kommune	851			57.0555	10.1854	
+DK	9370	Hals	North Denmark	19	Ålborg Kommune	851			57.0316	10.3312	
+DK	9380	Vestbjerg	North Denmark	19	Ålborg Kommune	851			57.1318	9.9628	
+DK	9381	Sulsted	North Denmark	19	Ålborg Kommune	851			57.1645	9.9601	
+DK	9382	Tylstrup	North Denmark	19	Ålborg Kommune	851			57.1981	9.9408	
+DK	9400	Nørresundby	North Denmark	19	Ålborg Kommune	851			57.0698	9.9249	
+DK	9430	Vadum	North Denmark	19	Ålborg Kommune	851			57.1195	9.8578	
+DK	9480	Løkken	North Denmark	19	Hjørring Kommune	860			57.3825	9.7439	
+DK	9760	Vrå	North Denmark	19	Hjørring Kommune	860			57.3581	9.9481	
+DK	9800	Hjørring	North Denmark	19	Hjørring Kommune	860			57.4654	9.9685	
+DK	9830	Tårs	North Denmark	19	Hjørring Kommune	860			57.3804	10.1308	
+DK	9850	Hirtshals	North Denmark	19	Hjørring Kommune	860			57.5707	9.9667	
+DK	9870	Sindal	North Denmark	19	Hjørring Kommune	860			57.4677	10.236	
+DK	9881	Bindslev	North Denmark	19	Hjørring Kommune	860			57.5707	10.2023	
+DK	2670	Greve	Zealand	20	Greve Kommune	253			55.5906	12.3018	
+DK	2690	Karlslunde	Zealand	20	Greve Kommune	253			55.5663	12.2468	
+DK	4030	Tune	Zealand	20	Greve Kommune	253			55.5955	12.1851	
+DK	4140	Borup	Zealand	20	Køge Kommune	259			55.4947	11.9809	
+DK	4600	Køge	Zealand	20	Køge Kommune	259			55.4624	12.1696	
+DK	4623	Lille Skensved	Zealand	20	Køge Kommune	259			55.4975	12.096	
+DK	4632	Bjæverskov	Zealand	20	Køge Kommune	259			55.4571	12.0418	
+DK	4681	Herfølge	Zealand	20	Køge Kommune	259			55.4109	12.1414	
+DK	4682	Tureby	Zealand	20	Køge Kommune	259			55.3841	12.0821	
+DK	4000	Roskilde	Zealand	20	Roskilde Kommune	265			55.6513	12.0958	
+DK	4040	Jyllinge	Zealand	20	Roskilde Kommune	265			55.7585	12.1069	
+DK	4130	Viby Sjælland	Zealand	20	Roskilde Kommune	265			55.5499	12.0221	
+DK	4621	Gadstrup	Zealand	20	Roskilde Kommune	265			55.5705	12.1032	
+DK	2680	Solrød Strand	Zealand	20	Solrød Kommune	269			55.532	12.213	
+DK	4622	Havdrup	Zealand	20	Solrød Kommune	269			55.5438	12.1221	
+DK	4500	Nykøbing Sj	Zealand	20	Odsherred Kommune	306			55.9281	11.6393	
+DK	4534	Hørve	Zealand	20	Odsherred Kommune	306			55.7538	11.4328	
+DK	4540	Fårevejle	Zealand	20	Odsherred Kommune	306			55.8166	11.4282	
+DK	4550	Asnæs	Zealand	20	Odsherred Kommune	306			55.8255	11.4991	
+DK	4560	Vig	Zealand	20	Odsherred Kommune	306			55.8585	11.5577	
+DK	4571	Grevinge	Zealand	20	Odsherred Kommune	306			55.7935	11.5885	
+DK	4572	Nørre Asmindrup	Zealand	20	Odsherred Kommune	306			55.8798	11.6151	
+DK	4573	Højby	Zealand	20	Odsherred Kommune	306			55.9059	11.5548	
+DK	4581	Rørvig	Zealand	20	Odsherred Kommune	306			55.9497	11.7498	
+DK	4583	Sjællands Odde	Zealand	20	Odsherred Kommune	306			55.9712	11.3624	
+DK	4300	Holbæk	Zealand	20	Holbæk Kommune	316			55.7186	11.7069	
+DK	4305	Orø	Zealand	20	Holbæk Kommune	316			55.7717	11.813	
+DK	4340	Tølløse	Zealand	20	Holbæk Kommune	316			55.6114	11.727	
+DK	4350	Ugerløse	Zealand	20	Holbæk Kommune	316			55.5881	11.6489	
+DK	4360	Kirke Eskilstrup	Zealand	20	Holbæk Kommune	316			55.5705	11.7737	
+DK	4370	Store Merløse	Zealand	20	Holbæk Kommune	316			55.5462	11.7159	
+DK	4390	Vipperød	Zealand	20	Holbæk Kommune	316			55.6675	11.7431	
+DK	4420	Regstrup	Zealand	20	Holbæk Kommune	316			55.6664	11.6185	
+DK	4440	Mørkøv	Zealand	20	Holbæk Kommune	316			55.6513	11.5085	
+DK	4450	Jyderup	Zealand	20	Holbæk Kommune	316			55.6602	11.4104	
+DK	4520	Svinninge	Zealand	20	Holbæk Kommune	316			55.7188	11.4769	
+DK	4532	Gislinge	Zealand	20	Holbæk Kommune	316			55.7328	11.5543	
+DK	4640	Faxe	Zealand	20	Faxe Kommune	320			55.2452	12.12	
+DK	4653	Karise	Zealand	20	Faxe Kommune	320			55.3055	12.1959	
+DK	4654	Faxe Ladeplads	Zealand	20	Faxe Kommune	320			55.2174	12.1601	
+DK	4683	Rønnede	Zealand	20	Faxe Kommune	320			55.2514	12.0302	
+DK	4690	Haslev	Zealand	20	Faxe Kommune	320			55.325	11.9696	
+DK	4270	Høng	Zealand	20	Kalundborg Kommune	326			55.5073	11.296	
+DK	4281	Gørlev	Zealand	20	Kalundborg Kommune	326			55.5324	11.1825	
+DK	4400	Kalundborg	Zealand	20	Kalundborg Kommune	326			55.6882	11.0848	
+DK	4460	Snertinge	Zealand	20	Kalundborg Kommune	326			55.7118	11.3801	
+DK	4470	Svebølle	Zealand	20	Kalundborg Kommune	326			55.6511	11.2885	
+DK	4480	Store Fuglede	Zealand	20	Kalundborg Kommune	326			55.5759	11.1709	
+DK	4490	Jerslev Sjælland	Zealand	20	Kalundborg Kommune	326			55.6163	11.2278	
+DK	4591	Føllenslev	Zealand	20	Kalundborg Kommune	326			55.746	11.3329	
+DK	4592	Sejerø	Zealand	20	Kalundborg Kommune	326			55.8916	11.1334	
+DK	4593	Eskebjerg	Zealand	20	Kalundborg Kommune	326			55.7022	11.274	
+DK	4100	Ringsted	Zealand	20	Ringsted Kommune	329			55.4442	11.8065	
+DK	4174	Jystrup Midtsj	Zealand	20	Ringsted Kommune	329			55.5176	11.8643	
+DK	4200	Slagelse	Zealand	20	Slagelse Kommune	330			55.4044	11.3353	
+DK	4220	Korsør	Zealand	20	Slagelse Kommune	330			55.3415	11.1549	
+DK	4230	Skælskør	Zealand	20	Slagelse Kommune	330			55.2517	11.3043	
+DK	4241	Vemmelev	Zealand	20	Slagelse Kommune	330			55.3612	11.2565	
+DK	4242	Boeslunde	Zealand	20	Slagelse Kommune	330			55.305	11.2653	
+DK	4243	Rude	Zealand	20	Slagelse Kommune	330			55.2142	11.4891	
+DK	4244	Agersø	Zealand	20	Slagelse Kommune	330			55.2155	11.186	
+DK	4245	Omø	Zealand	20	Slagelse Kommune	330			55.1575	11.1527	
+DK	4261	Dalmose	Zealand	20	Slagelse Kommune	330			55.2855	11.4168	
+DK	4652	Hårlev	Zealand	20	Stevns Kommune	336			55.3509	12.2291	
+DK	4660	Store Heddinge	Zealand	20	Stevns Kommune	336			55.3096	12.3772	
+DK	4671	Strøby	Zealand	20	Stevns Kommune	336			55.395	12.2964	
+DK	4672	Klippinge	Zealand	20	Stevns Kommune	336			55.3553	12.3319	
+DK	4673	Rødvig Stevns	Zealand	20	Stevns Kommune	336			55.2576	12.3671	
+DK	4173	Fjenneslev	Zealand	20	Sorø Kommune	340			55.4334	11.6617	
+DK	4180	Sorø	Zealand	20	Sorø Kommune	340			55.4361	11.5633	
+DK	4190	Munke Bjergby	Zealand	20	Sorø Kommune	340			55.4991	11.5253	
+DK	4291	Ruds Vedby	Zealand	20	Sorø Kommune	340			55.5393	11.3794	
+DK	4293	Dianalund	Zealand	20	Sorø Kommune	340			55.5331	11.4889	
+DK	4295	Stenlille	Zealand	20	Sorø Kommune	340			55.543	11.5842	
+DK	4296	Nyrup	Zealand	20	Sorø Kommune	340			55.5434	11.6494	
+DK	4060	Kirke Såby	Zealand	20	Lejre Kommune	350			55.6459	11.8572	
+DK	4070	Kirke Hyllinge	Zealand	20	Lejre Kommune	350			55.7007	11.8935	
+DK	4320	Lejre	Zealand	20	Lejre Kommune	350			55.5819	11.9668	
+DK	4330	Hvalsø	Zealand	20	Lejre Kommune	350			55.5938	11.8649	
+DK	4895	Errindlev	Zealand	20	Lolland Kommune	360			54.6636	11.5015	
+DK	4900	Nakskov	Zealand	20	Lolland Kommune	360			54.8288	11.1277	
+DK	4912	Harpelunde	Zealand	20	Lolland Kommune	360			54.8771	11.0719	
+DK	4913	Horslunde	Zealand	20	Lolland Kommune	360			54.9212	11.2104	
+DK	4920	Søllested	Zealand	20	Lolland Kommune	360			54.8032	11.278	
+DK	4930	Maribo	Zealand	20	Lolland Kommune	360			54.7737	11.4972	
+DK	4941	Bandholm	Zealand	20	Lolland Kommune	360			54.8389	11.4681	
+DK	4942	Askø	Zealand	20	Lolland Kommune	360			54.893	11.4993	
+DK	4943	Torrig L	Zealand	20	Lolland Kommune	360			54.9085	11.3244	
+DK	4944	Fejø	Zealand	20	Lolland Kommune	360			54.9441	11.4089	
+DK	4945	Femø	Zealand	20	Lolland Kommune	360			54.9739	11.5378	
+DK	4951	Nørreballe	Zealand	20	Lolland Kommune	360			54.8094	11.4285	
+DK	4952	Stokkemarke	Zealand	20	Lolland Kommune	360			54.843	11.3728	
+DK	4953	Vesterborg	Zealand	20	Lolland Kommune	360			54.8652	11.2954	
+DK	4960	Holeby	Zealand	20	Lolland Kommune	360			54.7098	11.4829	
+DK	4970	Rødby	Zealand	20	Lolland Kommune	360			54.6835	11.3591	
+DK	4983	Dannemare	Zealand	20	Lolland Kommune	360			54.7396	11.189	
+DK	4160	Herlufmagle	Zealand	20	Næstved Kommune	370			55.3139	11.751	
+DK	4171	Glumsø	Zealand	20	Næstved Kommune	370			55.3621	11.6897	
+DK	4250	Fuglebjerg	Zealand	20	Næstved Kommune	370			55.3092	11.5482	
+DK	4262	Sandved	Zealand	20	Næstved Kommune	370			55.2534	11.5218	
+DK	4684	Holmegaard	Zealand	20	Næstved Kommune	370			55.268	11.8297	
+DK	4700	Næstved	Zealand	20	Næstved Kommune	370			55.2237	11.7629	
+DK	4733	Tappernøje	Zealand	20	Næstved Kommune	370			55.1769	11.9719	
+DK	4736	Karrebæksminde	Zealand	20	Næstved Kommune	370			55.1778	11.6523	
+DK	4800	Nykøbing F	Zealand	20	Guldborgsund Kommune	376			54.7723	11.884	
+DK	4840	Nørre Alslev	Zealand	20	Guldborgsund Kommune	376			54.9069	11.8529	
+DK	4850	Stubbekøbing	Zealand	20	Guldborgsund Kommune	376			54.8846	12.0383	
+DK	4862	Guldborg	Zealand	20	Guldborgsund Kommune	376			54.8637	11.7322	
+DK	4863	Eskilstrup	Zealand	20	Guldborgsund Kommune	376			54.8542	11.8843	
+DK	4871	Horbelev	Zealand	20	Guldborgsund Kommune	376			54.8238	12.0644	
+DK	4872	Idestrup	Zealand	20	Guldborgsund Kommune	376			54.7247	11.9782	
+DK	4873	Væggerløse	Zealand	20	Guldborgsund Kommune	376			54.6829	11.9496	
+DK	4874	Gedser	Zealand	20	Guldborgsund Kommune	376			54.5953	11.944	
+DK	4880	Nysted	Zealand	20	Guldborgsund Kommune	376			54.6704	11.7255	
+DK	4891	Toreby L	Zealand	20	Guldborgsund Kommune	376			54.7597	11.7775	
+DK	4892	Kettinge	Zealand	20	Guldborgsund Kommune	376			54.7008	11.747	
+DK	4894	Øster Ulslev	Zealand	20	Guldborgsund Kommune	376			54.6958	11.6061	
+DK	4990	Sakskøbing	Zealand	20	Guldborgsund Kommune	376			54.7971	11.6452	
+DK	4720	Præstø	Zealand	20	Vordingborg Kommune	390			55.1112	12.0618	
+DK	4735	Mern	Zealand	20	Vordingborg Kommune	390			55.0464	12.0706	
+DK	4750	Lundby	Zealand	20	Vordingborg Kommune	390			55.1098	11.8361	
+DK	4760	Vordingborg	Zealand	20	Vordingborg Kommune	390			55.0184	11.9152	
+DK	4771	Kalvehave	Zealand	20	Vordingborg Kommune	390			55.003	12.1508	
+DK	4772	Langebæk	Zealand	20	Vordingborg Kommune	390			54.9976	12.0811	
+DK	4773	Stensved	Zealand	20	Vordingborg Kommune	390			54.995	12.0268	
+DK	4780	Stege	Zealand	20	Vordingborg Kommune	390			54.9904	12.2915	
+DK	4791	Borre	Zealand	20	Vordingborg Kommune	390			54.9777	12.4697	
+DK	4792	Askeby	Zealand	20	Vordingborg Kommune	390			54.9063	12.1605	
+DK	4793	Bogø By	Zealand	20	Vordingborg Kommune	390			54.9233	12.0508	
+DK	5463	Harndrup	South Denmark	21	Middelfart Kommune	410			55.4572	10.0226	
+DK	5464	Brenderup Fyn	South Denmark	21	Middelfart Kommune	410			55.4986	9.9731	
+DK	5466	Asperup	South Denmark	21	Middelfart Kommune	410			55.4964	9.9025	
+DK	5500	Middelfart	South Denmark	21	Middelfart Kommune	410			55.5063	9.764	
+DK	5580	Nørre Aaby	South Denmark	21	Middelfart Kommune	410			55.4544	9.8711	
+DK	5591	Gelsted	South Denmark	21	Middelfart Kommune	410			55.3948	9.9623	
+DK	5592	Ejby	South Denmark	21	Middelfart Kommune	410			55.4228	9.9224	
+DK	5492	Vissenbjerg	South Denmark	21	Assens Kommune	420			55.3875	10.137	
+DK	5560	Aarup	South Denmark	21	Assens Kommune	420			55.3759	10.0484	
+DK	5610	Assens	South Denmark	21	Assens Kommune	420			55.2803	9.9166	
+DK	5620	Glamsbjerg	South Denmark	21	Assens Kommune	420			55.2758	10.0941	
+DK	5631	Ebberup	South Denmark	21	Assens Kommune	420			55.2081	9.9902	
+DK	5683	Haarby	South Denmark	21	Assens Kommune	420			55.2123	10.1075	
+DK	5690	Tommerup	South Denmark	21	Assens Kommune	420			55.3243	10.2044	
+DK	5600	Faaborg	South Denmark	21	Faaborg-Midtfyn Kommune	430			55.1049	10.2503	
+DK	5601	Lyø	South Denmark	21	Faaborg-Midtfyn Kommune	430			55.0434	10.1513	
+DK	5602	Avernakø	South Denmark	21	Faaborg-Midtfyn Kommune	430			55.025	10.2758	
+DK	5603	Bjørnø	South Denmark	21	Faaborg-Midtfyn Kommune	430			55.0639	10.2517	
+DK	5642	Millinge	South Denmark	21	Faaborg-Midtfyn Kommune	430			55.1412	10.1733	
+DK	5672	Broby	South Denmark	21	Faaborg-Midtfyn Kommune	430			55.2422	10.2629	
+DK	5750	Ringe	South Denmark	21	Faaborg-Midtfyn Kommune	430			55.2326	10.4568	
+DK	5772	Kværndrup	South Denmark	21	Faaborg-Midtfyn Kommune	430			55.179	10.5316	
+DK	5792	Årslev	South Denmark	21	Faaborg-Midtfyn Kommune	430			55.3009	10.4407	
+DK	5854	Gislev	South Denmark	21	Faaborg-Midtfyn Kommune	430			55.2161	10.6006	
+DK	5856	Ryslinge	South Denmark	21	Faaborg-Midtfyn Kommune	430			55.2371	10.5366	
+DK	5863	Ferritslev Fyn	South Denmark	21	Faaborg-Midtfyn Kommune	430			55.3133	10.5821	
+DK	5290	Marslev	South Denmark	21	Kerteminde Kommune	440			55.395	10.5238	
+DK	5300	Kerteminde	South Denmark	21	Kerteminde Kommune	440			55.4519	10.6486	
+DK	5330	Munkebo	South Denmark	21	Kerteminde Kommune	440			55.458	10.5544	
+DK	5350	Rynkeby	South Denmark	21	Kerteminde Kommune	440			55.3997	10.6134	
+DK	5370	Mesinge	South Denmark	21	Kerteminde Kommune	440			55.508	10.629	
+DK	5380	Dalby	South Denmark	21	Kerteminde Kommune	440			55.5166	10.6722	
+DK	5390	Martofte	South Denmark	21	Kerteminde Kommune	440			55.5703	10.6254	
+DK	5550	Langeskov	South Denmark	21	Kerteminde Kommune	440			55.3614	10.5855	
+DK	5540	Ullerslev	South Denmark	21	Nyborg Kommune	450			55.3583	10.6646	
+DK	5800	Nyborg	South Denmark	21	Nyborg Kommune	450			55.322	10.7801	
+DK	5853	Ørbæk	South Denmark	21	Nyborg Kommune	450			55.264	10.6608	
+DK	5871	Frørup	South Denmark	21	Nyborg Kommune	450			55.2388	10.7645	
+DK	5000	Odense C	South Denmark	21	Odense Kommune	461			55.4028	10.392	
+DK	5200	Odense V	South Denmark	21	Odense Kommune	461			55.3953	10.3289	
+DK	5210	Odense NV	South Denmark	21	Odense Kommune	461			55.415	10.3132	
+DK	5220	Odense SØ	South Denmark	21	Odense Kommune	461			55.3727	10.4601	
+DK	5230	Odense M	South Denmark	21	Odense Kommune	461			55.381	10.4017	
+DK	5240	Odense NØ	South Denmark	21	Odense Kommune	461			55.4176	10.4446	
+DK	5250	Odense SV	South Denmark	21	Odense Kommune	461			55.3585	10.3366	
+DK	5260	Odense S	South Denmark	21	Odense Kommune	461			55.3462	10.3902	
+DK	5270	Odense N	South Denmark	21	Odense Kommune	461			55.4341	10.3612	
+DK	5320	Agedrup	South Denmark	21	Odense Kommune	461			55.4259	10.4757	
+DK	5491	Blommenslyst	South Denmark	21	Odense Kommune	461			55.3879	10.25	
+DK	5700	Svendborg	South Denmark	21	Svendborg Kommune	479			55.0528	10.6094	
+DK	5762	Vester Skerninge	South Denmark	21	Svendborg Kommune	479			55.0722	10.4594	
+DK	5771	Stenstrup	South Denmark	21	Svendborg Kommune	479			55.1272	10.5131	
+DK	5874	Hesselager	South Denmark	21	Svendborg Kommune	479			55.1711	10.766	
+DK	5881	Skårup Fyn	South Denmark	21	Svendborg Kommune	479			55.0869	10.6986	
+DK	5882	Vejstrup	South Denmark	21	Svendborg Kommune	479			55.1092	10.7094	
+DK	5883	Oure	South Denmark	21	Svendborg Kommune	479			55.1218	10.725	
+DK	5884	Gudme	South Denmark	21	Svendborg Kommune	479			55.1497	10.7034	
+DK	5892	Gudbjerg Sydfyn	South Denmark	21	Svendborg Kommune	479			55.157	10.6569	
+DK	5400	Bogense	South Denmark	21	Nordfyns Kommune	480			55.5548	10.0939	
+DK	5450	Otterup	South Denmark	21	Nordfyns Kommune	480			55.5401	10.4029	
+DK	5462	Morud	South Denmark	21	Nordfyns Kommune	480			55.4437	10.1928	
+DK	5471	Søndersø	South Denmark	21	Nordfyns Kommune	480			55.4912	10.2028	
+DK	5474	Veflinge	South Denmark	21	Nordfyns Kommune	480			55.4682	10.1526	
+DK	5485	Skamby	South Denmark	21	Nordfyns Kommune	480			55.5188	10.2766	
+DK	5900	Rudkøbing	South Denmark	21	Langeland Kommune	482			54.923	10.7403	
+DK	5932	Humble	South Denmark	21	Langeland Kommune	482			54.8126	10.6901	
+DK	5935	Bagenkop	South Denmark	21	Langeland Kommune	482			54.7511	10.6862	
+DK	5943	Strynø	South Denmark	21	Langeland Kommune	482			54.9049	10.6108	
+DK	5953	Tranekær	South Denmark	21	Langeland Kommune	482			55.0605	10.8773	
+DK	5960	Marstal	South Denmark	21	Ærø Kommune	492			54.8575	10.5085	
+DK	5965	Birkholm	South Denmark	21	Ærø Kommune	492			54.9307	10.5042	
+DK	5970	Ærøskøbing	South Denmark	21	Ærø Kommune	492			54.8771	10.3895	
+DK	5985	Søby Ærø	South Denmark	21	Ærø Kommune	492			54.9319	10.2671	
+DK	6100	Haderslev	South Denmark	21	Haderslev Kommune	510			55.2431	9.5239	
+DK	6500	Vojens	South Denmark	21	Haderslev Kommune	510			55.2428	9.2999	
+DK	6510	Gram	South Denmark	21	Haderslev Kommune	510			55.2814	9.0265	
+DK	6541	Bevtoft	South Denmark	21	Haderslev Kommune	510			55.198	9.204	
+DK	6560	Sommersted	South Denmark	21	Haderslev Kommune	510			55.3226	9.284	
+DK	6623	Vorbasse	South Denmark	21	Billund Kommune	530			55.6354	9.0813	
+DK	7190	Billund	South Denmark	21	Billund Kommune	530			55.7261	9.1164	
+DK	7200	Grindsted	South Denmark	21	Billund Kommune	530			55.7602	8.9211	
+DK	7250	Hejnsvig	South Denmark	21	Billund Kommune	530			55.6884	8.9799	
+DK	7260	Sønder Omme	South Denmark	21	Billund Kommune	530			55.8425	8.8964	
+DK	6300	Gråsten	South Denmark	21	Sønderborg Kommune	540			54.9146	9.5725	
+DK	6310	Broager	South Denmark	21	Sønderborg Kommune	540			54.8859	9.6782	
+DK	6320	Egernsund	South Denmark	21	Sønderborg Kommune	540			54.9041	9.6154	
+DK	6400	Sønderborg	South Denmark	21	Sønderborg Kommune	540			54.9213	9.7764	
+DK	6430	Nordborg	South Denmark	21	Sønderborg Kommune	540			55.0331	9.7881	
+DK	6440	Augustenborg	South Denmark	21	Sønderborg Kommune	540			54.9631	9.9198	
+DK	6470	Sydals	South Denmark	21	Sønderborg Kommune	540			54.9011	9.9565	
+DK	6240	Løgumkloster	South Denmark	21	Tønder Kommune	550			55.0555	8.979	
+DK	6261	Bredebro	South Denmark	21	Tønder Kommune	550			55.0545	8.7706	
+DK	6270	Tønder	South Denmark	21	Tønder Kommune	550			54.9442	8.8692	
+DK	6280	Højer	South Denmark	21	Tønder Kommune	550			54.973	8.704	
+DK	6520	Toftlund	South Denmark	21	Tønder Kommune	550			55.1794	9.0356	
+DK	6534	Agerskov	South Denmark	21	Tønder Kommune	550			55.1294	9.1426	
+DK	6535	Branderup J	South Denmark	21	Tønder Kommune	550			55.1198	9.065	
+DK	6780	Skærbæk	South Denmark	21	Tønder Kommune	550			55.1659	8.7766	
+DK	6792	Rømø	South Denmark	21	Tønder Kommune	550			55.1154	8.5377	
+DK	6690	Gørding	South Denmark	21	Esbjerg Kommune	561			55.4732	8.8019	
+DK	6700	Esbjerg	South Denmark	21	Esbjerg Kommune	561			55.4732	8.4592	
+DK	6705	Esbjerg Ø	South Denmark	21	Esbjerg Kommune	561			55.4886	8.4965	
+DK	6710	Esbjerg V	South Denmark	21	Esbjerg Kommune	561			55.5165	8.3942	
+DK	6715	Esbjerg N	South Denmark	21	Esbjerg Kommune	561			55.517	8.4587	
+DK	6731	Tjæreborg	South Denmark	21	Esbjerg Kommune	561			55.4648	8.5852	
+DK	6740	Bramming	South Denmark	21	Esbjerg Kommune	561			55.4711	8.7055	
+DK	6760	Ribe	South Denmark	21	Esbjerg Kommune	561			55.3209	8.7714	
+DK	6771	Gredstedbro	South Denmark	21	Esbjerg Kommune	561			55.4033	8.7495	
+DK	6720	Fanø	South Denmark	21	Fanø Kommune	563			55.4173	8.4037	
+DK	6753	Agerbæk	South Denmark	21	Varde Kommune	573			55.6024	8.8009	
+DK	6800	Varde	South Denmark	21	Varde Kommune	573			55.6349	8.5033	
+DK	6818	Årre	South Denmark	21	Varde Kommune	573			55.5748	8.6743	
+DK	6823	Ansager	South Denmark	21	Varde Kommune	573			55.7173	8.7474	
+DK	6830	Nørre Nebel	South Denmark	21	Varde Kommune	573			55.7814	8.2688	
+DK	6840	Oksbøl	South Denmark	21	Varde Kommune	573			55.6419	8.2731	
+DK	6851	Janderup Vestj	South Denmark	21	Varde Kommune	573			55.6306	8.3734	
+DK	6852	Billum	South Denmark	21	Varde Kommune	573			55.6137	8.3274	
+DK	6853	Vejers Strand	South Denmark	21	Varde Kommune	573			55.6247	8.1316	
+DK	6854	Henne	South Denmark	21	Varde Kommune	573			55.7332	8.2051	
+DK	6855	Outrup	South Denmark	21	Varde Kommune	573			55.7166	8.353	
+DK	6857	Blåvand	South Denmark	21	Varde Kommune	573			55.5542	8.1504	
+DK	6862	Tistrup	South Denmark	21	Varde Kommune	573			55.7165	8.612	
+DK	6870	Ølgod	South Denmark	21	Varde Kommune	573			55.8017	8.6196	
+DK	6600	Vejen	South Denmark	21	Vejen Kommune	575			55.4789	9.1389	
+DK	6621	Gesten	South Denmark	21	Vejen Kommune	575			55.5269	9.2039	
+DK	6622	Bække	South Denmark	21	Vejen Kommune	575			55.5753	9.1472	
+DK	6630	Rødding	South Denmark	21	Vejen Kommune	575			55.3707	9.1124	
+DK	6650	Brørup	South Denmark	21	Vejen Kommune	575			55.4951	9.0153	
+DK	6660	Lintrup	South Denmark	21	Vejen Kommune	575			55.4117	8.9784	
+DK	6670	Holsted	South Denmark	21	Vejen Kommune	575			55.4998	8.9129	
+DK	6682	Hovborg	South Denmark	21	Vejen Kommune	575			55.6063	8.9381	
+DK	6683	Føvling	South Denmark	21	Vejen Kommune	575			55.4394	8.9093	
+DK	6752	Glejbjerg	South Denmark	21	Vejen Kommune	575			55.5571	8.8302	
+DK	6200	Aabenraa	South Denmark	21	Aabenraa Kommune	580			55.033	9.4398	
+DK	6210	Barsø	South Denmark	21	Aabenraa Kommune	580			55.1214	9.5554	
+DK	6230	Rødekro	South Denmark	21	Aabenraa Kommune	580			55.072	9.3241	
+DK	6330	Padborg	South Denmark	21	Aabenraa Kommune	580			54.8367	9.3538	
+DK	6340	Kruså	South Denmark	21	Aabenraa Kommune	580			54.858	9.4359	
+DK	6360	Tinglev	South Denmark	21	Aabenraa Kommune	580			54.9316	9.2426	
+DK	6372	Bylderup-Bov	South Denmark	21	Aabenraa Kommune	580			54.9577	9.1024	
+DK	6392	Bolderslev	South Denmark	21	Aabenraa Kommune	580			54.9917	9.2719	
+DK	7000	Fredericia	South Denmark	21	Fredericia Kommune	607			55.5618	9.7151	
+DK	6000	Kolding	South Denmark	21	Kolding Kommune	621			55.4924	9.4798	
+DK	6051	Almind	South Denmark	21	Kolding Kommune	621			55.5629	9.4824	
+DK	6052	Viuf	South Denmark	21	Kolding Kommune	621			55.5882	9.4914	
+DK	6064	Jordrup	South Denmark	21	Kolding Kommune	621			55.5509	9.3138	
+DK	6070	Christiansfeld	South Denmark	21	Kolding Kommune	621			55.3609	9.4699	
+DK	6091	Bjert	South Denmark	21	Kolding Kommune	621			55.4528	9.5657	
+DK	6092	Sønder Stenderup	South Denmark	21	Kolding Kommune	621			55.4581	9.6225	
+DK	6093	Sjølund	South Denmark	21	Kolding Kommune	621			55.4074	9.5588	
+DK	6094	Hejls	South Denmark	21	Kolding Kommune	621			55.3733	9.5986	
+DK	6580	Vamdrup	South Denmark	21	Kolding Kommune	621			55.4235	9.3053	
+DK	6640	Lunderskov	South Denmark	21	Kolding Kommune	621			55.4831	9.3079	
+DK	6040	Egtved	South Denmark	21	Vejle Kommune	630			55.61	9.3509	
+DK	7080	Børkop	South Denmark	21	Vejle Kommune	630			55.6471	9.6723	
+DK	7100	Vejle	South Denmark	21	Vejle Kommune	630			55.7042	9.5245	
+DK	7120	Vejle Øst	South Denmark	21	Vejle Kommune	630			55.7229	9.6142	
+DK	7173	Vonge	South Denmark	21	Vejle Kommune	630			55.8628	9.4181	
+DK	7182	Bredsten	South Denmark	21	Vejle Kommune	630			55.7049	9.3603	
+DK	7183	Randbøl	South Denmark	21	Vejle Kommune	630			55.687	9.2611	
+DK	7184	Vandel	South Denmark	21	Vejle Kommune	630			55.7109	9.2101	
+DK	7300	Jelling	South Denmark	21	Vejle Kommune	630			55.7642	9.425	
+DK	7321	Gadbjerg	South Denmark	21	Vejle Kommune	630			55.7698	9.3054	
+DK	7323	Give	South Denmark	21	Vejle Kommune	630			55.8507	9.25	
+DK	9100	Aalborg	Region Nordjylland	81	Aalborg Kommune	851			57.048	9.9187	
+DK	8100	Aarhus C	Region Midtjylland	82	Aarhus Kommune	751			56.1567	10.2108	
+DK	8245	Risskov Ø	Region Midtjylland	82	Aarhus Kommune	751			56.1972	10.248	1
+DK	5100	Odense C	Region Syddanmark	83	Odense Kommune	461			55.3959	10.3883	
+DK	6701	Esbjerg	Region Syddanmark	83	Esbjerg Kommune	561			55.4703	8.4519	
+DK	7007	Fredericia	Region Syddanmark	83	Fredericia Kommune	607			55.5657	9.7526	4
+DK	0900	København C	Region Hovedstaden	84	Københavns Kommune	101			57.048	9.9187	
+DK	0960	Udland	Region Hovedstaden	84	Københavns Kommune	101			56.804	9.5144	
+DK	0999	København C	Region Hovedstaden	84	Københavns Kommune	101			57.7209	10.5839	
+DK	1001	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1002	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1003	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1004	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1005	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1006	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1007	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1008	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1009	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1010	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1011	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1012	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1013	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1014	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1015	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1016	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1017	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1018	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1019	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1020	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1021	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1022	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1023	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1024	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1025	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1026	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1092	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1093	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1095	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1098	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1140	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1147	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1148	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1217	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1240	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1448	København K	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1500	København V	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1501	København V	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1502	København V	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1503	København V	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1504	København V	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1505	København V	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1506	København V	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1507	København V	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1508	København V	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1509	København V	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1510	København V	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1513	Centraltastning	Region Hovedstaden	84	Københavns Kommune	101			55.6711	12.5653	
+DK	1592	København V	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1599	København V	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1630	København V	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1780	København V	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1785	København V	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1786	København V	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1787	København V	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1790	København V	Region Hovedstaden	84	Københavns Kommune	101			55.6759	12.5655	
+DK	1835	Frederiksberg C	Region Hovedstaden	84	Frederiksberg Kommune	147			55.6794	12.5346	
+DK	0917	Københavns Pakkecent	Region Hovedstaden	84	Brøndby Kommune	153			55.6759	12.5655	
+DK	0800	Høje Taastrup	Region Hovedstaden	84	Høje-Taastrup Kommune	169			55.6471	12.2742	4
+DK	1532	København V	Region Hovedstaden	84	Tårnby Kommune	185			55.6759	12.5655	
+DK	1533	København V	Region Hovedstaden	84	Tårnby Kommune	185			55.6759	12.5655	
