@@ -70,8 +70,21 @@ function address {
         ## Note: All data imported from flat files should be placed in this section. While it would reduce line counts to just perform selections
         ## in a single step here, this should be avoided. Always perform selection actions in the InternalGen section for code consistency when possible.
 
-        $SuffixData = Resolve-LocalizedPath -Culture $Culture -ContentFile streetsuffix.txt | Import-CacheableCsv -Delimiter ','
-        $CountryData = Resolve-LocalizedPath -Culture $Culture -ContentFile countries.csv | Import-CacheableCsv -Delimiter ','
+        try {
+            $SuffixPath = Resolve-LocalizedPath -Culture $Culture -ContentFile streetsuffix.txt
+        }
+        catch {
+            Resolve-LocalizedPath -Culture en -ContentFile streetsuffix.txt
+        }
+        $SuffixData = $SuffixPath | Import-CacheableCsv -Delimiter ','
+
+        try {
+            $CountryPath = Resolve-LocalizedPath -Culture $Culture -ContentFile countries.csv
+        }
+        catch {
+            $CountryPath = Resolve-LocalizedPath -Culture en -ContentFile countries.csv
+        }
+        $CountryData = $CountryPath | Import-CacheableCsv -Delimiter ','
 
     #endregion DataImport
 
@@ -169,11 +182,11 @@ function address {
         $dsFull = 'streetAddress', 'city', 'county', 'state', 'postalCode', 'country'
 
         switch ($DataSet) {
-            'Base' { $propertyName = $dsBase }
-            Default { $propertyName = $dsFull }
+            'Base' { [array]$propertyName = $dsBase }
+            Default { [array]$propertyName = $dsFull }
         }
 
-        if($IncludeGeo){ $propertyName = $propertyName, $dsGeo }
+        if($IncludeGeo){ [array]$propertyName = $propertyName, $dsGeo }
 
     #endregion DataSet
 
