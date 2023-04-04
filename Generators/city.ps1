@@ -70,7 +70,7 @@ function city {
     [CmdletBinding(DefaultParameterSetName='Legacy')]
     param(
         [Parameter(ParameterSetName='Legacy')]
-        [ValidateSet("both", "city", "county", 'all', "countryCode", "postalCode",  "state", "stateShort", "countyProvince", "countyProvinceShort", "community", "communityShort")]
+        [ValidateSet("","both", "city", "county", 'all', "countryCode", "postalCode",  "state", "stateShort", "countyProvince", "countyProvinceShort", "community", "communityShort")]
         [string]$propertyName,
         [Parameter(ParameterSetName='New')]
         [ValidateSet('Name','Enhanced','Full')]
@@ -93,7 +93,14 @@ function city {
         ## Note: All data imported from flat files should be placed in this section. While it would reduce line counts to just perform selections
         ## in a single step here, this should be avoided. Always perform selection actions in the InternalGen section for code consistency when possible.
 
-        $CountryData = (Resolve-LocalizedPath -Culture $Culture -ContentFile countries.csv | Import-CacheableCsv -Delimiter ',').Where({$_.PostalCode -eq 1})
+        try {
+            $CountryPath = Resolve-LocalizedPath -Culture $Culture -ContentFile countries.csv
+        }
+        catch {
+            $CountryPath = Resolve-LocalizedPath -Culture en -ContentFile countries.csv
+        }
+        
+        $CountryData = ($CountryPath | Import-CacheableCsv -Delimiter ',').Where({$_.PostalCode -eq 1})
 
         if($CountryCode){
             $CountryData = ($CountryData).Where({$_.Code -eq $CountryCode})
@@ -102,7 +109,14 @@ function city {
             $CountryCode = $CountryInfo.Code
         }
 
-        $CityData = Resolve-LocalizedPath -Culture $Culture -ContentFile "$CountryCode.csv" | Import-CacheableCsv -Delimiter ','
+        try {
+            $cityPath = Resolve-LocalizedPath -Culture $Culture -ContentFile "$CountryCode.csv"
+        }
+        catch {
+            $cityPath = Resolve-LocalizedPath -Culture en -ContentFile "$CountryCode.csv"
+        }
+        
+        $CityData = $cityPath | Import-CacheableCsv -Delimiter ','
         
     #endregion DataImport
 
@@ -118,6 +132,7 @@ function city {
         ## the code for selection goes into the CreatePSObject section.
 
         $city = $CityData | Get-Random
+        Write-Verbose "Selected city: `n$city"
 
     #endregion InternalGen
 
@@ -135,41 +150,54 @@ function city {
 
         $dsGeo = 'latitude', 'longitude'
         $dsBase = 'city'
+        $dsCounty = 'countyProvince'
+        $dsBoth = 'city','countyProvince'
         $dsEnhanced = "city","stateShort","postalCode"
         $dsFull = "countryCode", "city", "countyProvince", "countyProvinceShort", "state", "stateShort", "postalCode", "community", "communityShort"
 
+		Write-Verbose "ParameterSetName [$($PSCmdlet.ParameterSetName)]"
+
         # Determine if special handling for legacy is required, and otherwise filter returned property sets
         if($PSCmdlet.ParameterSetName -eq 'Legacy'){
+			Write-Verbose "Processing as Legacy"
+			
             # If null (no value) mimic original by overriding to 'city' - can't do this in param as it would force ParameterSet to always be Legacy
-            if($null -eq $propertyName){
-                $propertyName = $dsBase
+            if($null -eq $propertyName -or $propertyName -eq ""){
+				Write-Verbose "Detected Null; Setting to dsBase [$dsBase]"
+                [array]$propertyName = $dsBase
             }
 
             # If 'county' is specified, override to be updated value from new data set
             if($propertyName -eq 'county'){
-                $propertyName -eq 'countyProvince'
+				Write-Verbose "Detected 'county'; Setting to dsCounty [$dsCounty]"
+                [array]$propertyName = $dsCounty
             }
 
             # if 'both' is specified, override to be updated values from new data set
             if($propertyName -eq 'both'){
-                $propertyName = 'city','countyProvince'
+				Write-Verbose "Detected 'both'; Setting to dsBoth [$dsBoth]"
+                [array]$propertyName = $dsBoth
             }
 
             # Add support for new 'all' option
             if($propertyName -eq 'all'){
-                $propertyName = $dsFull
+				Write-Verbose "Detected 'all'; Setting to dsFull [$dsFull]"
+                [array]$propertyName = $dsFull
             }
 
         }else {
             switch ($DataSet) {
-                'Name' { $propertyName = $dsBase }
-                'Enhanced' { $propertyName = $dsEnhanced }
-                Default { $propertyName = $dsFull }
+                'Name' { [array]$propertyName = $dsBase }
+                'Enhanced' { [array]$propertyName = $dsEnhanced }
+                Default { [array]$propertyName = $dsFull }
             }
         }
 
         # Add lat and long if IncludeGeo switch is present
-        if($IncludeGeo){ $propertyName = $propertyName, $dsGeo }
+        if($IncludeGeo){ 
+            Write-Verbose "IncludeGeo specified; Additing dsGeo [$dsGeo]"
+            [array]$propertyName = $propertyName, $dsGeo 
+        }
 
     #endregion DataSet
 
