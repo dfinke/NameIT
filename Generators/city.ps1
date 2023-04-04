@@ -69,10 +69,10 @@ function city {
 #>
     [CmdletBinding(DefaultParameterSetName='Legacy')]
     param(
-        [Parameter(ParameterSetName='Legacy')]
+        [Parameter(ParameterSetName='Legacy',Position=0)]
         [ValidateSet("","both", "city", "county", 'all', "countryCode", "postalCode",  "state", "stateShort", "countyProvince", "countyProvinceShort", "community", "communityShort")]
         [string]$propertyName,
-        [Parameter(ParameterSetName='New')]
+        [Parameter(ParameterSetName='New',Position=0)]
         [ValidateSet('Name','Enhanced','Full')]
         [string]$DataSet,
         [Parameter(ParameterSetName='New')]
@@ -206,12 +206,23 @@ function city {
         ## as either an object or string using the propertyName variable defined in the DataSet section.
 
         if($AsObject){
-            # Write output as custom object
-            $city | Select-Object -Property $propertyName
+			# Write output as custom object
+			$CallStack = Get-PSCallStack
+			Write-Verbose "Calling command - $($CallStack.Command)"
+			if($(Get-PSCallStack).Command -eq 'Invoke-Generate'){
+
+				foreach($item in $($city | Select-Object -Property $propertyName).psobject.properties){
+					$output += "$($item.Name)=$($item.Value) `n"
+				}
+			}else{
+				$output = $city | Select-Object -Property $propertyName
+			}
         }else{
             # Write output as string
-            (($city | Select-Object -Property $propertyName).psobject.properties).value -join ", "
+            $output = (($city | Select-Object -Property $propertyName).psobject.properties).value -join ", "
         }
+		
+		$output
 
     #endregion Output
 }
