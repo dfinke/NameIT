@@ -107,9 +107,29 @@ function person {
         ## Note: All data imported from flat files should be placed in this section. While it would reduce line counts to just perform selections
         ## in a single step here, this should be avoided. Always perform selection actions in the InternalGen section for code consistency when possible.
 
-        $femaleData = Resolve-LocalizedPath -Culture $Culture -ContentFile given-female.txt | Import-CacheableCsv -Delimiter ','
-        $maleData = Resolve-LocalizedPath -Culture $Culture -ContentFile given-male.txt | Import-CacheableCsv -Delimiter ','
-        $lastData = Resolve-LocalizedPath -Culture $Culture -ContentFile surnames.txt | Import-CacheableCsv -Delimiter ','
+		try{
+			$femalePath = Resolve-LocalizedPath -Culture $Culture -ContentFile given-female.txt
+		}
+		catch{
+			$femalePath = Resolve-LocalizedPath -Culture en -ContentFile given-female.txt
+		}
+        $femaleData = $femalePath | Get-CacheableContent
+		
+		try{
+			$malePath = Resolve-LocalizedPath -Culture $Culture -ContentFile given-male.txt
+		}
+		catch{
+			$malePath = Resolve-LocalizedPath -Culture en -ContentFile given-male.txt
+		}
+        $maleData = $malePath | Get-CacheableContent
+		
+		try{
+			$lastPath = Resolve-LocalizedPath -Culture $Culture -ContentFile surnames.txt
+		}
+		catch {
+			$lastPath = Resolve-LocalizedPath -Culture en -ContentFile surnames.txt
+		}
+        $lastData = $lastPath | Get-CacheableContent
 
     #endregion DataImport
 
@@ -162,7 +182,7 @@ function person {
         ## Note: Data from external and internal generation processes is converted to a custom object here. For simple selections, where only a single
         ## text value is produced, this section can be skipped. Values may be formatted in this section, but they should not be set here.
 
-        $output = [PSCustomObject]@{
+        $person = [PSCustomObject]@{
             First = $firstName
             Middle = $middleName
             Last = $lastName
@@ -182,13 +202,14 @@ function person {
         $dsFirst = 'First'
         $dsLast = 'Last'
         $dsFull = 'First', 'Middle', 'Last'
+		$dsEnhanced = 'First', 'Middle', 'Last','Gender','Age'
 
         switch ($NameParts) {
-            "first" { $propertyName = $dsFirst }
-            "last" { $propertyName = $dsLast }
-            "Full" { $propertyName = $dsFull }
-            "Enhanced" { $propertyName = '*' }
-            Default { $propertyName = $dsBase }
+            "first" { [array]$propertyName = $dsFirst }
+            "last" { [array]$propertyName = $dsLast }
+            "Full" { [array]$propertyName = $dsFull }
+            "Enhanced" { [array]$propertyName = '*' }
+            Default { [array]$propertyName = $dsBase }
         }
 
     #endregion DataSet
@@ -198,10 +219,23 @@ function person {
         ## as either an object or string using the propertyName variable defined in the DataSet section.
 
         if($AsObject){
-            $output | Select-Object -Property $propertyName
-        }else {
-            (($output | Select-Object -Property $propertyName).psobject.properties).Value -join " "
+			# Write output as custom object
+			$CallStack = Get-PSCallStack
+			Write-Verbose "Calling command - $($CallStack.Command)"
+			if($(Get-PSCallStack).Command -eq 'Invoke-Generate'){
+
+				foreach($item in $($person | Select-Object -Property $propertyName).psobject.properties){
+					$output += "$($item.Name)=$($item.Value) `n"
+				}
+			}else{
+				$output = $person | Select-Object -Property $propertyName
+			}
+        }else{
+            # Write output as string
+            $output = (($person | Select-Object -Property $propertyName).psobject.properties).value -join " "
         }
+		
+		$output
 
     #endregion Output
 }

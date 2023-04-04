@@ -1,56 +1,56 @@
 function company {
-<#
-    .SYNOPSIS
-    The function is intended to generate basic information for a company
-
-    .DESCRIPTION
-    The function generates a random company name, and alternatively also supplemental information, such as a description,
-    tagline, EIN, and a fake website domain.
-
-    .PARAMETER DataSet
-    Specify the types of information to generate based on a set of collective data points
-
-        Name (default): Return only a company name - default to mimic legacy behavior
-        Basic: Include a description, tagline, and website/email domain
-        Enhanced: Returns all values, which includes all of the above, plus an address and fake EIN
-
-    .PARAMETER CountryCode
-    Provides the ability to target address generation to a specific country by specifying the two-letter country code.
-
-    Note: This parameter only has an effect when returning the Enhanced data set
-
-    .PARAMETER AsObject
-    Specifying this switch will cause a custom PSObject to be returned instead of just a simple string value, making it easier
-    to reuse for other generator templates without needing to extend the functionality of this one.
-
-    .PARAMETER Culture
-    The culture used for generate - default is the current culture.
-
-    .NOTES
-    KEYWORDS: PowerShell
-
-    VERSIONS HISTORY
-    0.1.0 - 2016-01-16 - The first version published as a part of NameIT powershell module https://github.com/dfinke/NameIT
-    0.2.0 - 2023-03-27 - Normalized function to match framework established elsewhere and updated to add new options
-
-    The source of industries and classifications for the en-US culture (2023) from
-    https://en.wikipedia.org/wiki/Global_Industry_Classification_Standard
-
-    .EXAMPLE
-    [PS] > Invoke-Generate "[company]"
-    Rogers and Sons
-
-    The one name returned as plain text.
-
-    .EXAMPLE
-    [PS] > Invoke-Generate "[company Enhanced -AsObject]"
-
-    Name        Description                         Tagline                             EIN         Domain          Address
-    -----       ------------                        --------                            ----        -------         --------
-    Sparks PLC  Optional Interactive Middleware     Incentivize Proactive Synergies     67-1573584  sparksplc.io    5748 Happy Value Blvd, Jamestown, North Carolina, 27282, US
-
-    A single company that includes all values returned as a custom object.
-#>
+    <#
+        .SYNOPSIS
+        The function is intended to generate basic information for a company
+    
+        .DESCRIPTION
+        The function generates a random company name, and alternatively also supplemental information, such as a description,
+        tagline, EIN, and a fake website domain.
+    
+        .PARAMETER DataSet
+        Specify the types of information to generate based on a set of collective data points
+    
+            Name (default): Return only a company name - default to mimic legacy behavior
+            Basic: Include a description, tagline, and website/email domain
+            Enhanced: Returns all values, which includes all of the above, plus an address and fake EIN
+    
+        .PARAMETER CountryCode
+        Provides the ability to target address generation to a specific country by specifying the two-letter country code.
+    
+        Note: This parameter only has an effect when returning the Enhanced data set
+    
+        .PARAMETER AsObject
+        Specifying this switch will cause a custom PSObject to be returned instead of just a simple string value, making it easier
+        to reuse for other generator templates without needing to extend the functionality of this one.
+    
+        .PARAMETER Culture
+        The culture used for generate - default is the current culture.
+    
+        .NOTES
+        KEYWORDS: PowerShell
+    
+        VERSIONS HISTORY
+        0.1.0 - 2016-01-16 - The first version published as a part of NameIT powershell module https://github.com/dfinke/NameIT
+        0.2.0 - 2023-03-27 - Normalized function to match framework established elsewhere and updated to add new options
+    
+        The source of industries and classifications for the en-US culture (2023) from
+        https://en.wikipedia.org/wiki/Global_Industry_Classification_Standard
+    
+        .EXAMPLE
+        [PS] > Invoke-Generate "[company]"
+        Rogers and Sons
+    
+        The one name returned as plain text.
+    
+        .EXAMPLE
+        [PS] > Invoke-Generate "[company Enhanced -AsObject]"
+    
+        Name        Description                         Tagline                             EIN         Domain          Address
+        -----       ------------                        --------                            ----        -------         --------
+        Sparks PLC  Optional Interactive Middleware     Incentivize Proactive Synergies     67-1573584  sparksplc.io    5748 Happy Value Blvd, Jamestown, North Carolina, 27282, US
+    
+        A single company that includes all values returned as a custom object.
+    #>
     [CmdletBinding()]
     param(
         [Parameter()]
@@ -72,11 +72,45 @@ function company {
         ## Note: All data imported from flat files should be placed in this section. While it would reduce line counts to just perform selections
         ## in a single step here, this should be avoided. Always perform selection actions in the InternalGen section for code consistency when possible.
 
-        $suffixData = Resolve-LocalizedPath -Culture $Culture -ContentFile companysuffix.txt | Import-CacheableCsv -Delimiter ','
-        $descriptionData = Resolve-LocalizedPath -Culture $Culture -ContentFile description.txt | Import-CacheableCsv -Delimiter ','
-        $taglineData = Resolve-LocalizedPath -Culture $Culture -ContentFile tagline.txt | Import-CacheableCsv -Delimiter ','
-        $sizeData = Resolve-LocalizedPath -Culture $Culture -ContentFile companysize.csv | Import-CacheableCsv -Delimiter ','
-        $industryData = Resolve-LocalizedPath -Culture $Culture -ContentFile industries.csv | Import-CacheableCsv -Delimiter ','
+        try {
+            $suffixPath = Resolve-LocalizedPath -Culture $Culture -ContentFile companysuffix.txt
+        }
+        catch {
+            $suffixPath = Resolve-LocalizedPath -Culture en -ContentFile companysuffix.txt
+        }
+        $suffixData = $suffixPath | Get-CacheableContent
+
+        try {
+            $descriptionPath = Resolve-LocalizedPath -Culture $Culture -ContentFile description.txt
+        }
+        catch {
+            $descriptionPath = Resolve-LocalizedPath -Culture en -ContentFile description.txt
+        }
+        $descriptionData = $descriptionPath | Get-CacheableContent
+
+        try {
+            $taglinePath = Resolve-LocalizedPath -Culture $Culture -ContentFile tagline.txt
+        }
+        catch {
+            $taglinePath = Resolve-LocalizedPath -Culture en -ContentFile tagline.txt
+        }
+        $taglineData = $taglinePath | Get-CacheableContent
+
+        try {
+            $sizePath = Resolve-LocalizedPath -Culture $Culture -ContentFile companysize.csv
+        }
+        catch {
+            $sizePath = Resolve-LocalizedPath -Culture en -ContentFile companysize.csv
+        }
+        $sizeData = $sizePath | Import-CacheableCsv -Delimiter ','
+
+        try {
+            $industryPath = Resolve-LocalizedPath -Culture $Culture -ContentFile industries.csv
+        }
+        catch {
+            $industryPath = Resolve-LocalizedPath -Culture en -ContentFile industries.csv
+        }
+        $industryData = $industryPath | Import-CacheableCsv -Delimiter ','
         
     #endregion DataImport
 
@@ -90,10 +124,11 @@ function company {
             }else {
                 $companyAddress = Invoke-Generate "[address]"
             }
+            Write-Verbose "Set headquarters [$companyAddress]"
 
             # Generate a generic Employer Identification Number - Generator: Numeric
             $companyEIN = $(Invoke-Generate "[numeric 2]"),$(Invoke-Generate "[numeric 7]") -join '-'
-
+            Write-Verbose "Set company EIN [$companyEIN]"
 
             # Identify company name generation formats and generate name
             $companyNameFormats = $(
@@ -106,9 +141,11 @@ function company {
             )
         
             $companyName = $companyNameFormats | Get-Random
+            Write-Verbose "Generate company name [$companyName]"
 
             # Generate a website top-level domain - Generator: Domain
-            $companyDomain = "$(Invoke-Generate [domain $companyName])"
+            $companyDomain = Invoke-Generate "[domain -basename '$companyName']"
+            Write-Verbose "Use company name to generate domain [$companyDomain]"
             
     #endregion ExternalGen
 
@@ -118,7 +155,9 @@ function company {
         ## the code for selection goes into the CreatePSObject section.
 
         $companyDescription = "$($descriptionData | Get-Random) $($descriptionData | Get-Random) $($descriptionData | Get-Random)"
+        Write-Verbose "Generate company description [$companyDescription]"
         $companyTagline = "$($taglineData | Get-Random) $($taglineData | Get-Random) $($taglineData | Get-Random)"
+        Write-Verbose "Generate company tagline [$companyTagline]"
 
         #TODO: Update tagline generation using new industryData sub-industry values
 
@@ -128,6 +167,7 @@ function company {
         }else {
             $companySize = $sizeData | Get-Random
         }
+        Write-Verbose "Set company size profile: `n$companySize"
         
         # Set randomized profile values from selected t-shirt
         $employeeCount = Get-Random -Minimum $($companySize.EmployeeMin) -Maximum $($companySize.EmployeeMax)
@@ -143,6 +183,7 @@ function company {
         }
         $revenue = ($revSelect / "1$('000' * ([System.Math]::Floor(($revSelect.ToString().Length - 1) / 3)))").ToString('C',$Culture)
         $revenueValue = "$revenue $valueAmt"
+        Write-Verbose "Determine revenue [$revenueValue]"
 
         # Set indicator of publicly traded or privately owned
         if($companySize.Size -like "*Ent"){
@@ -153,7 +194,7 @@ function company {
 
         # Set random founding year and years in business
         $baseDate = Get-Date '01.01.1820'
-        $futureDate = (Get-Date).AddMonths(-6)
+        $futureDate = (Get-Date).AddYears(-2)
         $founding = [datetime](Get-Random -Minimum $baseDate.Ticks -Maximum $futureDate.Ticks)
         $foundingYear = $founding.Year
         $inBusiness = "$([Math]::Floor(((Get-Date) - $founding).Days / 365)) Years"
@@ -166,7 +207,7 @@ function company {
         ## Note: Data from external and internal generation processes is converted to a custom object here. For simple selections, where only a single
         ## text value is produced, this section can be skipped. Values may be formatted in this section, but they should not be set here.
 
-        $output = [PSCustomObject]@{
+        $company = [PSCustomObject]@{
             Name = $companyName
             Description = $companyDescription
             Tagline = $companyTagline
@@ -192,13 +233,14 @@ function company {
 
         $dsBase = 'Name'
         $dsBasic = 'Name','Description','Tagline','Domain'
-        $dsEnhanced = 'Name','Description','Tagline','Domain','Address','EIN'
+        $dsEnhanced = 'Name','Description','Tagline','Domain','Headquarters','EIN'
+        $dsFull = 'Name','Description','Tagline','Domain','Headquarters','EIN','Employees','Locations','Founded','InBusiness','Revenue','TradeType','Industry'
 
         switch ($DataSet) {
-            "Basic" { $propertyName = $dsBasic }
-            "Enhanced" { $propertyName = $dsEnhanced }
-            "Full" { $propertyName = '*' }
-            Default { $propertyName = $dsBase }
+            "Basic" { [array]$propertyName = $dsBasic }
+            "Enhanced" { [array]$propertyName = $dsEnhanced }
+            "Full" { [array]$propertyName = $dsFull }
+            Default { [array]$propertyName = $dsBase }
         }
 
     #endregion DataSet
@@ -208,10 +250,23 @@ function company {
         ## as either an object or string using the propertyName variable defined in the DataSet section.
 
         if($AsObject){
-            $output | Select-Object -Property $propertyName
-        }else {
-            (($output | Select-Object -Property $propertyName).psobject.properties).Value -join ", "
+            # Write output as custom object
+            $CallStack = Get-PSCallStack
+            Write-Verbose "Calling command - $($CallStack.Command)"
+            if($(Get-PSCallStack).Command -eq 'Invoke-Generate'){
+
+                foreach($item in $($company | Select-Object -Property $propertyName).psobject.properties){
+                    $output += "$($item.Name)=$($item.Value) `n"
+                }
+            }else{
+                $output = $company | Select-Object -Property $propertyName
+            }
+        }else{
+            # Write output as string
+            $output = (($company | Select-Object -Property $propertyName).psobject.properties).value -join ", "
         }
+        
+        $output
 
     #endregion Output
 }

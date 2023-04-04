@@ -74,17 +74,35 @@ function domain {
                 }else {
                     # If we fail to get the full list, fail back to the existing local list
                     Write-Warning "Failed to retrieve full list - reverting to primary"
-                    $domSuffixes = Resolve-LocalizedPath -Culture $Culture -ContentFile domainsuffix.txt | Import-CacheableCsv -Delimiter ','
+                    try {
+                        $domPath = Resolve-LocalizedPath -Culture $Culture -ContentFile domainsuffix.txt
+                    }
+                    catch {
+                        $domPath = Resolve-LocalizedPath -Culture en -ContentFile domainsuffix.txt
+                    }
+                    $domSuffixes = $domPath | Get-CacheableContent
                 }
             }
             catch {
                 # If we get an error, fail back to the existing local list
                 Write-Warning "Failed to retrieve full list - reverting to primary"
-                $domSuffixes = Resolve-LocalizedPath -Culture $Culture -ContentFile domainsuffix.txt | Import-CacheableCsv -Delimiter ','
+                try {
+                    $domPath = Resolve-LocalizedPath -Culture $Culture -ContentFile domainsuffix.txt
+                }
+                catch {
+                    $domPath = Resolve-LocalizedPath -Culture en -ContentFile domainsuffix.txt
+                }
+                $domSuffixes = $domPath | Get-CacheableContent
             }
         }else {
             # Just use the base set of locally defined top-level domains
-            $domSuffixes = Resolve-LocalizedPath -Culture $Culture -ContentFile domainsuffix.txt | Import-CacheableCsv -Delimiter ','
+            try {
+                $domPath = Resolve-LocalizedPath -Culture $Culture -ContentFile domainsuffix.txt
+            }
+            catch {
+                $domPath = Resolve-LocalizedPath -Culture en -ContentFile domainsuffix.txt
+            }
+            $domSuffixes = $domPath | Get-CacheableContent
         }
 
     #endregion DataImport

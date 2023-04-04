@@ -76,7 +76,7 @@ function address {
         catch {
             Resolve-LocalizedPath -Culture en -ContentFile streetsuffix.txt
         }
-        $SuffixData = $SuffixPath | Import-CacheableCsv -Delimiter ','
+        $SuffixData = $SuffixPath | Get-CacheableContent
 
         try {
             $CountryPath = Resolve-LocalizedPath -Culture $Culture -ContentFile countries.csv
@@ -117,7 +117,7 @@ function address {
             $gen = "[city -DataSet Full -IncludeGeo -AsObject]"
         }
     
-        $cityInfo = Invoke-Generate $gen
+        $cityInfo = Invoke-Generate $gen -AsPSObject
     
     #endregion ExternalGen
 
@@ -158,7 +158,7 @@ function address {
         ## Note: Data from external and internal generation processes is converted to a custom object here. For simple selections, where only a single
         ## text value is produced, this section can be skipped. Values may be formatted in this section, but they should not be set here.
 
-        $output = [PSCustomObject]@{
+        $address = [PSCustomObject]@{
             streetName = $Culture.TextInfo.ToTitleCase($streetName)
             city = $Culture.TextInfo.ToTitleCase($($cityInfo.city))
             state = $Culture.TextInfo.ToTitleCase($($cityInfo.stateShort))
@@ -194,13 +194,24 @@ function address {
         ## Note: This section should not be performing any other processing except filtering the properties being sent to the pipeline, formatted as
         ## as either an object or string using the propertyName variable defined in the DataSet section.
 
-        if($AsObject){
-            # Write output as custom object
-            $output | Select-Object -Property $propertyName
+		if($AsObject){
+			# Write output as custom object
+			$CallStack = Get-PSCallStack
+			Write-Verbose "Calling command - $($CallStack.Command)"
+			if($(Get-PSCallStack).Command -eq 'Invoke-Generate'){
+
+				foreach($item in $($address | Select-Object -Property $propertyName).psobject.properties){
+					$output += "$($item.Name)=$($item.Value) `n"
+				}
+			}else{
+				$output = $address | Select-Object -Property $propertyName
+			}
         }else{
             # Write output as string
-            (($output | Select-Object -Property $propertyName).psobject.properties).value -join ", "
+            $output = (($address | Select-Object -Property $propertyName).psobject.properties).value -join ", "
         }
+		
+		$output
 
     #endregion Output
 }
