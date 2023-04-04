@@ -196,7 +196,7 @@ function city {
         # Add lat and long if IncludeGeo switch is present
         if($IncludeGeo){ 
             Write-Verbose "IncludeGeo specified; Additing dsGeo [$dsGeo]"
-            [array]$propertyName = $propertyName, $dsGeo 
+            [array]$propertyName = $propertyName + $dsGeo 
         }
 
     #endregion DataSet
