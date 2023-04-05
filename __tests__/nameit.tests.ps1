@@ -9,40 +9,40 @@ Describe "City Generation Test" {
     It "Tests returning a company title" {
         $actual = Invoke-Generate '[company]' -Count 5
 
-        $actual[0] | Should -BeExactly 'Jefferson-Hernandez'
-        $actual[1] | Should -BeExactly 'Wells Inc'
-        $actual[2] | Should -BeExactly 'Carter, Arnold and Bass'
-        $actual[3] | Should -BeExactly 'Dougherty-Haynes'
-        $actual[4] | Should -BeExactly 'Briggs-Forbes'
+        $actual[0] | Should -BeExactly 'Grandmaison PLC'
+        $actual[1] | Should -BeExactly 'Czerwinski-Hochwalt'
+        $actual[2] | Should -BeExactly 'Laredo-Linn'
+        $actual[3] | Should -BeExactly 'Charming Alcohol Group'
+        $actual[4] | Should -BeExactly 'Irate Resolve Inc'
     }
 
     It "Tests returning a company suffix" {
         $actual = Invoke-Generate '[company suffix]' -Count 5
 
-        $actual[0] | Should -BeExactly 'and Sons'
-        $actual[1] | Should -BeExactly 'and Sons'
-        $actual[2] | Should -BeExactly 'LLC'
-        $actual[3] | Should -BeExactly 'PLC'
-        $actual[4] | Should -BeExactly 'Ltd'
+        $actual[0] | Should -BeExactly 'Ltd'
+        $actual[1] | Should -BeExactly 'College'
+        $actual[2] | Should -BeExactly 'and Sons'
+        $actual[3] | Should -BeExactly 'LLC'
+        $actual[4] | Should -BeExactly 'Association'
     }
 
     It "Tests returning a fluff word" {
         $actual = Invoke-Generate '[company fluff]' -Count 5
 
-        $actual[0] | Should -BeExactly 'experiences'
-        $actual[1] | Should -BeExactly 'eyeballs'
-        $actual[2] | Should -BeExactly 'relationships'
-        $actual[3] | Should -BeExactly 'global'
-        $actual[4] | Should -BeExactly 'reinvent'
+        $actual[0] | Should -BeExactly 'e-tailers'
+        $actual[1] | Should -BeExactly 'virtual'
+        $actual[2] | Should -BeExactly 'B2C'
+        $actual[3] | Should -BeExactly 'implement'
+        $actual[4] | Should -BeExactly 'synergize'
     }
 
     It "Tests returning a catch word" {
         $actual = Invoke-Generate '[company catch]' -Count 5
 
-        $actual[0] | Should -BeExactly 'database'
-        $actual[1] | Should -BeExactly 'collaboration'
-        $actual[2] | Should -BeExactly 'Stand-alone'
-        $actual[3] | Should -BeExactly 'User-friendly'
-        $actual[4] | Should -BeExactly 'empowering'
+        $actual[0] | Should -BeExactly 'explicit'
+        $actual[1] | Should -BeExactly 'Distributed'
+        $actual[2] | Should -BeExactly 'Internet solution'
+        $actual[3] | Should -BeExactly 'value-added'
+        $actual[4] | Should -BeExactly '6thgeneration'
     }
 }

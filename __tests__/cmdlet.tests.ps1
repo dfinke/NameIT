@@ -23,11 +23,11 @@ Describe "Cmdlet Generation Test (en culture)" -Tag Cmdlet {
 
         $actual.Count | Should -Be 5
                 
-        $actual[0] | Should -BeExactly 'Skip-Question'
-        $actual[1] | Should -BeExactly 'Submit-Library'
-        $actual[2] | Should -BeExactly 'Search-Primary'
-        $actual[3] | Should -BeExactly 'Wait-Guy'
-        $actual[4] | Should -BeExactly 'Undo-Suggestion'
+        $actual[0] | Should -BeExactly 'Skip-Quit'
+        $actual[1] | Should -BeExactly 'Send-Lift'
+        $actual[2] | Should -BeExactly 'Set-Prior'
+        $actual[3] | Should -BeExactly 'Use-Hang'
+        $actual[4] | Should -BeExactly 'ConvertTo-Sweet'
     }
 }
 Describe "Cmdlet Generation Test (sv culture)" -Tag Cmdlet, CultureSv {
@@ -53,10 +53,10 @@ Describe "Cmdlet Generation Test (sv culture)" -Tag Cmdlet, CultureSv {
 
         $actual.Count | Should -Be 5
                 
-        $actual[0] | Should -BeExactly 'Skip-Kapitel'
-        $actual[1] | Should -BeExactly 'Invoke-Fotboll'
-        $actual[2] | Should -BeExactly 'Search-Banan'
-        $actual[3] | Should -BeExactly 'Clear-Tulpan'
-        $actual[4] | Should -BeExactly 'Deny-Päron'
+        $actual[0] | Should -BeExactly 'Skip-Knä'
+        $actual[1] | Should -BeExactly 'Resolve-Frisör'
+        $actual[2] | Should -BeExactly 'Show-Berättelse'
+        $actual[3] | Should -BeExactly 'Enter-Tvål'
+        $actual[4] | Should -BeExactly 'Ping-Rum'
     }
 }

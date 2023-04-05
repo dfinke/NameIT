@@ -54,7 +54,7 @@ function company {
     [CmdletBinding()]
     param(
         [Parameter()]
-        [ValidateSet('Name', 'Basic', 'Enhanced', 'Full')]
+        [ValidateSet('Name', 'Basic', 'Enhanced', 'Full', 'catch', 'suffix', 'fluff')]
         [string]$DataSet = 'Name',
         [Parameter()]
         [ValidateSet('Micro','Small','Medium','Large','MicroEnt','SmallEnt','MediumEnt','LargeEnt')]
@@ -153,6 +153,19 @@ function company {
         ## All code specific to this generator that involves filtering, setting, or creating values, including manipulation of data from any external
         ## generator calls should be placed in this section. For simple generations, where you are just getting a random item from a single data set,
         ## the code for selection goes into the CreatePSObject section.
+
+		# To support legacy functions, override companyName value when legacy options specified for DataSet
+		if($DataSet -eq 'suffix'){
+			$companyName = $suffixData | Get-Random
+		}
+		
+		if($DataSet -eq 'fluff'){
+			$companyName = $taglineData | Get-Random
+		}
+		
+		if($DataSet -eq 'catch'){
+			$companyName = $descriptionData | Get-Random
+		}
 
         $companyDescription = "$($descriptionData | Get-Random) $($descriptionData | Get-Random) $($descriptionData | Get-Random)"
         Write-Verbose "Generate company description [$companyDescription]"

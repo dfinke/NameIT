@@ -134,6 +134,11 @@ function city {
         $city = $CityData | Get-Random
         Write-Verbose "Selected city: `n$city"
 
+        # Handle legacy scenario where we get a city without a county - Find another non-null countyProvince and update value
+        if($propertyName -eq 'county' -and ($null -eq $city.countyProvince -or $city.countyProvince -eq "")){
+            $city.countyProvince = ((($cityData).Where({$_.countyProvince -ne "" -and $null -ne $_.countyProvince})) | Get-Random).countyProvince
+        }
+
     #endregion InternalGen
 
     #region CreatePSObject

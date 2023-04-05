@@ -1,0 +1,11 @@
+com
+org
+net
+int
+edu
+info
+work
+site
+one
+ooo
+global
