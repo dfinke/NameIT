@@ -136,6 +136,7 @@
             , 'email'
             , 'company'
             , 'city'
+            , 'character'
         )
         
         CultureNorms  = @{
